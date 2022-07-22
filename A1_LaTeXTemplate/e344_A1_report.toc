@@ -1,0 +1,18 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Declaration}{i}{Doc-Start}%
+\contentsline {chapter}{List of Figures}{iii}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{iv}{chapter*.3}%
+\contentsline {chapter}{Nomenclature}{v}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Literature survey}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Operational amplifiers}{2}{section.1.1}%
+\contentsline {subsubsection}{Operational amplifiers: limitations and considerations}{2}{subsubsection*.8}%
+\contentsline {subsubsection}{Operational amplifier configurations}{2}{subsubsection*.9}%
+\contentsline {section}{\numberline {1.2}Current sensing}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Detail design}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Current sensor}{4}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Results}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Current sensor}{5}{section.3.1}%
+\contentsline {chapter}{Bibliography}{7}{chapter*.14}%
+\contentsline {chapter}{\numberline {A}Social contract}{8}{appendix.A}%
+\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{9}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Stuff you want to include}{10}{appendix.C}%
