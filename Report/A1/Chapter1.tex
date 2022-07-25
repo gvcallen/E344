@@ -39,21 +39,20 @@ The op-amp used in this project is the MCP6242. Listed below are its notable par
 
 \subsubsection{Configurations}\label{sec:opamps_configs}
 A number of well-known op-amp configurations exist that all achieve slightly different amplification goals. The following list compares common configurations [3] which may achieve this project's goal
-of amplifying a small-signal voltage across a resistor:
+of amplifying a small-signal voltage across a resistor. The figures below also include a modified non-inverting amplifier to allow for input signal filtering:
 \begin{center}
 
     \begin{tabular}{|p{3.5cm}|p{6cm}|p{6cm}|}
         \hline
         Type            & Advantages                                      & Disadvantages                               \\
         \hline
-        Non-inverting   & - Simple to design and build                    & - Relatively large input bias currents      \\
-                        & - High input impedance due to negative feedback & - Amplifies noise from input                \\
+        Non-inverting   & - Simple to design and build                    & - Large input bias currents                 \\
+                        & - High input impedance                          & - Amplifies noise from input                \\
         \hline
         Differential    & - Good noise rejection                          & - Complex design                            \\
-                        & - Flexible                                      & - Low input impedance due to virtual ground \\
+                        & - Flexible                                      & - Low input impedance                       \\
         \hline
-        Instrumentation & - Good noise rejection                          & - Complex and expensive design              \\
-                        & - Flexible                                      &                                             \\
+        Instrumentation & - Same as differential                          & - Complex and expensive design              \\
                         & - Very high input impedance                     &                                             \\
         \hline
     \end{tabular}
@@ -61,25 +60,32 @@ of amplifying a small-signal voltage across a resistor:
 
 \begin{figure}[!h]
     \centering
-    \begin{minipage}{.325\textwidth}
-      \centering
-      \includegraphics[width=.8\linewidth]{Figures/Op-Amp_Non-Inverting_Amplifier}
-      \captionof{figure}{Non-inverting amplifier}
-      \label{fig:opamp-non-inverting}
+    \begin{minipage}{.23\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{Figures/Op-Amp_Non-Inverting_Amplifier}
+        \captionof{figure}{Non-inverting amplifier [3]}
+        \label{fig:opamp-non-inverting}
     \end{minipage}
-    \begin{minipage}{.325\textwidth}
-      \centering
-      \includegraphics[width=.8\linewidth]{Figures/Op-Amp_Differential_Amplifier}
-      \captionof{figure}{Differential amplifier}
-      \label{fig:opamp-differential}
+    \begin{minipage}{.23\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{Figures/Op-Amp_Differential_Amplifier}
+        \captionof{figure}{Differential amplifier [3]}
+        \label{fig:opamp-differential}
     \end{minipage}
-    \begin{minipage}{.325\textwidth}
+    \begin{minipage}{.23\textwidth}
         \centering
         \includegraphics[width=0.9\linewidth]{Figures/Op-Amp_Instrumentation_Amplifier}
-        \captionof{figure}{Instrumentation amplifier}
+        \captionof{figure}{Instrumentation amplifier [3]}
         \label{fig:opamp-instrumentation}
-      \end{minipage}    
-    \end{figure}
+    \end{minipage}
+    \begin{minipage}{.23\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Figures/Op-Amp_Non-Inverting_Filter}
+        \captionof{figure}{Modified non-inverting amplifier [4]}
+        \label{fig:opamp-non-inverting-filter}
+    \end{minipage}    
+
+\end{figure}
 
 \pagebreak
 \section{Current sensing}\label{sec:cursens}

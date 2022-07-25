@@ -1,77 +1,28 @@
 \chapter{Results}\label{ch:results}
 
+After running initial simulations, it was clear that the constant assumed in the design stage for the dominant capacitor $C_f$ was too high. The capacitor value was then experimentally
+increased until a satisfactory response which was reasonably below 250 mV (10-20\%) was obtained. This section details the rest of the results of these simulations.
 
-\begin{figure}
- \footnotesize
- \centering
-    \begin{subfigure}[]{0.55\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/E344_VoltRegulator.pdf}
-		    \caption{} \label{subfig:pwr_simu_rect}
-     \end{subfigure}
-     \begin{subfigure}[]{0.4\textwidth}
-             \centering
-  		\includegraphics[width=1.0\linewidth]{./Figures/Screengrab2}
-		   \caption{ } \label{subfig:pwr_meas_rect}
-     \end{subfigure}
-    \begin{subfigure}[]{0.55\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/E344_VoltRegulator.pdf}
-		    \caption{} \label{subfig:pwr_simu_rect}
-     \end{subfigure}
-    \begin{subfigure}[]{0.4\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/Screengrab2}
-		    \caption{} \label{subfig:pwr_simu_rect}
-     \end{subfigure}
-   \caption[\textcolor{red}{I am the short caption that appears in the List of Figures list}]{Voltage regulation, comparing the linear and switchmode regulators... (a)  Blah blah. (b)  Blah blah.  (c)  Blah blah. (d) Blah blah.   As far as possible, please put input(s) and output(s) on the same plot rather than on separate plots. Based on the datasheet of XXXX in \cite{WebsiteOpAmp}.}
-    \label{fig:simulation_results_box}
- \end{figure}
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=.6\linewidth]{Figures/simulation_response}
+   \captionof{figure}{Amplifier output in response to step input}
+   \label{fig:simulation response}
+\end{figure}
 
-In this section, you want to demonstrate, by means of referring to simulation results, using the designed circuit, how your circuit behaves as you designed it in Section \ref{sec:current_sensor_design}. Present and report on your simulated results in Figure \ref{fig:simulation_results_box}. Be absolutely sure that the text and information in your report are readable. 
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=.5\linewidth]{Figures/simulation_current}
+   \captionof{figure}{Current draw of op-amp}
+   \label{fig:simulation_current}
+\end{figure}
 
-\noindent You can use screengrabs or photos of the oscilloscope, or download the CSVs and plot them as PDFs using Matlab, Excel or similar. 
-You can also use tables, example of which are presented in Tables \ref{tab:table1} and \ref{tab:table2}.
+As can be seen, all specifications were adhered to:
+\begin{itemize}
+   \item The noise level at idle is well below the 250 mV requirement.
+   \item The step response input changes 20-25 ms, which is below the 100 ms requirement.
+   \item The power draw of the circuit (as measure at the positive terminal of the op-amp) is less than 85 uA, which is much less than the specified 150 uA.
+\end{itemize}
 
-
-\begin{table}[h]
-        \centering
-        \footnotesize
-        \caption{Example of a simple table.}
-         \begin{tabular}{c@{\qquad}rrrr}
-          \toprule
-             & 2017 & 2018 & $\Delta_{Abs}$ & $\Delta_{DiD}$\\
-          \midrule
-          A & 9,868      & 10,399 & +5 & -11\\
-          B & 10,191     & 10,590 & +4 & -12\\
-          \bottomrule
-        \end{tabular}
-     \label{tab:table1}
-\end{table}
-
-
-\begin{table}[h]
-         \centering
-        \footnotesize
-        \caption{Example of another table.}
-
-         \begin{tabular}{c@{\qquad}rrrr}
-          \toprule
-          \multirow{2}{*}{\raisebox{-\heavyrulewidth}{Schools }} & \multicolumn{2}{c}{Total energy used}& \multicolumn{2}{c}{Change}\\
-          \cmidrule{2-5}
-            & 2017 & 2018 & $\Delta_{Abs}$ & $\Delta_{DiD}$\\
-            & [kWh] & [kWh] & [\%] & [\%] \\
-          \midrule
-          A & 9,868      & 10,399 & +5 & -11\\
-          B & 10,191     & 10,590 & +4 & -12\\
-          \bottomrule
-        \end{tabular}
-     \label{tab:table2}
-\end{table}
-
-%**********************************************
-\section{Current sensor} \label{sec:current_sense_results}
-%**********************************************
-
-
-
+Lastly, the input simulation parameters were modified during testing to analyze the various output voltages for different input currents. For input currents of 400mA, 500mA, 800mA and 1A,
+the output voltages were 1.22V, 1.52, 2.43 and 3.024 V respectively. This matches perfectly with the initial design.

@@ -6,15 +6,42 @@ what decisions were made and the justification behind these decisions.
 \section{Current sensor}\label{sec:current_sensor_design}
 \subsubsection{Configuration}\label{sec:current_sensor_config}
 
-The simple non-inverting amplifier configuration was decided on for this design. Although the differential amplifier provides explicit noise-rejection,
-its filter design would prove rather complex and may require a second buffer stage compared to the single additional capacitor for the non-inverting case.
-Overall, with proper filter design, the non-inverting amplifier should still ensure that there is little noise in the output signal.
+The differential amplifier configuration was will be used for this project for the following reasons:
+\begin{itemize}
+  \item The configuration is specifically designed to reject common-mode noise, which the non-inverting amp suffers from.
+  \item Only 1 op-amp is needed.
+  \item The design is relatively simple compared to the instrumentation amplifier.
+\end{itemize}
 
-The only addition to the researched configuration is that of an input resistor into the non-inverting input of the amplifier, followed by a capacitor
-from the non-inverting input to ground. This RC combination determines the high cut-off of the filter, which can be used to block out the noise.
+However, a modified version with two extra capacitors will be used. A capacitor will be added in parallel with $R_f$ called $C_f$, and with $R_g$ called $C_g$. It is important that these capacitors have the same
+value in order to preserve CMRR [3]. It is likely, however, that one of these will be dominant due to differing resistor values, and therefore the filter will only be considered as first-order.
+This is, however, acceptable due to the amps noise-rejecting capabilities.
+
+\subsubsection{Gain and Cutoff}\label{sec:current_sensor_circuit}
+Before calculating component values, both the cutoff frequency of the RC filter, and the DC gain of the amplifier, need to be determined. The gain of the amplifier should be determined
+such that, when the maximum current flows through the sense resistor, the maximum voltage is output.
+
+First, the maximum current of the motor should be measured. This can be done by connecting the motor to a power supply (through an ammeter), stalling the motor, and reading the output current.
+With a supply voltage of 6.4 V connected, the motor for this project read 740 mA, however different motors may read between 1 and 1.5 A. The average running current, however, is between 200 mA
+and 300 mA. A value of $I_{max} = 1 A$ will therefore be chosen to allow for more headroom and a slightly lower gain.
+Since a sense resistor of $\SI{10}{\milli\ohm}$ is to be used, the maximum voltage through this resistor will therefore be 8 mV. A gain of $\frac{3 V}{10 mV} = 300$ is therefore chosen.
+Although this voltage level is small, it is expected seeing as the resistance value is so small, and is also desirable as it prevents the circuit "stealing" power from the motor itself.
+
+The cutoff frequency $f_H$ should be selected such that the slew rate requirements are not affected, while still adequately filtering a 1 kHz noise signal. In order for the noise requirement
+to be satisfied, the input signal must be attenuated by $20 \log{\frac{300 * 10 mV}{250 mV}} \approx 22 dB$. This means the cutoff should be around 100 Hz (a decade below 1 kHz).
+Since the specification requires a change from 0.1 to $3 \times 0.9 = 2.7 V$ in less than 100 ms, the output should be capable of oscillating at $\frac{1}{50 ms} = 20 Hz$, which is below the designed cutoff.
+
+Since input current of the circuit needs to be limited below 150 uA, high resistor values should be chosen:
+\begin{itemize}
+  \item Assuming $i_n = 0$, choose $\frac{V_{out(max)}}{R_1 + R_f} << 150 uA \therefore R_1 + R_f >> \SI{20}{\kilo\ohm}$. Choose $R_f = \SI{100}{\kilo\ohm}$.
+  \item $G = \frac{R_f}{R_1} = 300 \therefore R_1 = \SI{330}{\ohm}$
+  \item Choose $R_2 = R_1 = \SI{330}{\ohm}$ and $R_g = R_f = \SI{100}{\kilo\ohm}$ for differential symmetry.
+  \item Since $R_{eq}$ of $C_f$ is $R_f$ and of $C_g$ is $R_g || R_2$, it is clear that $C_f$ is dominant, $\therefore C_f = \frac{1}{2 \pi \cdot R_f \cdot 100 Hz} \approx 15 nF$. Also set $C_g = 15nF$ for symmetry.
+        It should be noted, however, that this technique (using time constants) is not always valid - especially in complex circuits such as these - and so these results should be checked using simulations.
+\end{itemize}
 
 \subsubsection{Circuit diagram}\label{sec:current_sensor_circuit}
-The following figure details the circuit design for the sensor and amplifier combination.
+The following figure details the final circuit design for the sensor and amplifier system.
 
 \begin{figure}[h!]
   \centering
@@ -23,15 +50,6 @@ The following figure details the circuit design for the sensor and amplifier com
   \label{fig:circuit-diagram}
 \end{figure}
 
-As can be see, a single +5 V and 0 V supply will be used. Although there are benefits to a dual rail supply, that would prove impractical
-in the context of the larger system.
-
-
+As visible, a single +5 V and 0 V supply will be used. Although there are benefits to a dual rail supply, that would prove impractical in the context of the larger system.
 
 \pagebreak
-Since input current of the circuit needs to be limited below 150 uA, high resistance values should be chosen:
-\begin{itemize}
-  \item Assuming $i_n = 0$, choose $\frac{V_{out(max)}}{(R_1 + R_2)} << 150 uA \therefore R_1 + R_2 >> \SI{20}{\kilo\ohm}$. Choose $R_1 = \SI{100}{\kilo\ohm}$.
-  \item $G = 1 + \frac{R_2}{R_1}$
-  \item 
-\end{itemize}

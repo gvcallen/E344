@@ -1,0 +1,28 @@
+* C:\users\gary\Documents\_University\_2022\_Second Semester\E Design\E344\LTSpice\A1\E344_Ass1_CurrSense.asc
+V2 N002 0 5
+RSense5V N002 5V 1µ
+R_sense N004 R_sense_V 0.01
+I1 N004 R_sense_V PWL file=PWL.csv AC 0
+V1 N004 0 SINE(0m 10m 1000) AC 1
+R1 V_current 0 100k
+XU2 N003 N001 5V 0 V_current LTC6078
+R2 N003 R_sense_V 330
+Rg 0 N003 100k
+R11 N001 0 330
+Rf N001 V_current 100k
+Cf V_current N001 100n
+Cg N003 0 100n
+.tran 0 {transtop} 0
+.include A1cfg.txt
+* Don't change these -- used for auto-assessments.\nYou may modify the input files (.txt and .csv) \n               while developing.\nFor submission: \n  * Only one label name per net name\n  * Use only VSupply for power
+* Config file:
+* Analysis setup:
+* =============================\nG. Allen 23905093\n=============================
+* ==========================================\nYour circuit goes here. Feel free to move things around. \n==========================================
+* PLEASE WAIT FOR YOUR SIMULATION TO FINISH BEFORE SUBMITTING.
+* 5V power supply\n(input to your circuit)
+* Current sense R voltage\n(input to your circuit)
+* Conditioned current sense R\n(output from your circuit)
+.lib LTC5.lib
+.backanno
+.end

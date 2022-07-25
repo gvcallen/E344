@@ -10,14 +10,13 @@ A level-1 auxiliary file: Chapter5.aux
 A level-1 auxiliary file: Chapter6.aux
 A level-1 auxiliary file: App-A.aux
 A level-1 auxiliary file: App-B.aux
-A level-1 auxiliary file: App-C.aux
+I found no \citation commands---while reading file e344_A1_report.aux
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Database file #1: References.bib
-Warning--I didn't find a database entry for "WebsiteOpAmp"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -25,7 +24,7 @@ Warning--I didn't find a database entry for "WebsiteOpAmp"
 Done.
 You've used 0 entries,
             4087 wiz_defined-function locations,
-            832 strings with 7430 characters,
+            829 strings with 7397 characters,
 and the built_in function-call counts, 104 in all, are:
 = -- 0
 > -- 0
@@ -64,4 +63,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 22
-(There was 1 warning)
+(There was 1 error message)

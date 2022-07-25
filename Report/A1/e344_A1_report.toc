@@ -13,10 +13,9 @@
 \contentsline {chapter}{\numberline {2}Detail design}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Current sensor}{4}{section.2.1}%
 \contentsline {subsubsection}{Configuration}{4}{subsubsection*.10}%
-\contentsline {subsubsection}{Circuit diagram}{4}{subsubsection*.11}%
+\contentsline {subsubsection}{Gain and Cutoff}{4}{subsubsection*.11}%
+\contentsline {subsubsection}{Circuit diagram}{5}{subsubsection*.12}%
 \contentsline {chapter}{\numberline {3}Results}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Current sensor}{6}{section.3.1}%
-\contentsline {chapter}{Bibliography}{8}{chapter*.16}%
-\contentsline {chapter}{\numberline {A}Social contract}{9}{appendix.A}%
-\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{10}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Stuff you want to include}{11}{appendix.C}%
+\contentsline {chapter}{Bibliography}{7}{chapter*.16}%
+\contentsline {chapter}{\numberline {A}Social contract}{8}{appendix.A}%
+\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{9}{appendix.B}%
