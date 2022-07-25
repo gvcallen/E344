@@ -1111,10 +1111,6 @@ INPUT ./e344_A1_report.lof
 INPUT e344_A1_report.lof
 INPUT e344_A1_report.lof
 OUTPUT e344_A1_report.lof
-INPUT ./e344_A1_report.lot
-INPUT e344_A1_report.lot
-INPUT e344_A1_report.lot
-OUTPUT e344_A1_report.lot
 INPUT ./frontmatter/nomenclature.tex
 INPUT ./frontmatter/nomenclature.tex
 INPUT ./frontmatter/nomenclature.tex
@@ -1156,6 +1152,10 @@ INPUT ./Figures/Op-Amp_Non-Inverting_Filter.png
 INPUT Figures/Op-Amp_Non-Inverting_Filter.png
 INPUT ./Figures/Op-Amp_Non-Inverting_Filter.png
 INPUT ./Figures/Op-Amp_Non-Inverting_Filter.png
+INPUT ./Figures/hall-effect-cs.jpg
+INPUT Figures/hall-effect-cs.jpg
+INPUT ./Figures/hall-effect-cs.jpg
+INPUT ./Figures/hall-effect-cs.jpg
 INPUT ./Chapter2.tex
 INPUT ./Chapter2.tex
 INPUT ./Chapter2.tex

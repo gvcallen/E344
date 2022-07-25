@@ -10,7 +10,6 @@ A level-1 auxiliary file: Chapter5.aux
 A level-1 auxiliary file: Chapter6.aux
 A level-1 auxiliary file: App-A.aux
 A level-1 auxiliary file: App-B.aux
-I found no \citation commands---while reading file e344_A1_report.aux
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
@@ -22,45 +21,44 @@ Database file #1: References.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 0 entries,
+You've used 6 entries,
             4087 wiz_defined-function locations,
-            829 strings with 7397 characters,
-and the built_in function-call counts, 104 in all, are:
-= -- 0
-> -- 0
+            858 strings with 8292 characters,
+and the built_in function-call counts, 2102 in all, are:
+= -- 137
+> -- 24
 < -- 0
-+ -- 0
-- -- 0
-* -- 19
-:= -- 27
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 12
+- -- 6
+* -- 85
+:= -- 395
+add.period$ -- 12
+call.type$ -- 6
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 3
+cite$ -- 6
+duplicate$ -- 174
+empty$ -- 211
+format.name$ -- 6
+if$ -- 434
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 23
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 6
+missing$ -- 42
+newline$ -- 53
+num.names$ -- 6
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1
+skip$ -- 144
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 6
+swap$ -- 84
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 0
+type$ -- 6
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 22
-(There was 1 error message)
+while$ -- 6
+width$ -- 7
+write$ -- 76

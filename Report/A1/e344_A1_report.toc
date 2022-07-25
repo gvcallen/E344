@@ -1,21 +1,23 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Declaration}{i}{Doc-Start}%
 \contentsline {chapter}{List of Figures}{iii}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{iv}{chapter*.3}%
-\contentsline {chapter}{Nomenclature}{v}{chapter*.4}%
+\contentsline {chapter}{Nomenclature}{iv}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Literature review}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Operational amplifiers}{1}{section.1.1}%
-\contentsline {subsubsection}{Limitations}{1}{subsubsection*.5}%
-\contentsline {subsubsection}{Considerations}{1}{subsubsection*.6}%
-\contentsline {subsubsection}{MCP6242}{2}{subsubsection*.7}%
-\contentsline {subsubsection}{Configurations}{2}{subsubsection*.8}%
+\contentsline {subsubsection}{Limitations}{1}{subsubsection*.4}%
+\contentsline {subsubsection}{Considerations}{1}{subsubsection*.5}%
+\contentsline {subsubsection}{MCP6242}{2}{subsubsection*.6}%
+\contentsline {subsubsection}{Configurations}{2}{subsubsection*.7}%
 \contentsline {section}{\numberline {1.2}Current sensing}{3}{section.1.2}%
+\contentsline {subsubsection}{Sensing Techniques}{3}{subsubsection*.9}%
+\contentsline {subsubsection}{High-side vs low-side sensing}{3}{subsubsection*.11}%
+\contentsline {subsubsection}{AC, DC, and Power Requirements}{3}{subsubsection*.12}%
 \contentsline {chapter}{\numberline {2}Detail design}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Current sensor}{4}{section.2.1}%
-\contentsline {subsubsection}{Configuration}{4}{subsubsection*.10}%
-\contentsline {subsubsection}{Gain and Cutoff}{4}{subsubsection*.11}%
-\contentsline {subsubsection}{Circuit diagram}{5}{subsubsection*.12}%
+\contentsline {subsubsection}{Configuration}{4}{subsubsection*.13}%
+\contentsline {subsubsection}{Gain and Cutoff}{4}{subsubsection*.14}%
+\contentsline {subsubsection}{Circuit diagram}{5}{subsubsection*.15}%
 \contentsline {chapter}{\numberline {3}Results}{6}{chapter.3}%
-\contentsline {chapter}{Bibliography}{7}{chapter*.16}%
+\contentsline {chapter}{Bibliography}{7}{chapter*.19}%
 \contentsline {chapter}{\numberline {A}Social contract}{8}{appendix.A}%
 \contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{9}{appendix.B}%
