@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  25 JUL 2022 04:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  1 AUG 2022 00:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/gary/Documents/_University/_2022/_Second Semester/E Design/E344/Report/A1/e344_A1_report.tex"
-(/home/gary/Documents/_University/_2022/_Second Semester/E Design/E344/Report/A1/e344_A1_report.tex
+**"/home/gary/Documents/_University/_2022/_Second Semester/E Design/E344/Report/e344_A1_report.tex"
+(/home/gary/Documents/_University/_2022/_Second Semester/E Design/E344/Report/e344_A1_report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -538,11 +538,11 @@ Package: ulem 2019/11/18
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 113.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./e344_A1_report.aux (./Chapter1.aux) (./Chapter2.aux
+) (build/e344_A1_report.aux (build/Chapter1.aux) (build/Chapter2.aux
 
 LaTeX Warning: Label `sec:current_sensor_circuit' multiply defined.
 
-) (./Chapter3.aux) (./Chapter4.aux) (./Chapter5.aux) (./Chapter6.aux) (./App-A.aux) (./App-B.aux))
+) (build/Chapter3.aux) (build/Chapter4.aux) (build/Chapter5.aux) (build/Chapter6.aux) (build/App-A.aux) (build/App-B.aux))
 \openout1 = `e344_A1_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
@@ -668,14 +668,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 113.
 LaTeX Info: Redefining \pageref on input line 113.
 LaTeX Info: Redefining \nameref on input line 113.
- (./e344_A1_report.out) (./e344_A1_report.out)
+ (build/e344_A1_report.out) (build/e344_A1_report.out)
 \@outlinefile=\write3
 \openout3 = `e344_A1_report.out'.
 
  (./frontmatter/skripsie_title_page.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/fig/SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/fig/SU_logo_RGB_without_slogan.pdf, id=52, 441.01764pt x 506.96803pt>
+<frontmatter/fig/SU_logo_RGB_without_slogan.pdf, id=68, 441.01764pt x 506.96803pt>
 File: frontmatter/fig/SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
 <use frontmatter/fig/SU_logo_RGB_without_slogan.pdf>
 Package pdftex.def Info: frontmatter/fig/SU_logo_RGB_without_slogan.pdf  used on input line 7.
@@ -693,7 +693,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/fig/SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/fig/SU_horizontal_RGB.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/fig/SU_horizontal_RGB.pdf, id=73, 835.26556pt x 283.70393pt>
+<frontmatter/fig/SU_horizontal_RGB.pdf, id=89, 835.26556pt x 283.70393pt>
 File: frontmatter/fig/SU_horizontal_RGB.pdf Graphic file (type pdf)
 <use frontmatter/fig/SU_horizontal_RGB.pdf>
 Package pdftex.def Info: frontmatter/fig/SU_horizontal_RGB.pdf  used on input line 7.
@@ -705,13 +705,13 @@ File: frontmatter/fig/Signature.png Graphic file (type png)
 <use frontmatter/fig/Signature.png>
 Package pdftex.def Info: frontmatter/fig/Signature.png  used on input line 43.
 (pdftex.def)             Requested size: 79.07391pt x 42.67912pt.
-) [1 <./frontmatter/fig/SU_horizontal_RGB.pdf> <./frontmatter/fig/Signature.png (PNG copy)>] (./e344_A1_report.toc)
+) [1 <./frontmatter/fig/SU_horizontal_RGB.pdf> <./frontmatter/fig/Signature.png (PNG copy)>] (build/e344_A1_report.toc)
 \tf@toc=\write4
 \openout4 = `e344_A1_report.toc'.
 
  [2
 
-] (./e344_A1_report.lof)
+] (build/e344_A1_report.lof)
 \tf@lof=\write5
 \openout5 = `e344_A1_report.lof'.
 
@@ -735,7 +735,7 @@ Overfull \hbox (6.30171pt too wide) in paragraph at lines 45--59
  [] 
  []
 
-<Figures/Op-Amp_Non-Inverting_Amplifier.png, id=171, 301.125pt x 125.46875pt>
+<Figures/Op-Amp_Non-Inverting_Amplifier.png, id=212, 301.125pt x 125.46875pt>
 File: Figures/Op-Amp_Non-Inverting_Amplifier.png Graphic file (type png)
 <use Figures/Op-Amp_Non-Inverting_Amplifier.png>
 Package pdftex.def Info: Figures/Op-Amp_Non-Inverting_Amplifier.png  used on input line 65.
@@ -750,12 +750,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--66
 |\OT1/lmr/m/n/10.95 (+20) Non-inverting
  []
 
-<Figures/Op-Amp_Differential_Amplifier.png, id=173, 301.125pt x 200.75pt>
+<Figures/Op-Amp_Differential_Amplifier.png, id=216, 301.125pt x 200.75pt>
 File: Figures/Op-Amp_Differential_Amplifier.png Graphic file (type png)
 <use Figures/Op-Amp_Differential_Amplifier.png>
 Package pdftex.def Info: Figures/Op-Amp_Differential_Amplifier.png  used on input line 71.
 (pdftex.def)             Requested size: 86.90485pt x 57.93724pt.
-<Figures/Op-Amp_Instrumentation_Amplifier.png, id=174, 501.875pt x 401.5pt>
+<Figures/Op-Amp_Instrumentation_Amplifier.png, id=219, 501.875pt x 401.5pt>
 File: Figures/Op-Amp_Instrumentation_Amplifier.png Graphic file (type png)
 <use Figures/Op-Amp_Instrumentation_Amplifier.png>
 Package pdftex.def Info: Figures/Op-Amp_Instrumentation_Amplifier.png  used on input line 77.
@@ -765,7 +765,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \OT1/lmr/m/n/10.95 (+20) stru-men-ta-tion
  []
 
-<Figures/Op-Amp_Non-Inverting_Filter.png, id=175, 435.12563pt x 298.86656pt>
+<Figures/Op-Amp_Non-Inverting_Filter.png, id=222, 435.12563pt x 298.86656pt>
 File: Figures/Op-Amp_Non-Inverting_Filter.png Graphic file (type png)
 <use Figures/Op-Amp_Non-Inverting_Filter.png>
 Package pdftex.def Info: Figures/Op-Amp_Non-Inverting_Filter.png  used on input line 83.
@@ -786,7 +786,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--84
  []
 
 [2 <./Figures/Op-Amp_Non-Inverting_Amplifier.png> <./Figures/Op-Amp_Differential_Amplifier.png> <./Figures/Op-Amp_Instrumentation_Amplifier.png> <./Figures/Op-Amp_Non-Inverting_Filter.png (PNG copy)>]
-<Figures/hall-effect-cs.jpg, id=186, 301.125pt x 226.59656pt>
+<Figures/hall-effect-cs.jpg, id=237, 301.125pt x 226.59656pt>
 File: Figures/hall-effect-cs.jpg Graphic file (type jpg)
 <use Figures/hall-effect-cs.jpg>
 Package pdftex.def Info: Figures/hall-effect-cs.jpg  used on input line 105.
@@ -802,7 +802,7 @@ Chapter 2.
 
 
 ]
-<Figures/Circuit.png, id=200, 919.18407pt x 496.10344pt>
+<Figures/Circuit.png, id=255, 919.18407pt x 496.10344pt>
 File: Figures/Circuit.png Graphic file (type png)
 <use Figures/Circuit.png>
 Package pdftex.def Info: Figures/Circuit.png  used on input line 48.
@@ -812,33 +812,56 @@ Package pdftex.def Info: Figures/Circuit.png  used on input line 48.
 
  (./Chapter3.tex
 Chapter 3.
-<Figures/simulation_response.png, id=209, 1032.10594pt x 321.45094pt>
+<Figures/simulation_response.png, id=264, 1032.10594pt x 321.45094pt>
 File: Figures/simulation_response.png Graphic file (type png)
 <use Figures/simulation_response.png>
-Package pdftex.def Info: Figures/simulation_response.png  used on input line 8.
+Package pdftex.def Info: Figures/simulation_response.png  used on input line 12.
 (pdftex.def)             Requested size: 283.39244pt x 88.25948pt.
-<Figures/simulation_current.png, id=210, 915.42pt x 319.1925pt>
+<Figures/simulation_current.png, id=265, 915.42pt x 319.1925pt>
 File: Figures/simulation_current.png Graphic file (type png)
 <use Figures/simulation_current.png>
-Package pdftex.def Info: Figures/simulation_current.png  used on input line 15.
+Package pdftex.def Info: Figures/simulation_current.png  used on input line 19.
 (pdftex.def)             Requested size: 236.15797pt x 82.34518pt.
-) [6
+[6
 
 
 
 
  <./Figures/simulation_response.png (PNG copy)> <./Figures/simulation_current.png (PNG copy)>]
+<Figures/results_currentSensor_noise.jpeg, id=272, 609.77812pt x 467.49657pt>
+File: Figures/results_currentSensor_noise.jpeg Graphic file (type jpg)
+<use Figures/results_currentSensor_noise.jpeg>
+Package pdftex.def Info: Figures/results_currentSensor_noise.jpeg  used on input line 48.
+(pdftex.def)             Requested size: 191.28535pt x 146.64871pt.
+<Figures/results_currentSensor_riseTime.jpeg, id=273, 612.78937pt x 425.33907pt>
+File: Figures/results_currentSensor_riseTime.jpeg Graphic file (type jpg)
+<use Figures/results_currentSensor_riseTime.jpeg>
+Package pdftex.def Info: Figures/results_currentSensor_riseTime.jpeg  used on input line 54.
+(pdftex.def)             Requested size: 191.28535pt x 132.76884pt.
+) [7 <./Figures/results_currentSensor_noise.jpeg> <./Figures/results_currentSensor_riseTime.jpeg>]
 \openout2 = `Chapter4.aux'.
 
+ (./Chapter4.tex
+Chapter 4.
+<Figures/physical_circuit.png, id=280, 480.29437pt x 526.96875pt>
+File: Figures/physical_circuit.png Graphic file (type png)
+<use Figures/physical_circuit.png>
+Package pdftex.def Info: Figures/physical_circuit.png  used on input line 13.
+(pdftex.def)             Requested size: 377.85419pt x 414.57999pt.
+) [8
 
-No file Chapter4.tex.
+
+
+
+ <./Figures/physical_circuit.png (PNG copy)>]
 \openout2 = `Chapter5.aux'.
+
 
 No file Chapter5.tex.
 \openout2 = `Chapter6.aux'.
 
 No file Chapter6.tex.
-(./e344_A1_report.bbl
+(build/e344_A1_report.bbl
 Underfull \hbox (badness 7888) in paragraph at lines 39--42
 []\OT1/lmr/m/n/12 (+20) WikiBooks, ``Op amp con-fig-u-ra-tions.'' [On-line]. Avail-
  []
@@ -858,10 +881,7 @@ Underfull \hbox (badness 6252) in paragraph at lines 57--60
 \OT1/lmr/m/n/12 (+20) line]. Avail-able: [][]$https : / / www . allaboutcircuits . com / technical-[]articles /
  []
 
-) [7
-
-
-
+) [9
 
 
 
@@ -879,12 +899,12 @@ Appendix A.
 
 
 pdfTeX warning: pdflatex (file ./Figures/SocialContract_signed.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./Figures/SocialContract_signed.pdf, id=236, 597.50829pt x 845.0471pt>
+<./Figures/SocialContract_signed.pdf, id=302, 597.50829pt x 845.0471pt>
 File: ./Figures/SocialContract_signed.pdf Graphic file (type pdf)
 <use ./Figures/SocialContract_signed.pdf>
 Package pdftex.def Info: ./Figures/SocialContract_signed.pdf  used on input line 6.
 (pdftex.def)             Requested size: 377.85419pt x 534.39401pt.
-) [8
+) [10
 
 
  <./Figures/SocialContract_signed.pdf>]
@@ -892,7 +912,7 @@ Package pdftex.def Info: ./Figures/SocialContract_signed.pdf  used on input line
 
  (./App-B.tex
 Appendix B.
-<./Figures/GitHub.png, id=279, 1251.17438pt x 612.78937pt>
+<./Figures/GitHub.png, id=344, 1251.17438pt x 612.78937pt>
 File: ./Figures/GitHub.png Graphic file (type png)
 <use ./Figures/GitHub.png>
 Package pdftex.def Info: ./Figures/GitHub.png  used on input line 7.
@@ -902,7 +922,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 7--9
  [][] 
  []
 
-) [9
+) [11
 
 
 
@@ -912,26 +932,26 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 7--9
 Package caption Warning: Unused \captionsetup[algorithm] on input line 98.
 See the caption package documentation for explanation.
 
-(./e344_A1_report.aux (./Chapter1.aux) (./Chapter2.aux) (./Chapter3.aux) (./Chapter4.aux) (./Chapter5.aux) (./Chapter6.aux) (./App-A.aux) (./App-B.aux))
+(build/e344_A1_report.aux (build/Chapter1.aux) (build/Chapter2.aux) (build/Chapter3.aux) (build/Chapter4.aux) (build/Chapter5.aux) (build/Chapter6.aux) (build/App-A.aux) (build/App-B.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `e344_A1_report.out' has not changed.
-(rerunfilecheck)             Checksum: 4020BA011BA09A572AC676F87AA65887;1468.
+(rerunfilecheck)             Checksum: E53908DE9E7D43102AE8E4DC50CD6830;2002.
  ) 
 Here is how much of TeX's memory you used:
- 21828 strings out of 478238
- 409079 string characters out of 5850456
- 808350 words of memory out of 5000000
- 39489 multiletter control sequences out of 15000+600000
- 529096 words of font info for 121 fonts, out of 8000000 for 9000
+ 21902 strings out of 478238
+ 411686 string characters out of 5850456
+ 808738 words of memory out of 5000000
+ 39546 multiletter control sequences out of 15000+600000
+ 531825 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,13n,79p,1093b,861s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,13n,79p,1090b,861s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on e344_A1_report.pdf (14 pages, 1492002 bytes).
+Output written on build/e344_A1_report.pdf (16 pages, 2327880 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 37026 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 39121 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -18,6 +18,10 @@
 \contentsline {subsubsection}{Gain and Cutoff}{4}{subsubsection*.14}%
 \contentsline {subsubsection}{Circuit diagram}{5}{subsubsection*.15}%
 \contentsline {chapter}{\numberline {3}Results}{6}{chapter.3}%
-\contentsline {chapter}{Bibliography}{7}{chapter*.19}%
-\contentsline {chapter}{\numberline {A}Social contract}{8}{appendix.A}%
-\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{9}{appendix.B}%
+\contentsline {section}{\numberline {3.1}Current sensor}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Simulation}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Implementation}{7}{subsection.3.1.2}%
+\contentsline {chapter}{\numberline {4}Physical implementation}{8}{chapter.4}%
+\contentsline {chapter}{Bibliography}{9}{chapter*.22}%
+\contentsline {chapter}{\numberline {A}Social contract}{10}{appendix.A}%
+\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{11}{appendix.B}%

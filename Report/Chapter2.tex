@@ -1,21 +1,21 @@
 \chapter{Detail design}\label{ch:detail_design}
 %**********************************************
-This process details the design process and calculations for the current sensor/amplifier circuit. It provides insight into
-what decisions were made and the justification behind these decisions.
+The following process details the design and calculations for the current sensor circuit. It provides insight into
+what decisions were made, as well as the justifications behind them.
 
 \section{Current sensor}\label{sec:current_sensor_design}
 \subsubsection{Configuration}\label{sec:current_sensor_config}
 
-The differential amplifier configuration was will be used for this project for the following reasons:
+The differential amplifier configuration will be used for this project for the following reasons:
 \begin{itemize}
   \item The configuration is specifically designed to reject common-mode noise, which the non-inverting amp suffers from.
   \item Only 1 op-amp is needed.
   \item The design is relatively simple compared to the instrumentation amplifier.
 \end{itemize}
 
-However, a modified version with two extra capacitors will be used. A capacitor will be added in parallel with $R_f$ called $C_f$, and with $R_g$ called $C_g$. It is important that these capacitors have the same
-value in order to preserve CMRR [3]. It is likely, however, that one of these will be dominant due to differing resistor values, and therefore the filter will only be considered as first-order.
-This is, however, acceptable due to the amps noise-rejecting capabilities.
+However, a modified version with two extra capacitors will be used. Two capacitors will be added in parallel with $R_f$ and $R_g$ called $C_f$ and $C_g$ respectively. It is important that these capacitors have the same
+value in order to preserve CMRR \cite{WebsiteOpAmpConfigurations}. It is likely, however, that one of these will be dominant due to differing resistor values, and therefore this design will only consider the filter to be first-order.
+This is acceptable, however, due to the amplifier's noise-rejecting capabilities.
 
 \subsubsection{Gain and Cutoff}\label{sec:current_sensor_circuit}
 Before calculating component values, both the cutoff frequency of the RC filter, and the DC gain of the amplifier, need to be determined. The gain of the amplifier should be determined
@@ -25,7 +25,7 @@ First, the maximum current of the motor should be measured. This can be done by 
 With a supply voltage of 6.4 V connected, the motor for this project read 740 mA, however different motors may read between 1 and 1.5 A. The average running current, however, is between 200 mA
 and 300 mA. A value of $I_{max} = 1 A$ will therefore be chosen to allow for more headroom and a slightly lower gain.
 Since a sense resistor of $\SI{10}{\milli\ohm}$ is to be used, the maximum voltage through this resistor will therefore be 8 mV. A gain of $\frac{3 V}{10 mV} = 300$ is therefore chosen.
-Although this voltage level is small, it is expected seeing as the resistance value is so small, and is also desirable as it prevents the circuit "stealing" power from the motor itself.
+Although this voltage level is small, it is expected, given that the resistance value is so small. It is also desirable, as it shows that the circuit is not "stealing" too much power from the motor itself.
 
 The cutoff frequency $f_H$ should be selected such that the slew rate requirements are not affected, while still adequately filtering a 1 kHz noise signal. In order for the noise requirement
 to be satisfied, the input signal must be attenuated by $20 \log{\frac{300 * 10 mV}{250 mV}} \approx 22 dB$. This means the cutoff should be around 100 Hz (a decade below 1 kHz).
@@ -50,6 +50,6 @@ The following figure details the final circuit design for the sensor and amplifi
   \label{fig:circuit-diagram}
 \end{figure}
 
-As visible, a single +5 V and 0 V supply will be used. Although there are benefits to a dual rail supply, that would prove impractical in the context of the larger system.
+A single 5 V supply will be used. Although there are benefits to a dual rail supply, that would prove impractical in the context of the larger system.
 
 \pagebreak
