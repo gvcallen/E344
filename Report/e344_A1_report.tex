@@ -3,24 +3,21 @@
 \nocite{*}
 
 \newcommand{\nameInitial}{
-    \textcolor{black}{G. Allen}  %change colour to black and enter your initial and surname
+    \textcolor{black}{G. Allen}
 }
 \newcommand{\nameFull}{
-    \textcolor{black}{Gary Allen} %change colour to black and enter your firstname and surname
+    \textcolor{black}{Gary Allen}
 }
 \newcommand{\stNumber}{
-    \textcolor{black}{23905093} %change to black and enter your student number 
+    \textcolor{black}{23905093}
 }
-\newcommand{\myDate}{\textcolor{black}{\today} %change colour and if you want to date.
+\newcommand{\myDate}{\textcolor{black}{\today}
 }
-\newcommand{\signature}{frontmatter/fig/Signature}   %Upload your signature as "frontmatter/fig/Signature.png"
+\newcommand{\signature}{frontmatter/figures/Signature}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%From here you can ignore up to \begin{document} (line 107)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Page layout
 \usepackage[left=2.2cm,right=2.2cm,top=2.2cm,bottom=2.2cm]{geometry}
+
 % Figures
 \usepackage[margin=\the\parindent,small,bf,sf]{caption}
 \usepackage{graphicx}
@@ -28,6 +25,7 @@
 \setlength{\abovecaptionskip}{7.5pt}  % spacing above and below captions
 \newcommand*{\WaterMark}[2][0.2\paperwidth]{\AddToShipoutPicture*{\AtTextCenter{\parbox[c]{0pt}{\makebox[0pt][c]{\includegraphics[width=#1]{#2}}}}}}
 \usepackage{subcaption}
+
 % Font and text
 \usepackage[afrikaans,english]{babel}
 \usepackage{microtype}
@@ -38,12 +36,13 @@
 \onehalfspacing
 \usepackage{siunitx}
 \usepackage{lipsum}
+
 % Headings
 \usepackage[raggedright,sf,bf]{titlesec}
 \titlelabel{\thetitle.\ }
 \titleformat{\chapter}[display]{\huge\bfseries\sffamily}{\chaptertitlename\ \thechapter}{15pt}{\raggedright}
-% \titleformat{\chapter}[display]{\centering\huge\bfseries\sffamily}{\chaptertitlename\ \thechapter:}{15pt}{}
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}  % remove spacing before chapter headings
+
 % Table of contents
 \makeatletter
 \let\originall@chapter\l@chapter
@@ -51,6 +50,7 @@
 \makeatother
 \let \savenumberline \numberline
 \def \numberline#1{\savenumberline{#1.}}
+
 % Mathematics
 \usepackage[cmex10]{amsmath}
 \usepackage{amssymb}
@@ -60,6 +60,7 @@
 \newcommand{\tr}{\textrm{tr}}
 \renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
 \newcommand{\defeq}{\triangleq}
+
 % Tables
 \usepackage{booktabs}
 \usepackage{tabularx}
@@ -72,6 +73,7 @@
 \renewcommand{\tabularxcolumn}[1]{m{#1}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
 % Header and footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -79,26 +81,31 @@
 \renewcommand{\sectionmark}[1]{\markright{\normalsize \thesection.\ #1}}
 \fancyhead[C]{\nouppercase{\textit{\rightmark}}}
 \fancyhead[RO]{\thepage}
-% \fancyhead[LE]{\thepage}  % double-sided printing
+
 \fancyfoot{}
 \setlength\headheight{14.5pt}
 \renewcommand{\headrulewidth}{0pt}
 \fancypagestyle{plain}{\fancyhead{}
                        \renewcommand{\headrulewidth}{0pt}
                        \fancyfoot[C]{\thepage}}
+
 % Pseudo-code
 \usepackage{algorithm}  % should go before \usepackage{hyperref}
+
 % Table of contents and hyperlinks
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linktoc=all,citecolor=black,linkcolor=black}
 \usepackage[nottoc]{tocbibind}
+
 % Pseudo-code
 \usepackage{algpseudocode}  % should go after \usepackage{hyperref}
 \renewcommand{\thealgorithm}{\arabic{chapter}.\arabic{algorithm}} 
 \captionsetup[algorithm]{labelfont={bf,sf},font=small,labelsep=colon}
+
 % Bibliography
 \usepackage{cite}  % automatically reorder inline citations
 \bibliographystyle{IEEEtran}
+
 % Fix titlesec issue
 \usepackage{etoolbox}
 \makeatletter
@@ -106,14 +113,11 @@
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 \makeatother
  \usepackage[normalem]{ulem}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Ignore up to here. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 % Front matter
-\input{frontmatter/skripsie_title_page}
+\input{frontmatter/title_page}
 \pagenumbering{roman}
 \input{frontmatter/declaration}
 \tableofcontents
@@ -124,23 +128,17 @@
 \pagenumbering{arabic}
 
 % Contents
-%\include{Chapter0}
-\include{Chapter1}
-\include{Chapter2}
-\include{Chapter3}
-\include{Chapter4}
-\include{Chapter5}
-\include{Chapter6}
-
+\input{content/chapter1}
+\input{content/chapter2}
+\input{content/chapter3}
+\input{content/chapter4}
 
 % Bibliography
-\bibliography{References}
+\bibliography{references}
 
 % End matter
 \appendix
-\include{App-A}
-\include{App-B}
-%\include{App-C}
+\input{endmatter/appendix_a}
+\input{endmatter/appendix_b}
 
 \end{document}
-

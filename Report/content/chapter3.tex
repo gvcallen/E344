@@ -1,3 +1,4 @@
+\graphicspath{{content/figures/}}
 \chapter{Results}\label{ch:results}
 
 \section{Current sensor}\label{sec:current_sensor_results}
@@ -9,14 +10,14 @@ increased to 100nF where a satisfactory response which was reasonably below 250 
 
 \begin{figure}[h!]
    \centering
-   \includegraphics[width=.6\linewidth]{Figures/simulation_response}
+   \includegraphics[width=.6\linewidth]{currentSensor_sim_stepResponse}
    \captionof{figure}{Amplifier output in response to step input}
    \label{fig:simulation response}
 \end{figure}
 
 \begin{figure}[h!]
    \centering
-   \includegraphics[width=.5\linewidth]{Figures/simulation_current}
+   \includegraphics[width=.5\linewidth]{currentSensor_sim_currentDraw}
    \captionof{figure}{Current draw of op-amp}
    \label{fig:simulation_current}
 \end{figure}
@@ -45,13 +46,13 @@ This time is 4x better than the designed/simulated circuit, presumably due to th
    \centering
    \begin{minipage}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.7\linewidth]{Figures/results_currentSensor_noise}
+      \includegraphics[width=0.7\linewidth]{currentSensor_impl_noise.jpeg}
       \captionof{figure}{Amplifier noise rejection}
       \label{fig:results_currentSensor_noise}
    \end{minipage}
    \begin{minipage}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.7\linewidth]{Figures/results_currentSensor_riseTime}
+      \includegraphics[width=0.7\linewidth]{currentSensor_impl_stepResponse.jpeg}
       \captionof{figure}{Amplifier response time}
       \label{fig:results_currentSensor_response}
    \end{minipage}
@@ -84,17 +85,17 @@ an ideal gain of $\frac{\SI{120}{\kilo\ohm}}{\SI{330}{\ohm}} = 363.6V/V$ was exp
    \centering
    \begin{minipage}{0.3\textwidth}
       \centering
-      \includegraphics[width=0.7\linewidth]{Figures/results_free}
+      \includegraphics[width=0.7\linewidth]{currentSensor_impl_freeRunning}
       \captionof{figure}{0 A to free running}
    \end{minipage}
    \begin{minipage}{0.3\textwidth}
       \centering
-      \includegraphics[width=0.7\linewidth]{Figures/results_increasingLoad}
+      \includegraphics[width=0.7\linewidth]{currentSensor_impl_increasingLoad}
       \captionof{figure}{Increasing load}
    \end{minipage}
    \begin{minipage}{0.3\textwidth}
       \centering
-      \includegraphics[width=0.7\linewidth]{Figures/results_stall}
+      \includegraphics[width=0.7\linewidth]{currentSensor_impl_stall}
       \captionof{figure}{Free running to stall}
    \end{minipage}   
 \end{figure}

@@ -1,4 +1,4 @@
-
+\graphicspath{{content/figures/}}
 \chapter{Literature review}\label{chap:Lit}
 
 The following study presents an overview of the current configurations and design techniques for both operational amplifier and current-sensing circuits.
@@ -44,7 +44,8 @@ of amplifying a small-signal voltage across a resistor. The figures below also i
 
     \begin{tabular}{|p{3.5cm}|p{6cm}|p{6cm}|}
         \hline
-        Type            & Advantages                                      & Disadvantages                               \\
+        Type            & Advantages
+                               & Disadvantages                               \\
         \hline
         Non-inverting   & - Simple to design and build                    & - Large input bias currents                 \\
                         & - High input impedance                          & - Amplifies noise from input                \\
@@ -62,25 +63,25 @@ of amplifying a small-signal voltage across a resistor. The figures below also i
     \centering
     \begin{minipage}{.23\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{Figures/Op-Amp_Non-Inverting_Amplifier}
+        \includegraphics[width=.8\linewidth]{opAmp_nonInverting}
         \captionof{figure}{Non-inverting amplifier \cite{WebsiteOpAmpConfigurations}}
         \label{fig:opamp-non-inverting}
     \end{minipage}
     \begin{minipage}{.23\textwidth}
         \centering
-        \includegraphics[width=.8\linewidth]{Figures/Op-Amp_Differential_Amplifier}
+        \includegraphics[width=.8\linewidth]{opAmp_differential}
         \captionof{figure}{Differential amplifier \cite{WebsiteOpAmpConfigurations}}
         \label{fig:opamp-differential}
     \end{minipage}
     \begin{minipage}{.23\textwidth}
         \centering
-        \includegraphics[width=0.9\linewidth]{Figures/Op-Amp_Instrumentation_Amplifier}
+        \includegraphics[width=0.9\linewidth]{opAmp_instrumentation}
         \captionof{figure}{Instrumentation amplifier \cite{WebsiteOpAmpConfigurations}}
         \label{fig:opamp-instrumentation}
     \end{minipage}
     \begin{minipage}{.23\textwidth}
         \centering
-        \includegraphics[width=0.8\linewidth]{Figures/Op-Amp_Non-Inverting_Filter}
+        \includegraphics[width=0.8\linewidth]{opAmp_nonInverting_modified}
         \captionof{figure}{Modified non-inverting amplifier \cite{WebsiteOpAmpFilter}}
         \label{fig:opamp-non-inverting-filter}
     \end{minipage}    
@@ -102,7 +103,7 @@ A list of a few of these techniques \cite{WebsiteHiokiUSA} include:
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=.3\linewidth]{Figures/hall-effect-cs}    
+    \includegraphics[width=.3\linewidth]{current_sensor_hall_effect}
     \captionof{figure}{Illustration of Hall Effect Sensors}
     \label{fig:hall-effect}
   \end{figure}
