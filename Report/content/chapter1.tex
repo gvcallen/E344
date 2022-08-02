@@ -9,7 +9,7 @@ enough information to aid the design process.
 
 \subsubsection{Limitations}\label{sec:opamps_limits}
 Often, it is applicable to design an amplifier using the ideal operational amplifier model, however this may be inadequate
-in low voltage, high current or high frequency environments. The following are common limitations of non-ideal op-amps \cite{WebsiteOpAmpLimitations}:
+in low voltage, high current or high frequency environments. The following are common limitations of non-ideal op-amps \cite{opAmpLimitations}:
 \begin{itemize}
     \item Voltage supply saturation. For given k, output cannot go above $V_{ss} - k$ or below  $V_{dd} + k$.
     \item Finite bandwidth. Output signal magnitude reduces at high frequencies. This effect can be catered for using the gain-bandwidth product equation.
@@ -30,7 +30,7 @@ System requirements should first be considered in order to attain an overview of
 It is clear that voltage supply saturation, slew rate and CMRR are the main parameters to be considered. A filter circuit should also be designed for noise specifications.
 
 \subsubsection{MCP6242}\label{sec:opamps_MCP6242}
-The op-amp used in this project is the MCP6242. Listed below are its notable parameters \cite{WebsiteOpMCP6242}:
+The op-amp used in this project is the MCP6242. Listed below are its notable parameters \cite{datasheetMCP6242}:
 \begin{itemize}
     \item Typical CMMR of 75 dB (DC) to 65 dB (1 kHz).
     \item Ability to output between 0.035 and 5.465 V if $V_{ss}$ = 6 V and $V_{dd}$ = 0 V
@@ -64,25 +64,25 @@ of amplifying a small-signal voltage across a resistor. The figures below also i
     \begin{minipage}{.23\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{opAmp_nonInverting}
-        \captionof{figure}{Non-inverting amplifier \cite{WebsiteOpAmpConfigurations}}
+        \captionof{figure}{Non-inverting amplifier \cite{opAmpConfigurations}}
         \label{fig:opamp-non-inverting}
     \end{minipage}
     \begin{minipage}{.23\textwidth}
         \centering
         \includegraphics[width=.8\linewidth]{opAmp_differential}
-        \captionof{figure}{Differential amplifier \cite{WebsiteOpAmpConfigurations}}
+        \captionof{figure}{Differential amplifier \cite{opAmpConfigurations}}
         \label{fig:opamp-differential}
     \end{minipage}
     \begin{minipage}{.23\textwidth}
         \centering
         \includegraphics[width=0.9\linewidth]{opAmp_instrumentation}
-        \captionof{figure}{Instrumentation amplifier \cite{WebsiteOpAmpConfigurations}}
+        \captionof{figure}{Instrumentation amplifier \cite{opAmpConfigurations}}
         \label{fig:opamp-instrumentation}
     \end{minipage}
     \begin{minipage}{.23\textwidth}
         \centering
         \includegraphics[width=0.8\linewidth]{opAmp_nonInverting_modified}
-        \captionof{figure}{Modified non-inverting amplifier \cite{WebsiteOpAmpFilter}}
+        \captionof{figure}{Modified non-inverting amplifier \cite{opAmpSecondOrderFilters}}
         \label{fig:opamp-non-inverting-filter}
     \end{minipage}    
 
@@ -94,7 +94,7 @@ of amplifying a small-signal voltage across a resistor. The figures below also i
 \subsubsection{Sensing Techniques}\label{sec:cur_sum}
 Measurement techniques are usually either "invasive" or "non-invasive". Invasive techniques tap into the circuit directly and often have a significant affect
 on its operation, whereas non-invasive techniques might use e.g. the circuit's magnetic flux to determine the strength of the current.
-A list of a few of these techniques \cite{WebsiteHiokiUSA} include:
+A list of a few of these techniques \cite{currentSenseMethods} include:
 \begin{itemize}
     \item A current-sensing resistor in series, which uses Ohm's law with a voltage measurement to calculate current.
     \item Hall element sensors, which determine the strength of current based on how much its magnetic field "bends" another current left and right (which creates a potential difference).
@@ -111,7 +111,7 @@ A list of a few of these techniques \cite{WebsiteHiokiUSA} include:
 \subsubsection{High-side vs low-side sensing}\label{sec:cur_highlow}
 These names of these two techniques refer to the placement of a current-sense resistor relative to the load. For circuits which draw higher currents, high-side sensing can be used
 (placing the resistor closer to the positive of the voltage source) and is often more convenient. Low-side sensing, on the other hand, can potentially cause ground loop
-issues \cite{WebsiteAllAboutCircuits}, but has the ability to detect faults earlier.
+issues \cite{currentSenseLowHighSide}, but has the ability to detect faults earlier.
 
 \subsubsection{AC, DC, and Power Requirements}\label{sec:cur_acdc}
 As mentioned, there are various non-invasive and even wireless techniques used to measure current. Faraday's law is used to make measurements using induction, which requires AC.

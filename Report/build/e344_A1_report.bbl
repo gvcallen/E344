@@ -21,38 +21,38 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{WebsiteOpAmpLimitations}
+\bibitem{opAmpLimitations}
 \BIBentryALTinterwordspacing
 {Tutorials Point}, ``Physical limitations of operational amplifiers.''
   [Online]. Available:
   \url{https://www.tutorialspoint.com/physical-limitations-of-operational-amplifiers}
 \BIBentrySTDinterwordspacing
 
-\bibitem{WebsiteOpMCP6242}
+\bibitem{datasheetMCP6242}
 \BIBentryALTinterwordspacing
 {Microchip}, ``Mcp6241/1r/1u/2/4.'' [Online]. Available:
   \url{https://www.tutorialspoint.com/physical-limitations-of-operational-amplifiers}
 \BIBentrySTDinterwordspacing
 
-\bibitem{WebsiteOpAmpConfigurations}
+\bibitem{opAmpConfigurations}
 \BIBentryALTinterwordspacing
 {WikiBooks}, ``Op amp configurations.'' [Online]. Available:
   \url{https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/21882d.pdf}
 \BIBentrySTDinterwordspacing
 
-\bibitem{WebsiteOpAmpFilter}
+\bibitem{opAmpSecondOrderFilters}
 \BIBentryALTinterwordspacing
 {ElectronicsTutorials}, ``Second order filters.'' [Online]. Available:
   \url{https://www.electronics-tutorials.ws/filter/second-order-filters.html}
 \BIBentrySTDinterwordspacing
 
-\bibitem{WebsiteHiokiUSA}
+\bibitem{currentSenseMethods}
 \BIBentryALTinterwordspacing
 {HiokiUSA}, ``6 current sensing methods.'' [Online]. Available:
   \url{https://hiokiusa.com/6-current-sensing-methods/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{WebsiteAllAboutCircuits}
+\bibitem{currentSenseLowHighSide}
 \BIBentryALTinterwordspacing
 {AllAboutCircuits}, ``Low side vs high side sensing.'' [Online]. Available:
   \url{https://www.allaboutcircuits.com/technical-articles/resistive-current-sensing-low-side-versus-high-side-sensing/}

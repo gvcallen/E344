@@ -1,9 +1,9 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Non-inverting amplifier \cite {WebsiteOpAmpConfigurations}\relax }}{2}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Differential amplifier \cite {WebsiteOpAmpConfigurations}\relax }}{2}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Instrumentation amplifier \cite {WebsiteOpAmpConfigurations}\relax }}{2}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Modified non-inverting amplifier \cite {WebsiteOpAmpFilter}\relax }}{2}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Non-inverting amplifier \cite {opAmpConfigurations}\relax }}{2}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Differential amplifier \cite {opAmpConfigurations}\relax }}{2}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Instrumentation amplifier \cite {opAmpConfigurations}\relax }}{2}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Modified non-inverting amplifier \cite {opAmpSecondOrderFilters}\relax }}{2}{figure.caption.9}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Illustration of Hall Effect Sensors\relax }}{3}{figure.caption.11}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Circuit diagram of final configuration\relax }}{5}{figure.caption.17}%

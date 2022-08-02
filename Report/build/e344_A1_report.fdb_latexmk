@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/e344_A1_report"] 1659450191 "build/e344_A1_report.aux" "build/e344_A1_report.bbl" "build/e344_A1_report" 1659450192
+["bibtex build/e344_A1_report"] 1659450391 "build/e344_A1_report.aux" "build/e344_A1_report.bbl" "build/e344_A1_report" 1659450392
   "/usr/share/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1650181511 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "build/e344_A1_report.aux" 1659450192 10878 e0b781429626ab24d1b71d7af7211b8a "pdflatex"
-  "references.bib" 1658716941 1199 f747e62817e30b03999a19503d5ff14e ""
+  "build/e344_A1_report.aux" 1659450392 10783 71f3ad7037206f08bf401ff587cb618f "pdflatex"
+  "references.bib" 1659450389 1194 56f338115bb52df1b32bf65588b4557e ""
   (generated)
   "build/e344_A1_report.bbl"
   "build/e344_A1_report.blg"
-["pdflatex"] 1659450191 "/home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Report/e344_A1_report.tex" "build/e344_A1_report.pdf" "e344_A1_report" 1659450192
+["pdflatex"] 1659450391 "/home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Report/e344_A1_report.tex" "build/e344_A1_report.pdf" "e344_A1_report" 1659450392
   "/home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Report/e344_A1_report.tex" 1659449814 3763 a49d61897c14ff9763c2ed7226c19e93 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1650183167 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1650183167 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -164,14 +164,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1658490804 4278762 af3ac1370db81a450c1118eabf1fe718 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1658490785 2927664 9002d3fae250b581d7e5ef125975bcb0 ""
-  "build/e344_A1_report.aux" 1659450192 10878 e0b781429626ab24d1b71d7af7211b8a "pdflatex"
-  "build/e344_A1_report.bbl" 1659450191 2379 c48fa9f07ca5fbd5f80e4d0a8ba5acc1 "bibtex build/e344_A1_report"
-  "build/e344_A1_report.lof" 1659450192 1880 256a3749ef33ab3b516db315adb360ea "pdflatex"
-  "build/e344_A1_report.lot" 1659450192 277 215703b7d752da912ac19a4cdb1ba5da "pdflatex"
-  "build/e344_A1_report.out" 1659450192 2251 00576f8a576d458a399b184aa201fa23 "pdflatex"
-  "build/e344_A1_report.toc" 1659450192 2000 d6d8aa5b65bb3eccf22b828539f43cf0 "pdflatex"
-  "content/chapter1.tex" 1659450053 7633 51fa4c79e979570f2031b6f6166b31d1 ""
-  "content/chapter2.tex" 1659450076 4592 ae5d802970f399eb41ef7c485033ee2e ""
+  "build/e344_A1_report.aux" 1659450392 10783 71f3ad7037206f08bf401ff587cb618f "pdflatex"
+  "build/e344_A1_report.bbl" 1659450391 2374 b4efd7837da9fd17ed1d09cfc9001dae "bibtex build/e344_A1_report"
+  "build/e344_A1_report.lof" 1659450392 1864 7b822753b7a7b254f737d63e91f145b9 "pdflatex"
+  "build/e344_A1_report.lot" 1659450392 277 215703b7d752da912ac19a4cdb1ba5da "pdflatex"
+  "build/e344_A1_report.out" 1659450392 2251 00576f8a576d458a399b184aa201fa23 "pdflatex"
+  "build/e344_A1_report.toc" 1659450392 2000 d6d8aa5b65bb3eccf22b828539f43cf0 "pdflatex"
+  "content/chapter1.tex" 1659450389 7614 d0f226023b7f7f7be47b83883d1047ea ""
+  "content/chapter2.tex" 1659450339 4585 fabb4149ffce9876f785e2692d7411ba ""
   "content/chapter3.tex" 1659450190 5433 c21433a7d428212425f92544d25171bb ""
   "content/chapter4.tex" 1659450086 808 dcb6216bfc2499a259064652072ae4f8 ""
   "content/figures//currentSensor_impl_circuit.png" 1659307271 638407 5f8808bde9b4bb347137479e79f29de2 ""
