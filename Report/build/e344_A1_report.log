@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  2 AUG 2022 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  2 AUG 2022 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,11 +538,11 @@ Package: ulem 2019/11/18
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 117.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (build/e344_A1_report.aux
+) (build/e344_A1_report.aux (build/content/chapter1/chapter1.aux) (build/content/chapter2/chapter2.aux
 
 LaTeX Warning: Label `sec:current_sensor_circuit' multiply defined.
 
-)
+) (build/content/chapter3/chapter3.aux) (build/content/chapter4/chapter4.aux))
 \openout1 = `e344_A1_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -725,134 +725,159 @@ Package pdftex.def Info: frontmatter/figures/Signature.png  used on input line 4
 
 ]) [5
 
-] (./content/chapter1.tex
+]
+\openout2 = `content/chapter1/chapter1.aux'.
+
+ (./content/chapter1/chapter1.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 14.
-(/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+(./content/chapter1/opAmps.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 8.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
+
 ]
-Overfull \hbox (6.30171pt too wide) in paragraph at lines 45--60
+Overfull \hbox (6.30171pt too wide) in paragraph at lines 39--54
  [] 
  []
 
-<content/figures//opAmp_nonInverting.png, id=239, 301.125pt x 125.46875pt>
-File: content/figures//opAmp_nonInverting.png Graphic file (type png)
-<use content/figures//opAmp_nonInverting.png>
-Package pdftex.def Info: content/figures//opAmp_nonInverting.png  used on input line 66.
+<content/chapter1/figures//opAmp_nonInverting.png, id=239, 301.125pt x 125.46875pt>
+File: content/chapter1/figures//opAmp_nonInverting.png Graphic file (type png)
+<use content/chapter1/figures//opAmp_nonInverting.png>
+Package pdftex.def Info: content/chapter1/figures//opAmp_nonInverting.png  used on input line 60.
 (pdftex.def)             Requested size: 86.90485pt x 36.21077pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
 []\OT1/lmss/bx/n/10.95 (+20) Figure 1.1:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
 |\OT1/lmr/m/n/10.95 (+20) Non-inverting
  []
 
-<content/figures//opAmp_differential.png, id=243, 298.86656pt x 219.82124pt>
-File: content/figures//opAmp_differential.png Graphic file (type png)
-<use content/figures//opAmp_differential.png>
-Package pdftex.def Info: content/figures//opAmp_differential.png  used on input line 72.
+<content/chapter1/figures//opAmp_differential.png, id=243, 298.86656pt x 219.82124pt>
+File: content/chapter1/figures//opAmp_differential.png Graphic file (type png)
+<use content/chapter1/figures//opAmp_differential.png>
+Package pdftex.def Info: content/chapter1/figures//opAmp_differential.png  used on input line 66.
 (pdftex.def)             Requested size: 86.90485pt x 63.92093pt.
-<content/figures//opAmp_instrumentation.png, id=246, 501.875pt x 401.5pt>
-File: content/figures//opAmp_instrumentation.png Graphic file (type png)
-<use content/figures//opAmp_instrumentation.png>
-Package pdftex.def Info: content/figures//opAmp_instrumentation.png  used on input line 78.
+<content/chapter1/figures//opAmp_instrumentation.png, id=246, 501.875pt x 401.5pt>
+File: content/chapter1/figures//opAmp_instrumentation.png Graphic file (type png)
+<use content/chapter1/figures//opAmp_instrumentation.png>
+Package pdftex.def Info: content/chapter1/figures//opAmp_instrumentation.png  used on input line 72.
 (pdftex.def)             Requested size: 97.7669pt x 78.20947pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
 \OT1/lmr/m/n/10.95 (+20) stru-men-ta-tion
  []
 
-<content/figures//opAmp_nonInverting_modified.png, id=249, 435.12563pt x 298.86656pt>
-File: content/figures//opAmp_nonInverting_modified.png Graphic file (type png)
-<use content/figures//opAmp_nonInverting_modified.png>
-Package pdftex.def Info: content/figures//opAmp_nonInverting_modified.png  used on input line 84.
+<content/chapter1/figures//opAmp_nonInverting_modified.png, id=249, 435.12563pt x 298.86656pt>
+File: content/chapter1/figures//opAmp_nonInverting_modified.png Graphic file (type png)
+<use content/chapter1/figures//opAmp_nonInverting_modified.png>
+Package pdftex.def Info: content/chapter1/figures//opAmp_nonInverting_modified.png  used on input line 78.
 (pdftex.def)             Requested size: 86.90485pt x 59.69016pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 []\OT1/lmss/bx/n/10.95 (+20) Figure 1.4:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 |\OT1/lmr/m/n/10.95 (+20) Mod-i-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 \OT1/lmr/m/n/10.95 (+20) non-inverting
  []
 
-[2 <./content/figures//opAmp_nonInverting.png> <./content/figures//opAmp_differential.png (PNG copy)> <./content/figures//opAmp_instrumentation.png> <./content/figures//opAmp_nonInverting_modified.png (PNG copy)>]
-<content/figures//current_sensor_hall_effect.jpg, id=262, 301.125pt x 226.59656pt>
-File: content/figures//current_sensor_hall_effect.jpg Graphic file (type jpg)
-<use content/figures//current_sensor_hall_effect.jpg>
-Package pdftex.def Info: content/figures//current_sensor_hall_effect.jpg  used on input line 106.
+) [2 <./content/chapter1/figures//opAmp_nonInverting.png> <./content/chapter1/figures//opAmp_differential.png (PNG copy)> <./content/chapter1/figures//opAmp_instrumentation.png> <./content/chapter1/figures//opAmp_nonInverting_modified.png (PNG copy)>] (./content/chapter1/currentSensing.tex
+<content/chapter1/figures//currentSensor_hall_effect.jpg, id=262, 301.125pt x 226.59656pt>
+File: content/chapter1/figures//currentSensor_hall_effect.jpg Graphic file (type jpg)
+<use content/chapter1/figures//currentSensor_hall_effect.jpg>
+Package pdftex.def Info: content/chapter1/figures//currentSensor_hall_effect.jpg  used on input line 16.
 (pdftex.def)             Requested size: 141.69621pt x 106.62831pt.
-) (./content/chapter2.tex [3 <./content/figures//current_sensor_hall_effect.jpg>]
+)) [3 <./content/chapter1/figures//currentSensor_hall_effect.jpg>]
+\openout2 = `content/chapter2/chapter2.aux'.
+
+ (./content/chapter2/chapter2.tex
 Chapter 2.
-[4
+(./content/chapter2/currentSensor.tex [4
+
+
+
 
 ]
-<content/figures//currentSensor_sim_circuit.png, id=280, 919.18407pt x 496.10344pt>
-File: content/figures//currentSensor_sim_circuit.png Graphic file (type png)
-<use content/figures//currentSensor_sim_circuit.png>
-Package pdftex.def Info: content/figures//currentSensor_sim_circuit.png  used on input line 49.
+<content/chapter2/figures//currentSensor_sim_circuit.png, id=280, 919.18407pt x 496.10344pt>
+File: content/chapter2/figures//currentSensor_sim_circuit.png Graphic file (type png)
+<use content/chapter2/figures//currentSensor_sim_circuit.png>
+Package pdftex.def Info: content/chapter2/figures//currentSensor_sim_circuit.png  used on input line 44.
 (pdftex.def)             Requested size: 377.85419pt x 203.94118pt.
-) [5 <./content/figures//currentSensor_sim_circuit.png (PNG copy)>] (./content/chapter3.tex
+) [5 <./content/chapter2/figures//currentSensor_sim_circuit.png (PNG copy)>])
+\openout2 = `content/chapter3/chapter3.aux'.
+
+ (./content/chapter3/chapter3.tex
 Chapter 3.
-<content/figures//currentSensor_sim_stepResponse.png, id=289, 1032.10594pt x 321.45094pt>
-File: content/figures//currentSensor_sim_stepResponse.png Graphic file (type png)
-<use content/figures//currentSensor_sim_stepResponse.png>
-Package pdftex.def Info: content/figures//currentSensor_sim_stepResponse.png  used on input line 13.
+(./content/chapter3/currentSensor.tex
+<content/chapter3/figures/currentSensor_sim_stepResponse.png, id=289, 1032.10594pt x 321.45094pt>
+File: content/chapter3/figures/currentSensor_sim_stepResponse.png Graphic file (type png)
+<use content/chapter3/figures/currentSensor_sim_stepResponse.png>
+Package pdftex.def Info: content/chapter3/figures/currentSensor_sim_stepResponse.png  used on input line 11.
 (pdftex.def)             Requested size: 283.39244pt x 88.25948pt.
-<content/figures//currentSensor_sim_currentDraw.png, id=290, 915.42pt x 319.1925pt>
-File: content/figures//currentSensor_sim_currentDraw.png Graphic file (type png)
-<use content/figures//currentSensor_sim_currentDraw.png>
-Package pdftex.def Info: content/figures//currentSensor_sim_currentDraw.png  used on input line 20.
+<content/chapter3/figures/currentSensor_sim_currentDraw.png, id=290, 915.42pt x 319.1925pt>
+File: content/chapter3/figures/currentSensor_sim_currentDraw.png Graphic file (type png)
+<use content/chapter3/figures/currentSensor_sim_currentDraw.png>
+Package pdftex.def Info: content/chapter3/figures/currentSensor_sim_currentDraw.png  used on input line 18.
 (pdftex.def)             Requested size: 236.15797pt x 82.34518pt.
-[6
+ [6
 
- <./content/figures//currentSensor_sim_stepResponse.png (PNG copy)> <./content/figures//currentSensor_sim_currentDraw.png (PNG copy)>]
-<content/figures//currentSensor_impl_noise.jpeg, id=297, 609.77812pt x 467.49657pt>
-File: content/figures//currentSensor_impl_noise.jpeg Graphic file (type jpg)
-<use content/figures//currentSensor_impl_noise.jpeg>
-Package pdftex.def Info: content/figures//currentSensor_impl_noise.jpeg  used on input line 49.
+
+
+
+ <./content/chapter3/figures/currentSensor_sim_stepResponse.png (PNG copy)> <./content/chapter3/figures/currentSensor_sim_currentDraw.png (PNG copy)>]
+<content/chapter3/figures/currentSensor_impl_noise.jpeg, id=297, 609.77812pt x 467.49657pt>
+File: content/chapter3/figures/currentSensor_impl_noise.jpeg Graphic file (type jpg)
+<use content/chapter3/figures/currentSensor_impl_noise.jpeg>
+Package pdftex.def Info: content/chapter3/figures/currentSensor_impl_noise.jpeg  used on input line 47.
 (pdftex.def)             Requested size: 148.77785pt x 114.06328pt.
-<content/figures//currentSensor_impl_stepResponse.jpeg, id=298, 612.78937pt x 425.33907pt>
-File: content/figures//currentSensor_impl_stepResponse.jpeg Graphic file (type jpg)
-<use content/figures//currentSensor_impl_stepResponse.jpeg>
-Package pdftex.def Info: content/figures//currentSensor_impl_stepResponse.jpeg  used on input line 55.
+<content/chapter3/figures/currentSensor_impl_stepResponse.jpeg, id=298, 612.78937pt x 425.33907pt>
+File: content/chapter3/figures/currentSensor_impl_stepResponse.jpeg Graphic file (type jpg)
+<use content/chapter3/figures/currentSensor_impl_stepResponse.jpeg>
+Package pdftex.def Info: content/chapter3/figures/currentSensor_impl_stepResponse.jpeg  used on input line 53.
 (pdftex.def)             Requested size: 148.77785pt x 103.26466pt.
-<content/figures//currentSensor_impl_freeRunning.png, id=300, 390.70969pt x 305.64188pt>
-File: content/figures//currentSensor_impl_freeRunning.png Graphic file (type png)
-<use content/figures//currentSensor_impl_freeRunning.png>
-Package pdftex.def Info: content/figures//currentSensor_impl_freeRunning.png  used on input line 88.
+<content/chapter3/figures/currentSensor_impl_freeRunning.png, id=300, 390.70969pt x 305.64188pt>
+File: content/chapter3/figures/currentSensor_impl_freeRunning.png Graphic file (type png)
+<use content/chapter3/figures/currentSensor_impl_freeRunning.png>
+Package pdftex.def Info: content/chapter3/figures/currentSensor_impl_freeRunning.png  used on input line 86.
 (pdftex.def)             Requested size: 99.1869pt x 77.5902pt.
-<content/figures//currentSensor_impl_increasingLoad.png, id=301, 355.3275pt x 279.29344pt>
-File: content/figures//currentSensor_impl_increasingLoad.png Graphic file (type png)
-<use content/figures//currentSensor_impl_increasingLoad.png>
-Package pdftex.def Info: content/figures//currentSensor_impl_increasingLoad.png  used on input line 93.
+<content/chapter3/figures/currentSensor_impl_increasingLoad.png, id=301, 355.3275pt x 279.29344pt>
+File: content/chapter3/figures/currentSensor_impl_increasingLoad.png Graphic file (type png)
+<use content/chapter3/figures/currentSensor_impl_increasingLoad.png>
+Package pdftex.def Info: content/chapter3/figures/currentSensor_impl_increasingLoad.png  used on input line 91.
 (pdftex.def)             Requested size: 99.1869pt x 77.96297pt.
-<content/figures//currentSensor_impl_stall.png, id=302, 365.11406pt x 273.27094pt>
-File: content/figures//currentSensor_impl_stall.png Graphic file (type png)
-<use content/figures//currentSensor_impl_stall.png>
-Package pdftex.def Info: content/figures//currentSensor_impl_stall.png  used on input line 98.
+<content/chapter3/figures/currentSensor_impl_stall.png, id=302, 365.11406pt x 273.27094pt>
+File: content/chapter3/figures/currentSensor_impl_stall.png Graphic file (type png)
+<use content/chapter3/figures/currentSensor_impl_stall.png>
+Package pdftex.def Info: content/chapter3/figures/currentSensor_impl_stall.png  used on input line 96.
 (pdftex.def)             Requested size: 99.1869pt x 74.23447pt.
-) (./content/chapter4.tex [7 <./content/figures//currentSensor_impl_noise.jpeg> <./content/figures//currentSensor_impl_stepResponse.jpeg> <./content/figures//currentSensor_impl_freeRunning.png (PNG copy)> <./content/figures//currentSensor_impl_increasingLoad.png (PNG copy)> <./content/figures//currentSensor_impl_stall.png (PNG copy)>]
-Chapter 4.
-<content/figures//currentSensor_impl_circuit.png, id=309, 480.29437pt x 526.96875pt>
-File: content/figures//currentSensor_impl_circuit.png Graphic file (type png)
-<use content/figures//currentSensor_impl_circuit.png>
-Package pdftex.def Info: content/figures//currentSensor_impl_circuit.png  used on input line 16.
-(pdftex.def)             Requested size: 354.23695pt x 388.66422pt.
-) (build/e344_A1_report.bbl [8
+)) [7 <./content/chapter3/figures/currentSensor_impl_noise.jpeg> <./content/chapter3/figures/currentSensor_impl_stepResponse.jpeg> <./content/chapter3/figures/currentSensor_impl_freeRunning.png (PNG copy)> <./content/chapter3/figures/currentSensor_impl_increasingLoad.png (PNG copy)> <./content/chapter3/figures/currentSensor_impl_stall.png (PNG copy)>]
+\openout2 = `content/chapter4/chapter4.aux'.
 
- <./content/figures//currentSensor_impl_circuit.png (PNG copy)>]
+ (./content/chapter4/chapter4.tex
+Chapter 4.
+(./content/chapter4/currentSensor.tex
+<content/chapter4/figures//currentSensor_impl_circuit.png, id=309, 480.29437pt x 526.96875pt>
+File: content/chapter4/figures//currentSensor_impl_circuit.png Graphic file (type png)
+<use content/chapter4/figures//currentSensor_impl_circuit.png>
+Package pdftex.def Info: content/chapter4/figures//currentSensor_impl_circuit.png  used on input line 14.
+(pdftex.def)             Requested size: 354.23695pt x 388.66422pt.
+)) [8
+
+
+
+
+ <./content/chapter4/figures//currentSensor_impl_circuit.png (PNG copy)>] (build/e344_A1_report.bbl
 Underfull \hbox (badness 7888) in paragraph at lines 39--42
 []\OT1/lmr/m/n/12 (+20) WikiBooks, ``Op amp con-fig-u-ra-tions.'' [On-line]. Avail-
  []
@@ -873,6 +898,8 @@ Underfull \hbox (badness 6252) in paragraph at lines 57--60
  []
 
 ) (./endmatter/appendix_a.tex [9
+
+
 
 ]
 Appendix A.
@@ -905,7 +932,7 @@ See the caption package documentation for explanation.
 
 [11
 
- <./endmatter/figures//GitHub.png (PNG copy)>] (build/e344_A1_report.aux)
+ <./endmatter/figures//GitHub.png (PNG copy)>] (build/e344_A1_report.aux (build/content/chapter1/chapter1.aux) (build/content/chapter2/chapter2.aux) (build/content/chapter3/chapter3.aux) (build/content/chapter4/chapter4.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -913,10 +940,10 @@ Package rerunfilecheck Info: File `e344_A1_report.out' has not changed.
 (rerunfilecheck)             Checksum: 00576F8A576D458A399B184AA201FA23;2251.
  ) 
 Here is how much of TeX's memory you used:
- 21754 strings out of 478238
- 408791 string characters out of 5850456
- 804080 words of memory out of 5000000
- 39428 multiletter control sequences out of 15000+600000
+ 21887 strings out of 478238
+ 415261 string characters out of 5850456
+ 806422 words of memory out of 5000000
+ 39515 multiletter control sequences out of 15000+600000
  532002 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,13n,79p,1090b,861s stack positions out of 5000i,500n,10000p,200000b,80000s
