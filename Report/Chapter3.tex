@@ -39,19 +39,19 @@ As can be seen in Figure \ref{fig:results_currentSensor_noise}, the amplifier no
 should not be amplified to more than \SI{250}{mV_{pp}}. An output of \SI{1.13}{V} - \SI{0.949}{V} = \SI{181}{mV} was obtained - within the threshold.
 
 In Figure \ref{fig:results_currentSensor_response}, the amplifier's step response time was recorded as \SI{4.957}{ms}, which is much below the \SI{100}{ms} requirement.
-This time is 4x better than the designed circuit, presumably due to the increased resistance value and other tolerances.
+This time is 4x better than the designed/simulated circuit, presumably due to the increased resistance value and other tolerances.
 
 \begin{figure}[!h]
    \centering
    \begin{minipage}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.9\linewidth]{Figures/results_currentSensor_noise}
+      \includegraphics[width=0.7\linewidth]{Figures/results_currentSensor_noise}
       \captionof{figure}{Amplifier noise rejection}
       \label{fig:results_currentSensor_noise}
    \end{minipage}
    \begin{minipage}{0.45\textwidth}
       \centering
-      \includegraphics[width=0.9\linewidth]{Figures/results_currentSensor_riseTime}
+      \includegraphics[width=0.7\linewidth]{Figures/results_currentSensor_riseTime}
       \captionof{figure}{Amplifier response time}
       \label{fig:results_currentSensor_response}
    \end{minipage}
@@ -59,8 +59,8 @@ This time is 4x better than the designed circuit, presumably due to the increase
 
 Current measurements were then made with the motor connected, as visible in Table \ref{table:motor_currents}.
 As can be analyzed, there is an offset voltage of \SI{0.42}{V} at the output. The actual gain can be calculated as e.g.
-$\frac{\SI{1.42}{V} - \SI{0.42}{V}}{\SI{210}{\milli\ampere} * \SI{10}{\milli\ohm}}= 476 V/V$. With the new resistor,
-an ideal gain of $\frac{\SI{120}{\kilo\ohm}}{\SI{330}{\kilo\ohm}} = 363.6V/V$ was expected, however due to the nature of the circuit
+$\frac{\SI{1.42}{V} - \SI{0.42}{V}}{\SI{210}{\milli\ampere} * \SI{10}{\milli\ohm}}= 476 V/V$. With the \SI{120}{\kilo\ohm} resistor,
+an ideal gain of $\frac{\SI{120}{\kilo\ohm}}{\SI{330}{\ohm}} = 363.6V/V$ was expected, however due to the nature of the circuit
 (which contains 4 resistors) a tolerance of 10\% * 4 should be accounted for, which explains the higher gain.
 
 \begin{table}[!h]
@@ -76,6 +76,25 @@ an ideal gain of $\frac{\SI{120}{\kilo\ohm}}{\SI{330}{\kilo\ohm}} = 363.6V/V$ wa
       I = 50 mA                        & 50                               & 0.63                               \\ \hline
       I = 0 mA                         & 0                                & 0.42                               \\ \hline
    \end{tabular}\
-   \caption{Measurements of Motor Current vs Voltage}
+   \caption{Measurements of Motor Current and Voltage}
    \label{table:motor_currents}   
 \end{table}
+
+\begin{figure}[!h]
+   \centering
+   \begin{minipage}{0.3\textwidth}
+      \centering
+      \includegraphics[width=0.7\linewidth]{Figures/results_free}
+      \captionof{figure}{0 A to free running}
+   \end{minipage}
+   \begin{minipage}{0.3\textwidth}
+      \centering
+      \includegraphics[width=0.7\linewidth]{Figures/results_increasingLoad}
+      \captionof{figure}{Increasing load}
+   \end{minipage}
+   \begin{minipage}{0.3\textwidth}
+      \centering
+      \includegraphics[width=0.7\linewidth]{Figures/results_stall}
+      \captionof{figure}{Free running to stall}
+   \end{minipage}   
+\end{figure}
