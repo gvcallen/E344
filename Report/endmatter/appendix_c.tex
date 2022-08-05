@@ -1,0 +1,70 @@
+\graphicspath{{endmatter/figures/}}
+\chapter{Formulae and Derivations}
+\makeatletter\@mkboth{}{Appendix}\makeatother
+
+\section{Filters}
+
+\subsection{Common Filter Formulae}{\label{filter_formulae}}
+In the following formulae, $f_c$ is the filter's cutoff frequency, $w_c = 2 \pi f_c$, and $H(s)$ is the
+Laplace transfer function of the filter. \\
+
+\noindent For a \nth{1} order filter:
+\begin{itemize}
+\item $H(s) = \frac{w_c}{s + w_c}$
+\item Attenuation (dB) $ = -10\log[1 + (\frac{f}{f_{c}})^{2}]$ \cite{pwmAnalogConversion}
+\item 10\% to 90\% Rise time, $t_r \approx \frac{2.2}{w_c}$ \cite{firstOrderRiseTime}
+\end{itemize}
+
+\noindent For a \nth{2} order filter:
+\begin{itemize}
+    \item $H(s) = \frac{{w_c}^2}{s^2 + 2 \zeta w_c s + {w_c}^2}$
+    \item Attenuation (dB) $ = -10\log [1+(\frac{f}{f_c})^4]$ with $\zeta = 0.707$ [\ref{eqn:2ndOrder_atten_simplified}]
+    \item 10\% to 90\% Rise time, $t_r \approx \frac{3.3}{w_c}$ with $\zeta = 0.707$ \cite{gopal2003digital}
+\end{itemize}
+
+\noindent For a \nth{3} order filter (formed by cascading a \nth{1} and \nth{2} order):
+\begin{itemize}
+    \item $H(s) = \left( \frac{w_c}{s + w_c} \right) \left( \frac{{w_c}^2}{s^2 + 2 \zeta w_c s + {w_c}^2} \right)$
+    \item Attenuation (dB) $ = -10\log [1+(\frac{f}{f_c})^2+(\frac{f}{f_c})^4+(\frac{f}{f_c})^6] \approx -60\log \left[\frac{f}{f_c}\right]$ with $\zeta = 0.707$ and $f >> f_c$.
+    \item 10\% to 90\% Rise time, $t_r \approx \frac{3.97}{w_c}$ with $\zeta = 0.707$, using $t_{ro} = \sqrt{t_{r1}^2 + t_{r2}^2}$ from \cite{cascadedRiseTime}
+\end{itemize}
+
+\subsection{\nth{2} Order Filter Attenuation}
+
+For a \nth{2} order filter with the following transfer function:
+$$H(s) = \frac{{w_c}^2}{s^2 + 2 \zeta w_c s + {w_c}^2}$$
+
+\noindent The attenuation $A_{dB}$ at frequency $w$ can be calculated as follows:
+\begin{align}
+    A_{dB} & = 20 \log \left\lvert\frac{w_c^2}{(jw)^2 + 2 \zeta w_c (jw) + w_c^2} \right\rvert                  \notag                                  \\
+           & = -20 \log \left\lvert \frac{(w_c^2 - w^2) + j(w 2 \zeta w_c)}{w_c^2} \right\rvert                 \notag                                  \\
+           & = -20 \log \sqrt{\frac{w_c ^ 4 - 2 w_c^2 w^2 + w^4 + 4 \zeta ^2 w_c^2 w^2}{w_c^2}}                 \notag                                  \\
+           & = -10 \log \left[ \frac{w_c^4 + w^4}{w_c^4} + \frac{w_c^2 w^2 (4 \zeta ^2 - 2)}{w_c^4} \right]     \notag                                  \\
+           & = -10 \log \left[ 1 + \left(\frac{w}{w_c}\right)^4 + \left(\frac{w}{w_c}\right)^2 (4 \zeta ^2 - 2) \right] \label{eqn:2ndOrder_atten_full}
+\end{align}
+
+For the case when $\zeta = 0.707$ (i.e. when optimally damped), then \ref{eqn:2ndOrder_atten_full} simplifies to:
+\begin{equation}
+    A = -10 \log \left[1 + \left( \frac{w}{w_c} \right)^4\right] \label{eqn:2ndOrder_atten_simplified}
+\end{equation}
+
+\subsection{\nth{1} and \nth{2} Order Filter Cutoff vs Attenuation}
+
+Given:
+\begin{itemize}
+    \item $f_n = f_{\text{cutoff ($n^{th}$ order)}}$.
+    \item For \nth{1} order, attenuation (dB) @ ${f} = -10\log[1 + (\frac{f}{f_{c}})^{2}]$ \cite{pwmAnalogConversion}
+    \item For \nth{2} order, attenuation (dB) @ ${f} = -10\log [1+(\frac{f}{f_c})^4]$ with $\zeta = 0.707$ [\ref{eqn:2ndOrder_atten_simplified}]
+\end{itemize}
+
+
+\noindent A \nth{1} order filter will therefore always attenuate a given frequency $f$ less than a \nth{2} order filter with $f_1 = f_2$.
+The cutoff frequency of a \nth{2} order filter that will attenuate $f$ by the same amount as a \nth{1} order filter with a given cutoff frequency $f_1$
+can be calculated as follows:
+\begin{gather}
+    -10\log\left[1 + \left(\frac{f}{f_{1}}\right)^{2}\right] = -10\log \left[1+\left(\frac{f}{f_2}\right)^4\right]          \notag\\
+    \left( \frac{f}{f_1} \right)^2 = \left( \frac{f}{f_2} \right)^4                                                         \notag\\
+    \therefore f_2^4 = \frac{f^4}{f^2} f_1^2                                                                                \notag\\
+    \therefore f_2^4 = f^2 f_1^2                                                                                            \notag\\
+    \therefore f_2 = \sqrt{f \cdot f_1}                                                                                     \label{eqn:1st2nd_cutoff_atten}
+\end{gather}

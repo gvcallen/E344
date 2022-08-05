@@ -2,10 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2022/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: e344_A1_report.aux
 The style file: IEEEtran.bst
-A level-1 auxiliary file: content/chapter1/chapter1.aux
-A level-1 auxiliary file: content/chapter2/chapter2.aux
-A level-1 auxiliary file: content/chapter3/chapter3.aux
-A level-1 auxiliary file: content/chapter4/chapter4.aux
+A level-1 auxiliary file: content/1_literatureReview/1_literatureReview.aux
+A level-1 auxiliary file: content/2_design/2_design.aux
+A level-1 auxiliary file: content/3_results/3_results.aux
+A level-1 auxiliary file: content/4_implementation/4_implementation.aux
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
@@ -17,44 +17,44 @@ Database file #1: references.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 6 entries,
+You've used 15 entries,
             4087 wiz_defined-function locations,
-            854 strings with 8308 characters,
-and the built_in function-call counts, 2102 in all, are:
-= -- 137
-> -- 24
-< -- 0
-+ -- 12
-- -- 6
-* -- 85
-:= -- 395
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 6
-chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 174
-empty$ -- 211
-format.name$ -- 6
-if$ -- 434
+            903 strings with 9668 characters,
+and the built_in function-call counts, 5648 in all, are:
+= -- 396
+> -- 76
+< -- 8
++ -- 40
+- -- 17
+* -- 209
+:= -- 1011
+add.period$ -- 29
+call.type$ -- 15
+change.case$ -- 12
+chr.to.int$ -- 21
+cite$ -- 15
+duplicate$ -- 457
+empty$ -- 576
+format.name$ -- 18
+if$ -- 1234
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 42
-newline$ -- 53
-num.names$ -- 6
-pop$ -- 144
+int.to.str$ -- 15
+missing$ -- 104
+newline$ -- 94
+num.names$ -- 15
+pop$ -- 342
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 144
+skip$ -- 419
 stack$ -- 0
-substring$ -- 6
-swap$ -- 84
-text.length$ -- 0
+substring$ -- 61
+swap$ -- 248
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 6
+type$ -- 15
 warning$ -- 0
-while$ -- 6
-width$ -- 7
-write$ -- 76
+while$ -- 18
+width$ -- 17
+write$ -- 157

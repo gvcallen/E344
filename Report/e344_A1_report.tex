@@ -26,6 +26,10 @@
 \newcommand*{\WaterMark}[2][0.2\paperwidth]{\AddToShipoutPicture*{\AtTextCenter{\parbox[c]{0pt}{\makebox[0pt][c]{\includegraphics[width=#1]{#2}}}}}}
 \usepackage{subcaption}
 
+% Items and Enums
+\usepackage{enumitem}
+\renewcommand{\labelitemii}{$\circ$}
+
 % Font and text
 \usepackage[afrikaans,english]{babel}
 \usepackage{microtype}
@@ -36,6 +40,7 @@
 \onehalfspacing
 \usepackage{siunitx}
 \usepackage{lipsum}
+\usepackage[super]{nth}
 
 % Headings
 \usepackage[raggedright,sf,bf]{titlesec}
@@ -60,6 +65,24 @@
 \newcommand{\tr}{\textrm{tr}}
 \renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
 \newcommand{\defeq}{\triangleq}
+
+\makeatletter
+\newcommand*{\inlineequation}[2][]{%
+  \begingroup
+    \refstepcounter{equation}%
+    \ifx\\#1\\%
+    \else
+      \label{#1}%
+    \fi
+    \relpenalty=10000 %
+    \binoppenalty=10000 %
+    \ensuremath{%
+      #2%
+    }%
+    ~\@eqnnum
+  \endgroup
+}
+\makeatother
 
 % Tables
 \usepackage{booktabs}
@@ -128,10 +151,10 @@
 \pagenumbering{arabic}
 
 % Contents
-\include{content/chapter1/chapter1}
-\include{content/chapter2/chapter2}
-\include{content/chapter3/chapter3}
-\include{content/chapter4/chapter4}
+\include{content/1_literatureReview/1_literatureReview}
+\include{content/2_design/2_design}
+\include{content/3_results/3_results}
+\include{content/4_implementation/4_implementation}
 
 % Bibliography
 \bibliography{references}
@@ -140,5 +163,6 @@
 \appendix
 \input{endmatter/appendix_a}
 \input{endmatter/appendix_b}
+\input{endmatter/appendix_c}
 
 \end{document}
