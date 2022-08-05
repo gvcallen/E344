@@ -1260,6 +1260,10 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT ./content/2_design/figures//rangeSensor_gainFilter.png
+INPUT content/2_design/figures//rangeSensor_gainFilter.png
+INPUT ./content/2_design/figures//rangeSensor_gainFilter.png
+INPUT ./content/2_design/figures//rangeSensor_gainFilter.png
 INPUT ./content/3_results/3_results.tex
 INPUT ./content/3_results/3_results.tex
 INPUT ./content/3_results/3_results.tex

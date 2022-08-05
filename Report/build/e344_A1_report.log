@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  5 AUG 2022 08:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  5 AUG 2022 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -548,7 +548,11 @@ Package: ulem 2019/11/18
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 140.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (build/e344_A1_report.aux (build/content/1_literatureReview/1_literatureReview.aux) (build/content/2_design/2_design.aux) (build/content/3_results/3_results.aux) (build/content/4_implementation/4_implementation.aux))
+) (build/e344_A1_report.aux (build/content/1_literatureReview/1_literatureReview.aux) (build/content/2_design/2_design.aux
+
+LaTeX Warning: Label `fig:sallenKeyFilter' multiply defined.
+
+) (build/content/3_results/3_results.aux) (build/content/4_implementation/4_implementation.aux))
 \openout1 = `e344_A1_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
@@ -748,7 +752,7 @@ Overfull \hbox (6.30171pt too wide) in paragraph at lines 39--54
  [] 
  []
 
-<content/1_literatureReview/figures//opAmp_nonInverting.png, id=355, 301.125pt x 125.46875pt>
+<content/1_literatureReview/figures//opAmp_nonInverting.png, id=359, 301.125pt x 125.46875pt>
 File: content/1_literatureReview/figures//opAmp_nonInverting.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_nonInverting.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_nonInverting.png  used on input line 60.
@@ -763,12 +767,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--61
 |\OT1/lmr/m/n/10.95 (+20) Non-inverting
  []
 
-<content/1_literatureReview/figures//opAmp_differential.png, id=359, 298.86656pt x 219.82124pt>
+<content/1_literatureReview/figures//opAmp_differential.png, id=363, 298.86656pt x 219.82124pt>
 File: content/1_literatureReview/figures//opAmp_differential.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_differential.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_differential.png  used on input line 66.
 (pdftex.def)             Requested size: 86.90485pt x 63.92093pt.
-<content/1_literatureReview/figures//opAmp_instrumentation.png, id=362, 501.875pt x 401.5pt>
+<content/1_literatureReview/figures//opAmp_instrumentation.png, id=366, 501.875pt x 401.5pt>
 File: content/1_literatureReview/figures//opAmp_instrumentation.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_instrumentation.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_instrumentation.png  used on input line 72.
@@ -778,7 +782,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--73
 \OT1/lmr/m/n/10.95 (+20) stru-men-ta-tion
  []
 
-<content/1_literatureReview/figures//opAmp_nonInverting_modified.png, id=365, 435.12563pt x 298.86656pt>
+<content/1_literatureReview/figures//opAmp_nonInverting_modified.png, id=369, 435.12563pt x 298.86656pt>
 File: content/1_literatureReview/figures//opAmp_nonInverting_modified.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_nonInverting_modified.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_nonInverting_modified.png  used on input line 78.
@@ -799,29 +803,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--79
  []
 
 ) [2 <./content/1_literatureReview/figures//opAmp_nonInverting.png> <./content/1_literatureReview/figures//opAmp_differential.png (PNG copy)> <./content/1_literatureReview/figures//opAmp_instrumentation.png> <./content/1_literatureReview/figures//opAmp_nonInverting_modified.png (PNG copy)>] (./content/1_literatureReview/currentSensing.tex
-<content/1_literatureReview/figures//currentSensing_hall_effect.jpg, id=378, 301.125pt x 226.59656pt>
+<content/1_literatureReview/figures//currentSensing_hall_effect.jpg, id=382, 301.125pt x 226.59656pt>
 File: content/1_literatureReview/figures//currentSensing_hall_effect.jpg Graphic file (type jpg)
 <use content/1_literatureReview/figures//currentSensing_hall_effect.jpg>
 Package pdftex.def Info: content/1_literatureReview/figures//currentSensing_hall_effect.jpg  used on input line 16.
 (pdftex.def)             Requested size: 141.69621pt x 106.62831pt.
 ) (./content/1_literatureReview/ultrasonicSensorInterface.tex [3 <./content/1_literatureReview/figures//currentSensing_hall_effect.jpg>]
-<content/1_literatureReview/figures//sonicSensor_TTL.png, id=389, 264.99pt x 348.55219pt>
+<content/1_literatureReview/figures//sonicSensor_TTL.png, id=393, 264.99pt x 348.55219pt>
 File: content/1_literatureReview/figures//sonicSensor_TTL.png Graphic file (type png)
 <use content/1_literatureReview/figures//sonicSensor_TTL.png>
 Package pdftex.def Info: content/1_literatureReview/figures//sonicSensor_TTL.png  used on input line 11.
 (pdftex.def)             Requested size: 70.8445pt x 93.18492pt.
-<content/1_literatureReview/figures//sonicSensor_timing.png, id=396, 748.29562pt x 308.65312pt>
+<content/1_literatureReview/figures//sonicSensor_timing.png, id=400, 748.29562pt x 308.65312pt>
 File: content/1_literatureReview/figures//sonicSensor_timing.png Graphic file (type png)
 <use content/1_literatureReview/figures//sonicSensor_timing.png>
 Package pdftex.def Info: content/1_literatureReview/figures//sonicSensor_timing.png  used on input line 33.
 (pdftex.def)             Requested size: 236.15797pt x 97.40991pt.
 ) (./content/1_literatureReview/pwmAnalogConversion.tex [4 <./content/1_literatureReview/figures//sonicSensor_TTL.png (PNG copy)> <./content/1_literatureReview/figures//sonicSensor_timing.png (PNG copy)>]
-<content/1_literatureReview/figures//pwm_graph.png, id=413, 683.55376pt x 324.21124pt>
+<content/1_literatureReview/figures//pwm_graph.png, id=417, 683.55376pt x 324.21124pt>
 File: content/1_literatureReview/figures//pwm_graph.png Graphic file (type png)
 <use content/1_literatureReview/figures//pwm_graph.png>
 Package pdftex.def Info: content/1_literatureReview/figures//pwm_graph.png  used on input line 14.
 (pdftex.def)             Requested size: 118.07898pt x 56.0007pt.
-<content/1_literatureReview/figures//pwm_filtered.png, id=418, 709.90219pt x 516.42938pt>
+<content/1_literatureReview/figures//pwm_filtered.png, id=422, 709.90219pt x 516.42938pt>
 File: content/1_literatureReview/figures//pwm_filtered.png Graphic file (type png)
 <use content/1_literatureReview/figures//pwm_filtered.png>
 Package pdftex.def Info: content/1_literatureReview/figures//pwm_filtered.png  used on input line 27.
@@ -837,36 +841,41 @@ Chapter 2.
 
 
 ]
-<content/2_design/figures//currentSensor_sim_circuit.png, id=440, 919.18407pt x 496.10344pt>
+<content/2_design/figures//currentSensor_sim_circuit.png, id=444, 919.18407pt x 496.10344pt>
 File: content/2_design/figures//currentSensor_sim_circuit.png Graphic file (type png)
 <use content/2_design/figures//currentSensor_sim_circuit.png>
 Package pdftex.def Info: content/2_design/figures//currentSensor_sim_circuit.png  used on input line 44.
 (pdftex.def)             Requested size: 377.85419pt x 203.94118pt.
 ) [8 <./content/2_design/figures//currentSensor_sim_circuit.png (PNG copy)>] (./content/2_design/rangeSensor.tex
-Overfull \hbox (4.27333pt too wide) in paragraph at lines 29--40
+Overfull \hbox (4.27333pt too wide) in paragraph at lines 30--41
  [][] 
  []
 
 [9]
-<content/2_design/figures//rangeSensor_sallenKeyFilter.png, id=463, 511.9125pt x 217.5628pt>
+<content/2_design/figures//rangeSensor_sallenKeyFilter.png, id=468, 511.9125pt x 217.5628pt>
 File: content/2_design/figures//rangeSensor_sallenKeyFilter.png Graphic file (type png)
 <use content/2_design/figures//rangeSensor_sallenKeyFilter.png>
-Package pdftex.def Info: content/2_design/figures//rangeSensor_sallenKeyFilter.png  used on input line 70.
-(pdftex.def)             Requested size: 188.9235pt x 80.29115pt.
+Package pdftex.def Info: content/2_design/figures//rangeSensor_sallenKeyFilter.png  used on input line 74.
+(pdftex.def)             Requested size: 170.02998pt x 72.2607pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 71.
-)) [10 <./content/2_design/figures//rangeSensor_sallenKeyFilter.png (PNG copy)>]
+(Font)              <10.95> on input line 75.
+<content/2_design/figures//rangeSensor_gainFilter.png, id=471, 751.30687pt x 285.31593pt>
+File: content/2_design/figures//rangeSensor_gainFilter.png Graphic file (type png)
+<use content/2_design/figures//rangeSensor_gainFilter.png>
+Package pdftex.def Info: content/2_design/figures//rangeSensor_gainFilter.png  used on input line 80.
+(pdftex.def)             Requested size: 170.02998pt x 64.56772pt.
+)) [10 <./content/2_design/figures//rangeSensor_sallenKeyFilter.png (PNG copy)> <./content/2_design/figures//rangeSensor_gainFilter.png (PNG copy)>]
 \openout2 = `content/3_results/3_results.aux'.
 
  (./content/3_results/3_results.tex
 Chapter 3.
 (./content/3_results/currentSensor.tex
-<content/3_results/figures/currentSensor_sim_stepResponse.png, id=471, 1032.10594pt x 321.45094pt>
+<content/3_results/figures/currentSensor_sim_stepResponse.png, id=480, 1032.10594pt x 321.45094pt>
 File: content/3_results/figures/currentSensor_sim_stepResponse.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_sim_stepResponse.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_sim_stepResponse.png  used on input line 11.
 (pdftex.def)             Requested size: 283.39244pt x 88.25948pt.
-<content/3_results/figures/currentSensor_sim_currentDraw.png, id=472, 915.42pt x 319.1925pt>
+<content/3_results/figures/currentSensor_sim_currentDraw.png, id=481, 915.42pt x 319.1925pt>
 File: content/3_results/figures/currentSensor_sim_currentDraw.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_sim_currentDraw.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_sim_currentDraw.png  used on input line 18.
@@ -877,27 +886,27 @@ Package pdftex.def Info: content/3_results/figures/currentSensor_sim_currentDraw
 
 
  <./content/3_results/figures/currentSensor_sim_stepResponse.png (PNG copy)> <./content/3_results/figures/currentSensor_sim_currentDraw.png (PNG copy)>]
-<content/3_results/figures/currentSensor_impl_noise.jpeg, id=479, 609.77812pt x 467.49657pt>
+<content/3_results/figures/currentSensor_impl_noise.jpeg, id=488, 609.77812pt x 467.49657pt>
 File: content/3_results/figures/currentSensor_impl_noise.jpeg Graphic file (type jpg)
 <use content/3_results/figures/currentSensor_impl_noise.jpeg>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_noise.jpeg  used on input line 47.
 (pdftex.def)             Requested size: 148.77785pt x 114.06328pt.
-<content/3_results/figures/currentSensor_impl_stepResponse.jpeg, id=480, 612.78937pt x 425.33907pt>
+<content/3_results/figures/currentSensor_impl_stepResponse.jpeg, id=489, 612.78937pt x 425.33907pt>
 File: content/3_results/figures/currentSensor_impl_stepResponse.jpeg Graphic file (type jpg)
 <use content/3_results/figures/currentSensor_impl_stepResponse.jpeg>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_stepResponse.jpeg  used on input line 53.
 (pdftex.def)             Requested size: 148.77785pt x 103.26466pt.
-<content/3_results/figures/currentSensor_impl_freeRunning.png, id=482, 390.70969pt x 305.64188pt>
+<content/3_results/figures/currentSensor_impl_freeRunning.png, id=491, 390.70969pt x 305.64188pt>
 File: content/3_results/figures/currentSensor_impl_freeRunning.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_impl_freeRunning.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_freeRunning.png  used on input line 86.
 (pdftex.def)             Requested size: 99.1869pt x 77.5902pt.
-<content/3_results/figures/currentSensor_impl_increasingLoad.png, id=483, 355.3275pt x 279.29344pt>
+<content/3_results/figures/currentSensor_impl_increasingLoad.png, id=492, 355.3275pt x 279.29344pt>
 File: content/3_results/figures/currentSensor_impl_increasingLoad.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_impl_increasingLoad.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_increasingLoad.png  used on input line 91.
 (pdftex.def)             Requested size: 99.1869pt x 77.96297pt.
-<content/3_results/figures/currentSensor_impl_stall.png, id=484, 365.11406pt x 273.27094pt>
+<content/3_results/figures/currentSensor_impl_stall.png, id=493, 365.11406pt x 273.27094pt>
 File: content/3_results/figures/currentSensor_impl_stall.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_impl_stall.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_stall.png  used on input line 96.
@@ -908,7 +917,7 @@ Package pdftex.def Info: content/3_results/figures/currentSensor_impl_stall.png 
  (./content/4_implementation/4_implementation.tex
 Chapter 4.
 (./content/4_implementation/currentSensor.tex
-<content/4_implementation/figures//currentSensor_impl_circuit.png, id=490, 480.29437pt x 526.96875pt>
+<content/4_implementation/figures//currentSensor_impl_circuit.png, id=499, 480.29437pt x 526.96875pt>
 File: content/4_implementation/figures//currentSensor_impl_circuit.png Graphic file (type png)
 <use content/4_implementation/figures//currentSensor_impl_circuit.png>
 Package pdftex.def Info: content/4_implementation/figures//currentSensor_impl_circuit.png  used on input line 14.
@@ -919,6 +928,11 @@ Package pdftex.def Info: content/4_implementation/figures//currentSensor_impl_ci
 
 
  <./content/4_implementation/figures//currentSensor_impl_circuit.png (PNG copy)>] (build/e344_A1_report.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+\OT1/lmr/m/n/12 (+14) downloads / aemDocuments / documents / OTH / ProductDocuments / DataSheets / 21882d .
+ []
+
+
 Underfull \hbox (badness 7116) in paragraph at lines 45--48
 []\OT1/lmr/m/n/12 (+20) WikiBooks, ``Op amp con-fig-u-ra-tions.'' [On-line]. Avail-
  []
@@ -942,7 +956,7 @@ Appendix A.
 
 
 pdfTeX warning: pdflatex (file ./endmatter/figures//SocialContract_signed.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter/figures//SocialContract_signed.pdf, id=530, 597.50829pt x 845.0471pt>
+<endmatter/figures//SocialContract_signed.pdf, id=542, 597.50829pt x 845.0471pt>
 File: endmatter/figures//SocialContract_signed.pdf Graphic file (type pdf)
 <use endmatter/figures//SocialContract_signed.pdf>
 Package pdftex.def Info: endmatter/figures//SocialContract_signed.pdf  used on input line 7.
@@ -951,7 +965,7 @@ Package pdftex.def Info: endmatter/figures//SocialContract_signed.pdf  used on i
 
  <./endmatter/figures//SocialContract_signed.pdf>]
 Appendix B.
-<endmatter/figures//GitHub.png, id=573, 1251.17438pt x 612.78937pt>
+<endmatter/figures//GitHub.png, id=584, 1251.17438pt x 612.78937pt>
 File: endmatter/figures//GitHub.png Graphic file (type png)
 <use endmatter/figures//GitHub.png>
 Package pdftex.def Info: endmatter/figures//GitHub.png  used on input line 8.
@@ -1021,22 +1035,25 @@ Package caption Warning: Unused \captionsetup[algorithm] on input line 126.
 See the caption package documentation for explanation.
 
 [19] (build/e344_A1_report.aux (build/content/1_literatureReview/1_literatureReview.aux) (build/content/2_design/2_design.aux) (build/content/3_results/3_results.aux) (build/content/4_implementation/4_implementation.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `e344_A1_report.out' has not changed.
 (rerunfilecheck)             Checksum: BD6F102F7688071783F21B7F25E9FFF4;4746.
  ) 
 Here is how much of TeX's memory you used:
- 22553 strings out of 478238
- 430396 string characters out of 5850456
- 820448 words of memory out of 5000000
- 40044 multiletter control sequences out of 15000+600000
- 551918 words of font info for 176 fonts, out of 8000000 for 9000
+ 22572 strings out of 478238
+ 431020 string characters out of 5850456
+ 821536 words of memory out of 5000000
+ 40056 multiletter control sequences out of 15000+600000
+ 552188 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,13n,79p,1090b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on build/e344_A1_report.pdf (26 pages, 3198031 bytes).
+Output written on build/e344_A1_report.pdf (26 pages, 3222259 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 581 compressed objects within 6 object streams
- 118 named destinations out of 1000 (max. 500000)
- 51577 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 590 compressed objects within 6 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 51582 words of extra memory for PDF output out of 51595 (max. 10000000)
 

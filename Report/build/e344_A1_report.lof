@@ -12,6 +12,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Circuit diagram of final configuration\relax }}{8}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 2\relax \textsuperscript {nd} order unity-gain Sallen-Key LPF \cite {filterDesign}\relax }}{10}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 2\relax \textsuperscript {nd} order unity-gain Sallen-Key LPF \cite {gainOffset30Seconds}\relax }}{10}{figure.caption.23}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Amplifier output in response to step input\relax }}{11}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Current draw of op-amp\relax }}{11}{figure.caption.25}%

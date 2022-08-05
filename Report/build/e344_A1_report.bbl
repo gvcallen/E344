@@ -31,7 +31,7 @@
 \bibitem{datasheetMCP6242}
 \BIBentryALTinterwordspacing
 {Microchip}, ``Mcp6241/1r/1u/2/4.'' [Online]. Available:
-  \url{https://www.tutorialspoint.com/physical-limitations-of-operational-amplifiers}
+  \url{https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/21882d.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{datasheetHCSR04}
@@ -110,6 +110,12 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
 {Texas Instruments}, ``Active filter design techniques,'' 2001. [Online].
   Available:
   \url{https://web.archive.org/web/20060616013258/http://focus.ti.com/lit/ml/sloa088/sloa088.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{gainOffset30Seconds}
+\BIBentryALTinterwordspacing
+{Bruce Carter}, ``Designing gain and offset in thirty seconds,'' 2002.
+  [Online]. Available: \url{https://www.ti.com/lit/an/sloa097/sloa097.pdf}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
