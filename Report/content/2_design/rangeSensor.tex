@@ -1,6 +1,6 @@
 \graphicspath{{content/2_design/figures/}}
 \section{Range sensor}
-\subsection{Sensor power \& output}
+\subsection{Sensor power \& output}{\label{rangeSensor_powerOutput}}
 The range sensor requires \SI{5}{V_{dc}} power and will draw around \SI{15}{mA}. Since the LD1117V provides a stable 5.0 V output and is capable
 of providing up to 800 mA of current, the sensor will be powered directly from this regulator.
 
@@ -17,7 +17,7 @@ Equations \ref{eqn:sensor_distanceFormula} and \ref{eqn:pwm_filtered_amplitude} 
 
 To determine the filter's order, rise time and noise requirements should be considered:
 \begin{itemize}
-  \item After filtering, since gain = $\frac{\SI{3}{V}}{\SI{475}{mV}} \approx \SI{7}{V/V}$, filter ripple must be under $ \frac{\SI{70}{mV}}{7} = \SI{7}{mV}$.
+  \item After filtering, since gain $\approx \frac{\SI{3}{V}}{\SI{475}{mV}} \approx \SI{7}{V/V}$, filter ripple must be under $ \frac{\SI{70}{mV}}{7} = \SI{7}{mV}$.
   \item A 10\% to 90\% rise time ($t_r$) of \SI{1.5}{s} should be adhered to.
 \end{itemize}
 
@@ -45,15 +45,15 @@ Analyzing Table \ref{tab:range_sensor_filter_comparison}, a \nth{3} order filter
 \subsection{Circuit configuration}
 
 A "two-and-a-half" stage configuration will be used. The first stage will be a \nth{2} order filter to remove PWM harmonics.
-The second stage will be a gain and \nth{1} order filter stage. A Sallen-Key topology will be used for stage 1,
+The second stage will be a gain/offset and \nth{1} order filter stage. A Sallen-Key topology will be used for stage 1,
 as in Figure \ref{fig:sallenKeyFilter}. A non-inverting amplifier with filtering will be used for stage 2 with offset,
-as in Figure \ref{fig:opamp-non-inverting-filter}. Since the maximum quiescent current for each op-amp is $\SI{70}{uA}$ \cite{datasheetMCP6242},
-$\SI{200}{\micro\ampere}$ will be allowed by stage 1, and $\SI{400}{\micro\ampere}$ by stage 2.
+as in Figure \ref{fig:opamp-non-inverting-filter}. Since the quiescent current for each op-amp is $\SI{70}{uA}$ \cite{datasheetMCP6242},
+stage 1 \& 2 will be allocated $\SI{200}{\micro\ampere}$ and $\SI{400}{\micro\ampere}$ respectively.
 
 
-\subsection{Filter design}
+\subsection{Filter design}{\label{rangeSensor_filterDesign}}
 
-This stage will use the same supply as stage 2 as $V_{out(max)}$ is only $\approx \SI{500}{mV}$.
+This stage will use the same supply as stage 2, as $V_{out(max)}$ is only $\approx \SI{500}{mV}$.
 A cutoff frequency of $f_c = \SI{0.6}{Hz}$ will be used, providing $t_r \approx 1.1 s$ and $A_{dB} \approx 86 dB $ for the combined \nth{3} order filter [\ref{filter_formulae}].
 This results in the \nth{2} order stage transfer function $H(s) = \frac{1}{1 + 0.3751 s + 0.07036 s^2} = \frac{1}{1 + a_1 s + b_1 s^2}$. Now, component values can be chosen.
 Formulae from \cite{filterDesign} will be used:
@@ -62,10 +62,12 @@ Formulae from \cite{filterDesign} will be used:
   \item Since both capacitors are open-circuit during DC, the idle current is very low. A maximum step input will result in a surge of current through $C_1$ to ground.
         With $V_{in(max)} = \SI{5}{V}$, $(R_1 + R_2)_{min} = \frac{\SI{5}{V}}{\SI{200}{\micro\ampere}} = \SI{25}{\kilo\ohm}$.
   \item Since $C_1 = \frac{a_1}{2 \pi f_c (R_1 + R_2)}$ \cite{filterDesign}, choose $C_1 = \SI{220}{nF}$ so that $R_1 + R_2 = \SI{450}{\kilo\ohm}$.
-  \item To meet $C_2 \geq C_1 \cdot \frac{4 \cdot b_1}{a_1 ^2} $\cite{filterDesign} $\approx 2 C_1 $, choose $C_2 = \SI{470}{nF}$.
+  \item To meet $C_2 \geq C_1 \cdot \frac{4 \cdot b_1}{a_1 ^2} \approx 2 C_1 $ \cite{filterDesign}, choose $C_2 = \SI{470}{nF}$.
   \item Since $C_1 \cdot C_2 = \frac{b_1}{((2 \pi f_c)^2 R_1 R_2)}$, and $R_1 + R_2 = \SI{450}{\kilo\ohm}$, solve to obtain $R_1 = \SI{170}{\kilo\ohm}$ and $R_2 = \SI{280}{\kilo\ohm}$.
         Choose $R_1 = \SI{180}{\kilo\ohm}$ and $R_2 = \SI{270}{\kilo\ohm}$ as practical values.
 \end{itemize}
+
+Lastly, since the MCP can only swing down to 35 mV, an offset bias of 0.5 V will be applied using resistors $R_{b1}$ and $R_{b2}$ as shown in Figure ..., resulting in $\SI{0.523}{V} < V_o < \SI{0.975}{V}$.
 
 \begin{figure}[!htb]
   \centering
@@ -87,10 +89,10 @@ Formulae from \cite{filterDesign} will be used:
 
 Since the output of amplifier is to be read by the MCU, it should produce $V_{out(max)} = \SI{3.3}{V}$
 and will therefore be powered by the 3.3V regulator. Since this is a low-gain circuit, input bias voltages can be neglected.
-Slew rate and CMMR imbalance can also be ignored due to the low-frequency, single-ended use of op-amp. Lastly, since the system
-needs to output $\SI{0.3}{V} < V_{out} < \SI{3}{V}$ and the MCP can swing $\SI{35}{mV}$ from the rails, the op-amp can be treated as ideal.
-Using the equations at \cite{gainOffset30Seconds},
-with gain $m = \frac{\SI{3}{V} - \SI{0.3}{V}}{\SI{475}{mV} - \SI{23}{mV}} = \SI{5.97}{\volt\per\volt}$ and offset $b = \SI{0.3}{V} - m \times \SI{23}{mV} \approx \SI{163}{mV}$:
+Slew rate and CMMR imbalance can also be ignored due to the low-frequency, single-ended use of the op-amp. Voltage rail saturation does not need to be considered for the circuit output,
+since $\SI{0.3}{V} < V_{out} < \SI{3}{V}$, and has already been considered for the input in Section \ref{rangeSensor_filterDesign}.
+Using the equations at \cite{gainOffset30Seconds}, gain $m = \frac{\SI{3}{V} - \SI{0.3}{V}}{\SI{0.975}{V} - \SI{0.523}{V}} = \SI{5.97}{\volt\per\volt}$,
+and offset $b = \SI{0.3}{V} - m \times \SI{40}{mV} \approx \SI{163}{mV}$:
 
 \begin{itemize}
   \item With idle current $I_Q = \frac{V_{out}}{R_f + R_g}$, and $V_{out(max)} = \SI{3.3}{V}$, $(R_f + R_g)_{min} = \frac{\SI{3.3}{V}}{\SI{400}{\micro\ampere}} = \SI{8.25}{\kilo\ohm}$.

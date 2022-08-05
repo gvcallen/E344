@@ -14,15 +14,15 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 2\relax \textsuperscript {nd} order unity-gain Sallen-Key LPF \cite {filterDesign}\relax }}{10}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces 2\relax \textsuperscript {nd} order unity-gain Sallen-Key LPF \cite {gainOffset30Seconds}\relax }}{10}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Amplifier output in response to step input\relax }}{11}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Current draw of op-amp\relax }}{11}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Amplifier noise rejection\relax }}{12}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Amplifier response time\relax }}{12}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 0 A to free running\relax }}{12}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Increasing load\relax }}{12}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Free running to stall\relax }}{12}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Amplifier output in response to step input\relax }}{12}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Current draw of op-amp\relax }}{12}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Amplifier noise rejection\relax }}{13}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Amplifier response time\relax }}{13}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 0 A to free running\relax }}{13}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Increasing load\relax }}{13}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Free running to stall\relax }}{13}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Circuit Implementation\relax }}{13}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Circuit Implementation\relax }}{14}{figure.caption.29}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
