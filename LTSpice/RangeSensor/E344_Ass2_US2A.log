@@ -6,9 +6,8 @@ Limiting rise time of source v6 to 0.0006
 Limiting fall time of source v6 to 0.0006
 Limiting rise time of source v5 to 5e-005
 Limiting fall time of source v5 to 5e-005
-Limiting rise time of source v12 to 0.0006
-Limiting fall time of source v12 to 0.0006
-WARNING: Less than two connections to node 3V3.  This node is used by RSENSE3V.
+Limiting rise time of source v12 to 0.00057
+Limiting fall time of source v12 to 0.00057
 WARNING: Less than two connections to node NC_01.  This node is used by V4.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -22,153 +21,133 @@ Gmin = 1.5325e-005
 Gmin = 1.6455e-006
 vernier = 0.5
 vernier = 0.25
-Gmin = 7.02396e-007
-vernier = 0.333333
+Gmin = 7.37083e-007
+vernier = 0.125
 vernier = 0.166667
+Gmin = 5.37415e-007
 vernier = 0.0833333
-Gmin = 5.61242e-007
-vernier = 0.111111
-vernier = 0.148148
-vernier = 0.074074
+vernier = 0.0416667
+vernier = 0.0208333
+Gmin = 5.0269e-007
+vernier = 0.0277778
 vernier = 0.037037
-vernier = 0.0185185
-Gmin = 4.76162e-007
-vernier = 0.00925925
-vernier = 0.0123457
-Gmin = 4.64923e-007
-vernier = 0.0164609
-vernier = 0.0219478
-Gmin = 4.45913e-007
-vernier = 0.0292638
-Gmin = 4.1759e-007
+Gmin = 4.6479e-007
+vernier = 0.0493827
+vernier = 0.0658435
+Gmin = 4.10295e-007
+vernier = 0.0877914
+vernier = 0.0438957
+Gmin = 3.63987e-007
+vernier = 0.0585276
+vernier = 0.0780367
 vernier = 0.0390184
+Gmin = 3.26403e-007
 vernier = 0.0520245
-Gmin = 3.74116e-007
+Gmin = 2.91484e-007
 vernier = 0.0693659
 vernier = 0.034683
-vernier = 0.0173415
-Gmin = 3.3454e-007
-vernier = 0.00867074
-vernier = 0.00433537
-vernier = 0.00578049
-Gmin = 3.31295e-007
-vernier = 0.00770732
-vernier = 0.0102764
-Gmin = 3.25239e-007
-vernier = 0.0137019
-Gmin = 3.1565e-007
+vernier = 0.046244
+Gmin = 2.69322e-007
+vernier = 0.023122
+vernier = 0.0308293
+Gmin = 2.56691e-007
+vernier = 0.0411057
+vernier = 0.0205529
+vernier = 0.0274038
+Gmin = 2.44707e-007
+vernier = 0.0365384
 vernier = 0.0182692
+Gmin = 2.33284e-007
 vernier = 0.0243589
-Gmin = 3.00564e-007
 vernier = 0.0324786
-vernier = 0.0433047
-Gmin = 2.78149e-007
-vernier = 0.0577396
+vernier = 0.0162393
+Gmin = 2.22898e-007
+vernier = 0.0216524
+Gmin = 2.12611e-007
 vernier = 0.0288698
-Gmin = 2.57944e-007
-vernier = 0.0384931
-vernier = 0.0513241
+vernier = 0.0144349
+vernier = 0.0192465
+Gmin = 2.05707e-007
 vernier = 0.025662
-Gmin = 2.40062e-007
 vernier = 0.012831
-vernier = 0.00641551
-vernier = 0.00855401
-Gmin = 2.36624e-007
+Gmin = 1.99226e-007
+vernier = 0.017108
+vernier = 0.0228107
 vernier = 0.0114053
+Gmin = 1.93018e-007
 vernier = 0.0152071
-Gmin = 2.30255e-007
+Gmin = 1.86537e-007
 vernier = 0.0202762
-Gmin = 2.20287e-007
-vernier = 0.0270349
-vernier = 0.0360465
+vernier = 0.0101381
+vernier = 0.0135174
+Gmin = 1.82029e-007
 vernier = 0.0180232
-Gmin = 2.0955e-007
+Gmin = 1.7481e-007
 vernier = 0.024031
-Gmin = 1.9855e-007
-vernier = 0.0320413
+vernier = 0.0120155
 vernier = 0.0160207
+Gmin = 1.70155e-007
 vernier = 0.0213609
-Gmin = 1.91537e-007
-vernier = 0.0284812
+vernier = 0.0106804
+Gmin = 1.659e-007
 vernier = 0.0142406
-Gmin = 1.85181e-007
 vernier = 0.0189874
-vernier = 0.0253166
+vernier = 0.00949371
+Gmin = 1.61632e-007
 vernier = 0.0126583
-Gmin = 1.78859e-007
 vernier = 0.0168777
-vernier = 0.0225036
-Gmin = 1.71786e-007
+Gmin = 1.56811e-007
+vernier = 0.00843885
 vernier = 0.0112518
+Gmin = 1.54081e-007
 vernier = 0.0150024
-Gmin = 1.67811e-007
 vernier = 0.0200032
-vernier = 0.0100016
-vernier = 0.0133355
-Gmin = 1.63946e-007
-vernier = 0.0177806
-vernier = 0.0088903
-vernier = 0.00444515
-vernier = 0.00222258
-Gmin = 1.61151e-007
-vernier = 0.00296343
-Gmin = 1.6008e-007
-vernier = 0.00395124
-vernier = 0.00526832
-Gmin = 1.58299e-007
-vernier = 0.00702443
-vernier = 0.0093659
-Gmin = 1.555e-007
-vernier = 0.0124879
-Gmin = 1.51198e-007
-vernier = 0.0166505
-vernier = 0.0222006
-Gmin = 1.44247e-007
-vernier = 0.0296009
-vernier = 0.0394678
-Gmin = 1.33832e-007
-vernier = 0.0526237
-Gmin = 1.18972e-007
-vernier = 0.0701649
-vernier = 0.0935532
-Gmin = 9.77171e-008
-vernier = 0.124738
-vernier = 0.166317
-Gmin = 7.15298e-008
-vernier = 0.221756
-Gmin = 4.39662e-008
-vernier = 0.295674
-vernier = 0.394232
-Gmin = 1.96788e-008
-vernier = 0.525643
-vernier = 0.700857
-Gmin = 5.62856e-009
-vernier = 0.934475
-Gmin = 8.37228e-010
+Gmin = 1.48328e-007
+vernier = 0.0266709
+Gmin = 1.39714e-007
+vernier = 0.0355612
+vernier = 0.0474149
+Gmin = 1.26388e-007
+vernier = 0.0632199
+vernier = 0.0842932
+Gmin = 1.07769e-007
+vernier = 0.112391
+Gmin = 8.39575e-008
+vernier = 0.149854
+vernier = 0.199806
+Gmin = 5.54045e-008
+vernier = 0.266408
+vernier = 0.35521
+Gmin = 2.87935e-008
+vernier = 0.473614
+Gmin = 1.0469e-008
+vernier = 0.631485
+vernier = 0.841979
+Gmin = 2.02346e-009
 vernier = 1
-Gmin = 8.98966e-011
-Gmin = 9.65258e-012
-Gmin = 1.03644e-012
-Gmin = 1.11287e-013
+Gmin = 2.31679e-010
+Gmin = 2.48764e-011
+Gmin = 2.67108e-012
+Gmin = 2.86805e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Sun Aug 07 12:25:54 2022
-Total elapsed time: 0.363 seconds.
+Date: Sun Aug 07 12:50:45 2022
+Total elapsed time: 0.439 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 34123
-traniter = 29897
-tranpoints = 14949
-accept = 11702
-rejected = 3247
+totiter = 44992
+traniter = 41208
+tranpoints = 19462
+accept = 14950
+rejected = 4512
 matrix size = 38
-fillins = 56
+fillins = 55
 solver = Normal
-Thread vector: 5.9/3.7[3] 1.5/1.5[1] 0.7/0.9[1] 0.2/0.9[1]  2592/500
-Matrix Compiler1: 5.47 KB object code size  0.9/0.5/[0.3]
-Matrix Compiler2: off  [0.3]/0.5/0.6
+Thread vector: 6.9/3.6[3] 1.5/1.3[3] 0.7/0.9[1] 0.2/0.8[1]  2592/500
+Matrix Compiler1: 4.91 KB object code size  0.8/0.5/[0.3]
+Matrix Compiler2: off  [0.3]/0.6/0.5
 
