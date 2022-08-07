@@ -9,18 +9,28 @@
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Sensor timing diagram \cite {datasheetHCSR04}\relax }}{4}{figure.caption.15}%
 \contentsline {figure}{\numberline {1.8}{\ignorespaces PWM Signal Voltage vs Time \cite {pwmGraph}\relax }}{5}{figure.caption.16}%
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Filtered PWM signal\relax }}{5}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces A basic ultrasonic sensing system \cite {ultrasonicSensorBasics}\relax }}{6}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Circuit diagram of final configuration\relax }}{8}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Circuit diagram of final configuration\relax }}{8}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Final range sensor amplifier circuit diagram\relax }}{10}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Amplifier output in response to step input\relax }}{11}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Current draw of op-amp\relax }}{11}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Amplifier noise rejection\relax }}{12}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Amplifier response time\relax }}{12}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 0 A to free running\relax }}{12}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Increasing load\relax }}{12}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Free running to stall\relax }}{12}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Amplifier output in response to step input\relax }}{11}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Current draw of op-amp\relax }}{11}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Amplifier noise rejection\relax }}{12}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Amplifier response time\relax }}{12}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 0 A to free running\relax }}{12}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Increasing load\relax }}{12}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Free running to stall\relax }}{12}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Full range PWM (close to far, modified workbench)\relax }}{13}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 400 mV Step Response Input vs Output\relax }}{13}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Noise Level of Ripple\relax }}{13}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Current Draw of Gain and Filter Configuration\relax }}{13}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise level of range sensor circuit\relax }}{14}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Step response of circuit\relax }}{14}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Range input gradual change\relax }}{14}{figure.caption.34}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Circuit Implementation\relax }}{13}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Circuit Implementation\relax }}{15}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Final Circuit Implementation\relax }}{16}{figure.caption.36}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

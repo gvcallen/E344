@@ -6,7 +6,7 @@ PWM waves are similar to square waves, however differ in that $t_{high} \neq t_{
 \begin{itemize}
     \item Frequency: The rate at which the signal oscillates. $f = \frac{1}{t_{high} + t_{low}}$ Hz.
     \item Amplitude: The difference between "high" and "low" voltages. $A = V_{high} - V_{low}$ V.
-    \item Duty cycle: The ratio of the signal's "high time" to its oscillation period. $\tau = \frac{t_{high}}{t_{high} + t_{low}}$ s.
+    \item Duty cycle: The ratio of the signal's "high time" to its period. $\tau = \frac{t_{high}}{t_{high} + t_{low}}$ s.
 \end{itemize}
 
 \begin{figure}[!htb]
@@ -16,10 +16,10 @@ PWM waves are similar to square waves, however differ in that $t_{high} \neq t_{
 \end{figure}
 
 Often, this analog information is conveyed in a varying duty cycle ($\tau$). To convert this varying value to analog,
-a LPF can be used. Since the signal's average increases with $\tau$, filtering out all "harmonics" of the
+a low-pass filter can be used. Since the signal's average value increases with $\tau$, filtering out all "harmonics" of the
 signal will result in \inlineequation[eqn:pwm_filtered_amplitude]{V_{out} = A \times \tau} \cite{pwmAnalogConversion}. The cutoff frequency ($f_{c}$) of the filter
 should be as low as possible, while maintaining an acceptable rise time, in order to minimize ripple on the filter output.
-Then, since $t_r \propto \frac{1}{f_c}$, $t_{r(max)}$ will determine $f_{c(min)}$. This will be based on the filter used
+Then, since $t_r \propto \frac{1}{f_c}$, $t_{r(max)}$ will determine the minimum cutoff frequency, $f_{c(min)}$. This will be based on the filter used
 e.g. $f_{c(min)}$ = $\frac{3.3}{2 \pi \cdot t_{r(max)}}$ for a \nth{2} order filter [\ref{filter_formulae}].
 
 \begin{figure}[!htb]
@@ -29,7 +29,7 @@ e.g. $f_{c(min)}$ = $\frac{3.3}{2 \pi \cdot t_{r(max)}}$ for a \nth{2} order fil
 \end{figure}
 
 Assuming $f_{c(min)}$ is fixed, $f_{c(max)}$ should be determined by the maximum acceptable noise on the output of the filter.
-Since filtering will leave a ripple of frequency $f_{PWM}$, this will be the largest noise component. Given the following:
+Since filtering will still leave a small "ripple" signal at frequency $f_{PWM}$, this will be the largest noise component. Given the following:
 \begin{itemize}
   \item $A$: Amplitude of the PWM signal (V)
   \item $\tau_{max}$: Maximum duty cycle of the PWM signal (\%)
@@ -37,4 +37,4 @@ Since filtering will leave a ripple of frequency $f_{PWM}$, this will be the lar
 \end{itemize}
 
 \noindent Then the required attenuation at $f_{PWM}$ is given by \inlineequation[eqn:pwm_required_attenuation]{A_{dB} = 20 \log \left[ \frac{A \cdot \tau_{max}}{N_{max}} \right]}.
-This will determine $f_{c(max)}$ based on the type of filter used.
+This will determine $f_{c(max)}$, in conjunction with the type of filter used and its order.

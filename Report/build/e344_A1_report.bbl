@@ -118,4 +118,16 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
   [Online]. Available: \url{https://www.ti.com/lit/an/sloa097/sloa097.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{ultrasonicSensorWorkings}
+\BIBentryALTinterwordspacing
+{element14}, ``How do ultrasonic distance sensors work?'' 2021. [Online].
+  Available: \url{https://www.youtube.com/watch?v=2ojWO1QNprw}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ultrasonicSensorBasics}
+\BIBentryALTinterwordspacing
+{Mubina Toa, Akeem Whitehead}, ``Ultrasonic sensing basics,'' 2022. [Online].
+  Available: \url{https://www.ti.com/lit/an/slaa907d/slaa907d.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
