@@ -1,0 +1,49 @@
+Circuit: * C:\users\gary\Documents\_University\_2022\_Second Semester\E Design\Repo\LTSpice\DAC\E344_Ass3_DAC.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+vernier = 0.5
+vernier = 0.25
+Gmin = 7.37083e-007
+vernier = 0.333333
+vernier = 0.444444
+Gmin = 3.42136e-007
+vernier = 0.592592
+Gmin = 1.01256e-007
+vernier = 0.790123
+vernier = 1
+Gmin = 1.531e-008
+Gmin = 1.6439e-009
+Gmin = 1.76512e-010
+Gmin = 1.89528e-011
+Gmin = 2.03505e-012
+Gmin = 2.18511e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Sun Aug 14 17:47:13 2022
+Total elapsed time: 0.102 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4348
+traniter = 3622
+tranpoints = 1811
+accept = 1618
+rejected = 193
+matrix size = 25
+fillins = 17
+solver = Normal
+Matrix Compiler1: 2.00 KB object code size  0.5/0.3/[0.2]
+Matrix Compiler2: off  [0.2]/0.4/0.4
+

@@ -1,0 +1,168 @@
+\documentclass[a4paper,12pt]{report}
+
+\nocite{*}
+
+\newcommand{\nameInitial}{
+    \textcolor{black}{G. Allen}
+}
+\newcommand{\nameFull}{
+    \textcolor{black}{Gary Allen}
+}
+\newcommand{\stNumber}{
+    \textcolor{black}{23905093}
+}
+\newcommand{\myDate}{\textcolor{black}{\today}
+}
+\newcommand{\signature}{frontmatter/figures/Signature}
+
+% Page layout
+\usepackage[left=2.2cm,right=2.2cm,top=2.2cm,bottom=2.2cm]{geometry}
+
+% Figures
+\usepackage[margin=\the\parindent,small,bf,sf]{caption}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\setlength{\abovecaptionskip}{7.5pt}  % spacing above and below captions
+\newcommand*{\WaterMark}[2][0.2\paperwidth]{\AddToShipoutPicture*{\AtTextCenter{\parbox[c]{0pt}{\makebox[0pt][c]{\includegraphics[width=#1]{#2}}}}}}
+\usepackage{subcaption}
+
+% Items and Enums
+\usepackage{enumitem}
+\renewcommand{\labelitemii}{$\circ$}
+
+% Font and text
+\usepackage[afrikaans,english]{babel}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{lmodern}
+\newcommand{\myemph}[1]{{\sffamily\bfseries#1}}
+\sloppy
+\onehalfspacing
+\usepackage{siunitx}
+\usepackage{lipsum}
+\usepackage[super]{nth}
+
+% Headings
+\usepackage[raggedright,sf,bf]{titlesec}
+\titlelabel{\thetitle.\ }
+\titleformat{\chapter}[display]{\huge\bfseries\sffamily}{\chaptertitlename\ \thechapter}{15pt}{\raggedright}
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}  % remove spacing before chapter headings
+
+% Table of contents
+\makeatletter
+\let\originall@chapter\l@chapter
+\def\l@chapter#1#2{\originall@chapter{{\sffamily #1}}{#2}}
+\makeatother
+\let \savenumberline \numberline
+\def \numberline#1{\savenumberline{#1.}}
+
+% Mathematics
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand{\T}{^\textrm{T}}
+\newcommand{\tr}{\textrm{tr}}
+\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\defeq}{\triangleq}
+
+\makeatletter
+\newcommand*{\inlineequation}[2][]{%
+  \begingroup
+    \refstepcounter{equation}%
+    \ifx\\#1\\%
+    \else
+      \label{#1}%
+    \fi
+    \relpenalty=10000 %
+    \binoppenalty=10000 %
+    \ensuremath{%
+      #2%
+    }%
+    ~\@eqnnum
+  \endgroup
+}
+\makeatother
+
+% Tables
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\newcommand{\mytable}{
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.2}
+    }
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+% Header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markright{\normalsize \thesection.\ #1}}
+\fancyhead[C]{\nouppercase{\textit{\rightmark}}}
+\fancyhead[RO]{\thepage}
+
+\fancyfoot{}
+\setlength\headheight{14.5pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhead{}
+                       \renewcommand{\headrulewidth}{0pt}
+                       \fancyfoot[C]{\thepage}}
+
+% Pseudo-code
+\usepackage{algorithm}  % should go before \usepackage{hyperref}
+
+% Table of contents and hyperlinks
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linktoc=all,citecolor=black,linkcolor=black}
+\usepackage[nottoc]{tocbibind}
+
+% Pseudo-code
+\usepackage{algpseudocode}  % should go after \usepackage{hyperref}
+\renewcommand{\thealgorithm}{\arabic{chapter}.\arabic{algorithm}} 
+\captionsetup[algorithm]{labelfont={bf,sf},font=small,labelsep=colon}
+
+% Bibliography
+\usepackage{cite}  % automatically reorder inline citations
+\bibliographystyle{IEEEtran}
+
+% Fix titlesec issue
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+ \usepackage[normalem]{ulem}
+
+\begin{document}
+
+% Front matter
+\input{frontmatter/title_page}
+\pagenumbering{roman}
+\input{frontmatter/declaration}
+\tableofcontents
+\listoffigures
+\listoftables
+\input{frontmatter/nomenclature}
+\newpage
+\pagenumbering{arabic}
+
+% Contents
+\include{content/1_literatureReview/1_literatureReview}
+\include{content/2_design/2_design}
+\include{content/3_results/3_results}
+\include{content/4_implementation/4_implementation}
+
+% Bibliography
+\bibliography{references}
+
+% End matter
+\appendix
+\input{endmatter/appendix_a}
+\input{endmatter/appendix_b}
+\input{endmatter/appendix_c}
+
+\end{document}

@@ -1,7 +1,7 @@
 \graphicspath{{content/1_literatureReview/figures/}}
 \section{Operational amplifiers}\label{sec:opamps}
 
-\subsubsection{Limitations}\label{sec:opamps_limits}
+\subsection{Limitations}\label{sec:opamps_limits}
 Often, it is applicable to design an amplifier using the ideal operational amplifier model, however this may be inadequate
 in low voltage, high current or high frequency environments. The following are common limitations of non-ideal op-amps \cite{opAmpLimitations}:
 \begin{itemize}
@@ -13,7 +13,7 @@ in low voltage, high current or high frequency environments. The following are c
     \item Finite common-mode rejection ratio (CMRR). An op-amp should only amplify $V_{+} - V_{-}$, but also amplifies the unwanted common signal (e.g. noise) on both inputs.
 \end{itemize}
 
-\subsubsection{Considerations}\label{sec:opamps_considerations}
+\subsection{Considerations}\label{sec:opamps_considerations}
 System requirements should first be considered in order to attain an overview of the specifications:
 \begin{itemize}
     \item The output range of the circuit should be from 0.1 to 3 V. Since a low-side current sense resistor will be used, this means initial measurements will be at a lower voltage initially.
@@ -23,7 +23,7 @@ System requirements should first be considered in order to attain an overview of
 
 It is clear that voltage supply saturation, slew rate and CMRR are the main parameters to be considered. A filter circuit should also be designed for noise specifications.
 
-\subsubsection{MCP6242}\label{sec:opamps_MCP6242}
+\subsection{MCP6242}\label{sec:opamps_MCP6242}
 The op-amp used in this project is the MCP6242. Listed below are its notable parameters \cite{datasheetMCP6242}:
 \begin{itemize}
     \item Typical CMMR of 75 dB (DC) to 65 dB (1 kHz).
@@ -31,7 +31,7 @@ The op-amp used in this project is the MCP6242. Listed below are its notable par
     \item Slew rate of 0.3 V/uS.
 \end{itemize}
 
-\subsubsection{Configurations}\label{sec:opamps_configs}
+\subsection{Configurations}\label{sec:opamps_configs}
 A number of well-known op-amp configurations exist that all achieve slightly different amplification goals. The following list compares common configurations [3] which may achieve this project's goal
 of amplifying a small-signal voltage across a resistor. The figures below also include a modified non-inverting amplifier to allow for input signal filtering:
 \begin{center}

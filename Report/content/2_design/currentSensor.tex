@@ -1,6 +1,6 @@
 \graphicspath{{content/2_design/figures/}}
 \section{Current sensor}\label{sec:current_sensor_design}
-\subsubsection{Configuration}\label{sec:current_sensor_config}
+\subsection{Configuration}\label{sec:current_sensor_config}
 
 The differential amplifier configuration will be used for this project for the following reasons:
 \begin{itemize}
@@ -13,7 +13,7 @@ However, a modified version with two extra capacitors will be used. Two capacito
 value in order to preserve CMRR \cite{opAmpConfigurations}. It is likely, however, that one of these will be dominant due to differing resistor values, and therefore this design will only consider the filter to be first-order.
 This is acceptable, however, due to the amplifier's noise-rejecting capabilities.
 
-\subsubsection{Gain and Cutoff}
+\subsection{Gain and Cutoff}
 Before calculating component values, both the cutoff frequency of the RC filter, and the DC gain of the amplifier, need to be determined. The gain of the amplifier should be determined
 such that, when the maximum current flows through the sense resistor, the maximum voltage is output.
 
@@ -36,7 +36,7 @@ Since input current of the circuit needs to be limited below 150 uA, high resist
         It should be noted, however, that this technique (using time constants) is not always valid - especially in complex circuits such as these - and so these results should be checked using simulations.
 \end{itemize}
 
-\subsubsection{Circuit diagram}\label{sec:current_sensor_circuit}
+\subsection{Circuit diagram}\label{sec:current_sensor_circuit}
 The following figure details the final circuit design for the sensor and amplifier system.
 
 \begin{figure}[h!]
