@@ -40,6 +40,12 @@
   \url{https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{datasheetTIP31C}
+\BIBentryALTinterwordspacing
+{STMicroelectronics}, ``Tip31c power transistors.'' [Online]. Available:
+  \url{https://www.st.com/content/ccc/resource/technical/document/datasheet/a2/01/d8/6b/ba/9d/49/86/CD00104632.pdf/files/CD00104632.pdf/jcr:content/translations/en.CD00104632.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{opAmpConfigurations}
 \BIBentryALTinterwordspacing
 {WikiBooks}, ``Op amp configurations.'' [Online]. Available:
@@ -64,9 +70,16 @@
   \url{https://www.allaboutcircuits.com/technical-articles/resistive-current-sensing-low-side-versus-high-side-sensing/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{currentSenseHallEffect}
+\BIBentryALTinterwordspacing
+{Engineering360}, ``How electric current sensor technology works,'' 5 2015.
+  [Online]. Available:
+  \url{https://insights.globalspec.com/article/994/how-electric-current-sensor-technology-works}
+\BIBentrySTDinterwordspacing
+
 \bibitem{ttlLevels}
 \BIBentryALTinterwordspacing
-------, ``Logic signal voltage levels.'' [Online]. Available:
+{AllAboutCircuits}, ``Logic signal voltage levels.'' [Online]. Available:
   \url{https://www.allaboutcircuits.com/textbook/digital/chpt-3/logic-signal-voltage-levels/}
 \BIBentrySTDinterwordspacing
 
@@ -153,6 +166,13 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
 {Espressif}, ``Esp32-wroom-32d \& esp32-wroom-32u datasheet.'' [Online].
   Available:
   \url{https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{opAmpSumDiff}
+\BIBentryALTinterwordspacing
+{Adrian S. Nastase}, ``A summing and differential amplifier with one op amp.''
+  [Online]. Available:
+  \url{https://masteringelectronicsdesign.com/a-summing-and-differential-amplifier-with-one-op-amp/}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
