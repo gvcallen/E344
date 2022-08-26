@@ -1,0 +1,120 @@
+Circuit: * C:\users\gary\Documents\_University\_2022\_Second Semester\E Design\Repo\LTSpice\MotorController\LTSpice4a\E344_12345678_A4a.asc
+
+V3: Removing PWL point (0.06,0.5)
+WARNING: Less than two connections to node 5V.  This node is used by RSENSE5V.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+vernier = 0.5
+vernier = 0.666667
+Gmin = 5.75037e-007
+vernier = 0.333333
+vernier = 0.166667
+vernier = 0.222222
+vernier = 0.111111
+Gmin = 5.18225e-007
+vernier = 0.0555555
+vernier = 0.074074
+Gmin = 4.49459e-007
+vernier = 0.0987653
+vernier = 0.131687
+vernier = 0.0658435
+Gmin = 3.74278e-007
+vernier = 0.0329218
+vernier = 0.0438957
+Gmin = 3.43903e-007
+vernier = 0.0585276
+vernier = 0.0780367
+vernier = 0.0390184
+Gmin = 3.08393e-007
+vernier = 0.0195092
+vernier = 0.00975459
+vernier = 0.0048773
+vernier = 0.00243865
+vernier = 0.00325153
+Gmin = 3.07205e-007
+vernier = 0.00433537
+Gmin = 3.04307e-007
+vernier = 0.00578049
+vernier = 0.00770732
+Gmin = 2.99619e-007
+vernier = 0.0102764
+vernier = 0.0137019
+Gmin = 2.92342e-007
+vernier = 0.0182692
+Gmin = 2.80912e-007
+vernier = 0.0243589
+vernier = 0.0324786
+vernier = 0.0162393
+Gmin = 2.68541e-007
+vernier = 0.0216524
+Gmin = 2.55803e-007
+vernier = 0.0288698
+vernier = 0.0144349
+vernier = 0.0192465
+Gmin = 2.47645e-007
+vernier = 0.025662
+vernier = 0.012831
+Gmin = 2.40227e-007
+vernier = 0.017108
+vernier = 0.0228107
+vernier = 0.0114053
+Gmin = 2.32824e-007
+vernier = 0.0152071
+vernier = 0.0202762
+Gmin = 2.24509e-007
+vernier = 0.0270349
+Gmin = 2.11654e-007
+vernier = 0.0360465
+vernier = 0.048062
+Gmin = 1.92204e-007
+vernier = 0.0640826
+vernier = 0.0854435
+Gmin = 1.65047e-007
+vernier = 0.113925
+Gmin = 1.29042e-007
+vernier = 0.151899
+vernier = 0.202533
+Gmin = 8.65085e-008
+vernier = 0.270043
+vernier = 0.360058
+Gmin = 4.62423e-008
+vernier = 0.480077
+Gmin = 1.70511e-008
+vernier = 0.640102
+vernier = 0.853469
+Gmin = 3.49739e-009
+vernier = 1
+Gmin = 4.10579e-010
+Gmin = 4.40856e-011
+Gmin = 4.73365e-012
+Gmin = 5.08272e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Thu Aug 25 15:02:52 2022
+Total elapsed time: 0.352 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7660
+traniter = 4830
+tranpoints = 1996
+accept = 1704
+rejected = 292
+matrix size = 71
+fillins = 71
+solver = Normal
+Thread vector: 13.0/7.7[7] 5.2/2.7[7] 2.5/1.7[4] 0.3/1.0[1]  2592/500
+Matrix Compiler1: 8.02 KB object code size  1.8/1.3/[0.5]
+Matrix Compiler2: 6.99 KB object code size  0.9/1.3/[0.4]
+

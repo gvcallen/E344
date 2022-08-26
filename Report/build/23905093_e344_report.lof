@@ -17,30 +17,30 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Range Sensor Amplifier Circuit Diagram\relax }}{11}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Digital to Analog Converter Circuit Diagram\relax }}{12}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Amplifier Output in Response to Step Input\relax }}{15}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Current Draw\relax }}{15}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Noise Level\relax }}{16}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Step Response\relax }}{16}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Open Circuit to Free Running\relax }}{16}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Increasing Load\relax }}{16}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Free Running to Stall\relax }}{16}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Full-Range PWM using Modified Workbench\relax }}{17}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces 400 mV Step Response Input vs Output\relax }}{17}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Noise Level\relax }}{17}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Current Draw\relax }}{17}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise Level\relax }}{18}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Step Response\relax }}{18}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Gradual Change over Input Range\relax }}{18}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Output Range from 0000 (First Cursor) to 1111 (Second Cursor)\relax }}{19}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Current Draw (Amplifier and Digital Inputs)\relax }}{19}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces DAC Output at 0000\relax }}{19}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces DAC Output at 0001\relax }}{19}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces DAC Output at 1110\relax }}{19}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces DAC Output at 1111\relax }}{19}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Amplifier Output in Response to Step Input\relax }}{15}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Current Draw\relax }}{15}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Noise Level\relax }}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Step Response\relax }}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Open Circuit to Free Running\relax }}{16}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Increasing Load\relax }}{16}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Free Running to Stall\relax }}{16}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Full-Range PWM using Modified Workbench\relax }}{17}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces 400 mV Step Response Input vs Output\relax }}{17}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Noise Level\relax }}{17}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Current Draw\relax }}{17}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise Level\relax }}{18}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Step Response\relax }}{18}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Gradual Change over Input Range\relax }}{18}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Output Range from 0000 (First Cursor) to 1111 (Second Cursor)\relax }}{19}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Current Draw (Amplifier and Digital Inputs)\relax }}{19}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces DAC Output at 0000\relax }}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces DAC Output at 0001\relax }}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces DAC Output at 1110\relax }}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces DAC Output at 1111\relax }}{19}{figure.caption.33}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Current Sensor Physical Circuit\relax }}{20}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ultrasonics Sensor Amplifier Physical Circuit\relax }}{21}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Digital to Analog Converter Physical Circuit\relax }}{22}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Current Sensor Physical Circuit\relax }}{20}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ultrasonics Sensor Amplifier Physical Circuit\relax }}{21}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Digital to Analog Converter Physical Circuit\relax }}{22}{figure.caption.36}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

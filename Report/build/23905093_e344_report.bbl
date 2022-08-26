@@ -175,4 +175,10 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
   \url{https://masteringelectronicsdesign.com/a-summing-and-differential-amplifier-with-one-op-amp/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{datasheet2N2222A}
+\BIBentryALTinterwordspacing
+{ON Semiconductor}, ``P2n2222a amplifier transistors.'' [Online]. Available:
+  \url{https://www.onsemi.com/pdf/datasheet/p2n2222a-d.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

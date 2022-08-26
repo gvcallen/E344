@@ -55,7 +55,7 @@
 \contentsline {section}{\numberline {4.1}Current Sensor}{20}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Range Sensor}{21}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Digital to Analog Converter}{22}{section.4.3}%
-\contentsline {chapter}{Bibliography}{23}{chapter*.36}%
+\contentsline {chapter}{Bibliography}{23}{chapter*.37}%
 \contentsline {chapter}{\numberline {A}Social contract}{25}{appendix.A}%
 \contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{26}{appendix.B}%
 \contentsline {chapter}{\numberline {C}Formulae and Derivations}{27}{appendix.C}%

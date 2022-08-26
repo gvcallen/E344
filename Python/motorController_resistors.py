@@ -1,10 +1,25 @@
-from scipy.optimize import fsolve
-import math
+Cmax = 7.2
+Cmin = 1.8
+Smax = 3.1
+Smin = 0.1
+Rmin = 0.6
+Rmax = 3.3
 
-def equations(p):
-    x, y = p
-    return ((15 * x + 9.9 * y) / (x + y) - 7.2, (15 * x + 1.8 * y) / (x + y) - 1.2)
+L = (Rmax - Rmin)
+W = (Smax - Smin)
+Rc = Rmax
+Sc = Smin
+h = Cmax - Cmin
+hb = Cmin
 
-x, y = fsolve(equations, (10, 10))
+m1 = -h/W
+k1 = h + h/W * Sc + hb
+m2 = h/L
+k2 = h - (h/L) * Rc + hb
 
-print((x, y))
+print("m1 = %.4f" % m1)
+print("k1 = %.4f" % k1)
+print("m2 = %.4f" % m2)
+print("k2 = %.4f" % k2)
+
+print("Use S when %.3f * S + %.3f > R" % (-L/W, (L/W) * Smax))
