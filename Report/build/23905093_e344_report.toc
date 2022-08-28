@@ -1,21 +1,21 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Declaration}{i}{Doc-Start}%
-\contentsline {chapter}{List of Figures}{iv}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{vi}{chapter*.3}%
-\contentsline {chapter}{Nomenclature}{vii}{chapter*.4}%
+\contentsline {chapter}{List of Figures}{v}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{vii}{chapter*.3}%
+\contentsline {chapter}{Nomenclature}{viii}{chapter*.4}%
 \contentsline {chapter}{\numberline {1}Literature Review}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Operational Amplifiers}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Basic Principles}{1}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Limitations}{1}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Key Specifications}{2}{subsection.1.1.3}%
 \contentsline {subsection}{\numberline {1.1.4}Configurations}{2}{subsection.1.1.4}%
-\contentsline {section}{\numberline {1.2}Current Sensors}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Current Sensing}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Techniques}{3}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}High-Side vs Low-Side}{3}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}AC, DC and Power Requirements}{3}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}Ultrasonic Sensors}{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Interface}{4}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Fundamental Operation}{5}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.1}Interfacing with the Range Sensor}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Fundamental Operation of Range Sensors}{5}{subsection.1.3.2}%
 \contentsline {subsubsection}{Sound Transducers}{5}{subsubsection*.9}%
 \contentsline {subsubsection}{Pulse Generation}{5}{subsubsection*.11}%
 \contentsline {subsubsection}{Pulse Acquisition}{5}{subsubsection*.12}%
@@ -24,42 +24,50 @@
 \contentsline {subsection}{\numberline {1.5.1}Configurations}{7}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Impedance Requirements}{7}{subsection.1.5.2}%
 \contentsline {chapter}{\numberline {2}Detailed Design}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Current Sensor}{8}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Configuration}{8}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Gain and Filter Stage}{8}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Circuit Diagram}{9}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Ultrasonic Sensor}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Power and Output Requirements}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Filter Selection}{10}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Configuration}{10}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Gain Stage}{11}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Filter Stage}{11}{subsection.2.2.5}%
-\contentsline {section}{\numberline {2.3}Digital to Analog Converter}{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Configuration and Impedance Requirements}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Summing Stage}{12}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Motor Controller}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Configuration}{13}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Power Stage}{13}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Subtractor Stage}{13}{subsection.2.4.3}%
-\contentsline {chapter}{\numberline {3}Results}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Current Sensor}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Simulation}{15}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Implementation}{16}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Range Sensor}{17}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Simulation}{17}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Implementation}{18}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Digital to Analog Converter}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Simulation}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Implementation}{19}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Physical Implementation}{20}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Current Sensor}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Range Sensor}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Digital to Analog Converter}{22}{section.4.3}%
-\contentsline {chapter}{Bibliography}{23}{chapter*.37}%
-\contentsline {chapter}{\numberline {A}Social contract}{25}{appendix.A}%
-\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{26}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Formulae and Derivations}{27}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Filters}{27}{section.C.1}%
-\contentsline {subsection}{\numberline {C.1.1}Common Filter Formulae}{27}{subsection.C.1.1}%
-\contentsline {subsection}{\numberline {C.1.2}2\relax \textsuperscript {nd} Order Filter Attenuation}{27}{subsection.C.1.2}%
-\contentsline {subsection}{\numberline {C.1.3}1\relax \textsuperscript {st} and 2\relax \textsuperscript {nd} Order Filter Cutoff vs Attenuation}{28}{subsection.C.1.3}%
+\contentsline {section}{\numberline {2.1}System Design}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}5V and 3.3V Regulator}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Current Sensor}{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Configuration}{10}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Gain and Filter Stage}{10}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Circuit Diagram}{11}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Ultrasonic Sensor}{12}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Power and Output Requirements}{12}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Filter Selection}{12}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Configuration}{12}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Gain Stage}{13}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Filter Stage}{13}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Digital to Analog Converter}{14}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Configuration and Impedance Requirements}{14}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Summing Stage}{14}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Motor Controller}{15}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Configuration}{15}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Power Stage}{15}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Subtractor Stage}{15}{subsection.2.6.3}%
+\contentsline {chapter}{\numberline {3}Results}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Voltage Regulation}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Measured}{17}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Current Sensor}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Simulation}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Measured}{18}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Range Sensor}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Simulation}{20}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Measured}{21}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Digital to Analog Converter}{22}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Simulation}{22}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Measured}{22}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Motor Controller}{23}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Simulation}{23}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Measured}{24}{subsection.3.5.2}%
+\contentsline {chapter}{\numberline {4}Physical Implementation}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Combined Circuit}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Current Sensor}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Range Sensor}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Digital to Analog Converter}{28}{section.4.4}%
+\contentsline {chapter}{Bibliography}{29}{chapter*.48}%
+\contentsline {chapter}{\numberline {A}Social contract}{32}{appendix.A}%
+\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{33}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Formulae and Derivations}{34}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Filters}{34}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Common Filter Formulae}{34}{subsection.C.1.1}%
+\contentsline {subsection}{\numberline {C.1.2}2\relax \textsuperscript {nd} Order Filter Attenuation}{34}{subsection.C.1.2}%
+\contentsline {subsection}{\numberline {C.1.3}1\relax \textsuperscript {st} and 2\relax \textsuperscript {nd} Order Filter Cutoff vs Attenuation}{35}{subsection.C.1.3}%

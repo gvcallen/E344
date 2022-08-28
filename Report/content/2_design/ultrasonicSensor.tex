@@ -69,8 +69,7 @@ and offset $b = \SI{0.3}{V} - m \times \SI{23}{mV} \approx \SI{163}{mV}$:
 
 \begin{itemize}
   \item With idle current $I_Q = \frac{V_{out}}{R_f + R_g}$, and $V_{out(max)} = \SI{3.3}{V}$, $(R_f + R_g)_{min} = \frac{\SI{3.3}{V}}{\SI{400}{\micro\ampere}} = \SI{8.25}{\kilo\ohm}$.
-  \item Since the offset voltage is low (i.e. $R_{ref}$ will be high), first choose $R_{ref} = \SI{820}{\kilo\ohm} + \SI{470}{\kilo\ohm} \textnormal{pot} \approx \SI{1000}{\kilo\ohm}$.
-        A potentiometer is used to tune the offset.
+  \item Since the offset voltage is low, $R_{ref}$ will be high. A potentiometer will also be used to tune this offset, therefore choose $R_{ref} = \SI{1000}{\kilo\ohm} = \SI{820}{\kilo\ohm} + \SI{470}{\kilo\ohm} \textnormal{pot}$.
   \item Calculate $R_{in} = \frac{R_{ref} \times b}{V_{ref} \times m} \approx \SI{8.2}{\kilo\ohm}$ with $V_{ref} = \SI{5}{V}$ and $C_1 = \frac{1}{2 \pi f_c R_1} \approx \SI{22}{\micro\farad}$.
   \item Choose $R_f = \SI{10}{\kilo\ohm}$ to satisfy the current requirements.
   \item Calculate $R_g = \frac{R_{ref} \times R_f}{m \times (R_{in} + R_{ref}) - R_{ref}} \approx \SI{2}{\kilo\ohm}$. To tune the gain, choose $R_g = \SI{1.5}{k} + \SI{1}{\kilo\ohm}\textnormal{pot}$.

@@ -181,4 +181,12 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
   \url{https://www.onsemi.com/pdf/datasheet/p2n2222a-d.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{datasheetLD1117}
+\BIBentryALTinterwordspacing
+{ST Microelectronics}, ``Ld1117 - adjustable and fixed low drop positive
+  voltage regulator.'' [Online]. Available:
+  \url{https://www.st.com/content/ccc/resource/technical/document/datashee
+  t/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

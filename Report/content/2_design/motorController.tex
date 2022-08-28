@@ -27,7 +27,7 @@ This corresponds to $V_{range(min)} \approx \SI{0.6}{V}$.
 
 Since a high $V_{speed}$ corresponds to a low output voltage, the DAC input will be connected to the inverting terminal. No offset needs to be added at the non-inverting terminal
 as the range sensor provides a constant 3.3 V when no object is near. A limit of $\SI{400}{\micro\ampere}$ should be kept for this circuit, excluding quiescent current.
-Referring to the final circuit diagram in Figure below and according to \cite{opAmpSumDiff}, the equation for $V_{control}$ is given by:
+Referring to the final circuit diagram in Figure \ref{fig:motorController_subtractor_circuitDiagram} below and according to \cite{opAmpSumDiff}, the equation for $V_{control}$ is given by:
 \begin{equation}{\label{eqn:opAmpSumDiff}}
     V_{control} = \left( V_{range} \cdot \frac{R_a}{R_a + R_b} \right) \left(1 + \frac{R_f}{R_s} \right) - V_{speed} \cdot \frac{R_f}{R_s}
 %     V_{control} = \left(V_{ref} \cdot R_r + V_{range} \cdot R_o \right) \left(\frac{1 + \frac{R_f}{R_s}}{Rr + Ro} \right) - V_{speed} \cdot \frac{R_f}{R_s}    
@@ -50,9 +50,9 @@ Referring to the final circuit diagram in Figure below and according to \cite{op
   \caption{Output Conditions for Various Range and Sensor Inputs}
 \end{table}
 
-\indent It should be noted that condition 3 will always be true, given condition 1 is true, due to the nature of the subtractor. Component values can now be calculated:
+\indent Condition 3, however, will always be true, given that condition 1 is true (due to the nature of the subtractor). Component values can now be calculated:
 \begin{itemize}
-    \item Maximum current will flow through the feedback loop when $V_{control} = \SI{7.2}{V}$  and $V_{speed} = \SI{0}{V}$, with a value of $I_{max} = \frac{\SI{7.2}{V}}{R_s + R_f}$.
+    \item Maximum current will flow through the feedback loop when $V_{control} = \SI{7.2}{V}$ and $V_{speed} = \SI{0}{V}$, with a value of $I_{max} = \frac{\SI{7.2}{V}}{R_s + R_f}$.
           To keep feedback current $< \SI{200}{\micro\ampere}$, $(R_s + R_f)_{min} = \frac{\SI{7.2}{V}}{\SI{200}{\micro\ampere}} = \SI{36}{\kilo\ohm}$.
     \item Conditions 2 and 4 result in a minimum gain of $\frac{\SI{7.2}{V} - \SI{1.8}{V}}{\SI{3.1}{V} - \SI{0.1}{V}} = \SI{1.8}{V/V}$. Choose a gain of 2 i.e. $\frac{R_f}{R_s} = 2$.
           Choose $R_f = \SI{47}{\kilo\ohm}$ and $R_s = \SI{23.5}{\kilo\ohm}$. A potentiometer will be used for fine-tuning of the speed gain $\therefore R_s = \SI{18}{\kilo\ohm} + \SI{10}{\kilo\ohm}$pot.
@@ -60,6 +60,22 @@ Referring to the final circuit diagram in Figure below and according to \cite{op
     \item Applying condition 1, $\SI{1.8}{V} > 3 \cdot \SI{0.6}{V} \cdot \frac{R_a}{R_a + R_b} - 2 \cdot \SI{0.1}{V} \therefore \frac{R_a}{R_a + R_b} < 1.111$.
     \item Applying condition 2, $\SI{7.2}{V} < 3 \cdot \SI{3.3}{V} \cdot \frac{R_a}{R_a + R_b} - 2 \cdot \SI{0.1}{V} \therefore \frac{R_a}{R_a + R_b} > 0.747$.
     \item Applying condition 4, $\SI{1.8}{V} > 3 \cdot \SI{3.3}{V} \cdot \frac{R_a}{R_a + R_b} - 2 \cdot \SI{3.1}{V} \therefore \frac{R_a}{R_a + R_b} < 0.808$.
-    \item Choose $\frac{R_a}{R_a + R_b} = 0.78$. Choose $R_a = \SI{56}{\kilo\ohm} \therefore R_b = \SI{15.79}{\kilo\ohm}$. A potentiometer will be used for fine-tuning of the range gain
-          $\therefore R_b = \SI{10}{\kilo\ohm} + \SI{10}{\kilo\ohm}$pot.
+    \item Choose $\frac{R_a}{R_a + R_b} = 0.78$. To keep maximum range sensor input current $I_{max} = \frac{\SI{3.3}{V}}{R_a + R_b}$ below $\SI{200}{\micro\ampere}$, $R_a + R_b > \SI{16.5}{\kilo\ohm}$.
+    Choose $R_a = \SI{56}{\kilo\ohm} \therefore R_b = \SI{15.79}{\kilo\ohm}$. A potentiometer will be used for fine-tuning of the range gain $\therefore R_b = \SI{10}{\kilo\ohm} + \SI{10}{\kilo\ohm}$pot.
 \end{itemize}
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.6\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{motorController_subtractor_circuitDiagram}
+        \captionof{figure}{Motor Controller Subtractor Stage Circuit Diagram}
+        \label{fig:motorController_subtractor_circuitDiagram}
+    \end{minipage}
+    \begin{minipage}{.35\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{motorController_power_circuitDiagram}
+        \captionof{figure}{Motor Controller Power Stage Circuit Diagram}
+        \label{fig:motorController_power_circuitDiagram}
+    \end{minipage}
+\end{figure}
