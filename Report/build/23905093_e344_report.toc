@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {1.5.2}Impedance Requirements}{7}{subsection.1.5.2}%
 \contentsline {chapter}{\numberline {2}Detailed Design}{8}{chapter.2}%
 \contentsline {section}{\numberline {2.1}System Design}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}5V and 3.3V Regulator}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Voltage Regulation}{9}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Current Sensor}{10}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Configuration}{10}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Gain and Filter Stage}{10}{subsection.2.3.2}%
@@ -47,16 +47,16 @@
 \contentsline {section}{\numberline {3.1}Voltage Regulation}{17}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Measured}{17}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Current Sensor}{18}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Simulation}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Simulated}{18}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Measured}{18}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Range Sensor}{20}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Simulation}{20}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Simulated}{20}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Measured}{21}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Digital to Analog Converter}{22}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Simulation}{22}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Simulated}{22}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Measured}{22}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Motor Controller}{23}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Simulation}{23}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.1}Simulated}{23}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Measured}{24}{subsection.3.5.2}%
 \contentsline {chapter}{\numberline {4}Physical Implementation}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Combined Circuit}{25}{section.4.1}%

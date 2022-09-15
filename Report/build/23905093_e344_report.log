@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  28 AUG 2022 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  28 AUG 2022 13:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,12 +863,12 @@ Package pdftex.def Info: content/2_design/figures/voltageRegulation_blockDiagram
 <content/2_design/figures/voltageRegulation_3v3.png, id=803, 584.93532pt x 228.855pt>
 File: content/2_design/figures/voltageRegulation_3v3.png Graphic file (type png)
 <use content/2_design/figures/voltageRegulation_3v3.png>
-Package pdftex.def Info: content/2_design/figures/voltageRegulation_3v3.png  used on input line 13.
+Package pdftex.def Info: content/2_design/figures/voltageRegulation_3v3.png  used on input line 14.
 (pdftex.def)             Requested size: 188.9235pt x 73.91603pt.
 <content/2_design/figures/voltageRegulation_5v.png, id=806, 587.94656pt x 229.60782pt>
 File: content/2_design/figures/voltageRegulation_5v.png Graphic file (type png)
 <use content/2_design/figures/voltageRegulation_5v.png>
-Package pdftex.def Info: content/2_design/figures/voltageRegulation_5v.png  used on input line 19.
+Package pdftex.def Info: content/2_design/figures/voltageRegulation_5v.png  used on input line 20.
 (pdftex.def)             Requested size: 188.9235pt x 73.7773pt.
 ) [9 <./content/2_design/figures/voltageRegulation_3v3.png (PNG copy)> <./content/2_design/figures/voltageRegulation_5v.png (PNG copy)>] (./content/2_design/currentSensor.tex [10]
 <content/2_design/figures//currentSensor_sim_circuit.png, id=821, 919.18407pt x 496.10344pt>
@@ -1183,11 +1183,11 @@ Package pdftex.def Info: endmatter/figures//SocialContract_signed.pdf  used on i
 
  <./endmatter/figures//SocialContract_signed.pdf>]
 Appendix B.
-<endmatter/figures//GitHub.png, id=1088, 1251.17438pt x 612.78937pt>
+<endmatter/figures//GitHub.png, id=1088, 1008.01593pt x 630.10406pt>
 File: endmatter/figures//GitHub.png Graphic file (type png)
 <use endmatter/figures//GitHub.png>
 Package pdftex.def Info: endmatter/figures//GitHub.png  used on input line 8.
-(pdftex.def)             Requested size: 472.31595pt x 231.3289pt.
+(pdftex.def)             Requested size: 472.31595pt x 295.24518pt.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 8--10
  [][] 
@@ -1254,7 +1254,7 @@ See the caption package documentation for explanation.
 
 [35] (build/23905093_e344_report.aux (build/content/1_literatureReview/1_literatureReview.aux) (build/content/2_design/2_design.aux) (build/content/3_results/3_results.aux) (build/content/4_implementation/4_implementation.aux))
 Package rerunfilecheck Info: File `23905093_e344_report.out' has not changed.
-(rerunfilecheck)             Checksum: 1C066206B32B9308744252664492CCFB;10132.
+(rerunfilecheck)             Checksum: 54F4F4052CFD7226D1F514E7F7AE8C3A;10091.
  ) 
 Here is how much of TeX's memory you used:
  23277 strings out of 478238
@@ -1265,7 +1265,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  74i,14n,79p,1096b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on build/23905093_e344_report.pdf (44 pages, 8229696 bytes).
+Output written on build/23905093_e344_report.pdf (44 pages, 8224715 bytes).
 PDF statistics:
  1243 PDF objects out of 1440 (max. 8388607)
  1050 compressed objects within 11 object streams
