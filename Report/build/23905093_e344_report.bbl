@@ -189,4 +189,11 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
   t/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{datasheetFQD13N06L}
+\BIBentryALTinterwordspacing
+{Fairchild Semiconductor}, ``Fqd13n06l - 60 v logic n-channel mosfet.''
+  [Online]. Available:
+  \url{https://docs.rs-online.com/1c55/0900766b80d27f42.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

@@ -1,0 +1,1 @@
+.model FQD13N06L VDMOS(Rg=3 Vto=2.5 Rd=50m Rs=150m Rb=60m Kp=5 lambda=.01 Cgdmax=1n Cgdmin=.26n Cgs=.2n Cjo=.4n Is=52p ksubthres=.1 mfg=onsemi Vds=60 Ron=150m Qg=26n)

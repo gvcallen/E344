@@ -1,0 +1,21 @@
+Circuit: * C:\users\gary\Documents\_University\_2022\_Second Semester\E Design\Repo\LTSpice\CurrentSensor\New\E344_Ass1_CurrSense.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Sep 15 19:22:55 2022
+Total elapsed time: 0.200 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 35372
+traniter = 35343
+tranpoints = 15378
+accept = 10197
+rejected = 5181
+matrix size = 17
+fillins = 9
+solver = Normal
+Matrix Compiler1: 1.51 KB object code size  0.4/0.2/[0.1]
+Matrix Compiler2: off  [0.2]/0.2/0.3
+

@@ -1,0 +1,56 @@
+Circuit: * C:\users\gary\Documents\_University\_2022\_Second Semester\E Design\Repo\LTSpice\MotorController\LTSpice4a\E344_12345678_A4a.asc
+
+V3: Removing PWL point (0.06,0.5)
+WARNING: Less than two connections to node 5V.  This node is used by RSENSE5V.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+vernier = 0.5
+vernier = 0.25
+Gmin = 5.61917e-007
+vernier = 0.125
+vernier = 0.166667
+Gmin = 4.26252e-007
+vernier = 0.222222
+vernier = 0.296296
+Gmin = 2.53839e-007
+vernier = 0.395061
+Gmin = 1.10883e-007
+vernier = 0.526748
+vernier = 0.702331
+Gmin = 2.95693e-008
+vernier = 0.936441
+vernier = 1
+Gmin = 4.12142e-009
+Gmin = 4.42535e-010
+Gmin = 4.75168e-011
+Gmin = 5.10208e-012
+Gmin = 5.47831e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Sun Aug 28 14:02:27 2022
+Total elapsed time: 0.126 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3433
+traniter = 2556
+tranpoints = 1267
+accept = 1215
+rejected = 52
+matrix size = 21
+fillins = 17
+solver = Normal
+Matrix Compiler1: 1.86 KB object code size  0.4/0.2/[0.2]
+Matrix Compiler2: off  [0.2]/0.3/0.3
+

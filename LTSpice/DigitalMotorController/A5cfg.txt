@@ -1,0 +1,11 @@
+.param transtop 	250m
+.param transtart 	0.000000E+00
+.param timestep 	1.000000E-03
+.param K_t=900m
+.param K_emf=900m
+.param L_motor=65u
+.PARAM R_motor = 20
+.PARAM J = 2m
+.PARAM B = 5m
+.PARAM Tint = 0.5
+

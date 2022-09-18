@@ -21,42 +21,45 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Digital to Analog Converter Circuit Diagram\relax }}{14}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Motor Controller Subtractor Stage Circuit Diagram\relax }}{16}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Motor Controller Power Stage Circuit Diagram\relax }}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Setup Diagram\relax }}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Echo Interrupt Diagram\relax }}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Loop Diagram\relax }}{17}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 3.3 V Regulator Ripple Measurement\relax }}{17}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 5 V Regulator Ripple Measurement\relax }}{17}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Output and Noise Level in Response to Step Input\relax }}{18}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Current Draw\relax }}{18}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Noise Level\relax }}{19}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Step Response\relax }}{19}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Open Circuit to Free Running\relax }}{19}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Increasing Load\relax }}{19}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Free Running to Stall\relax }}{19}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Full-Range PWM using Modified Workbench\relax }}{20}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 400 mV Step Response Input vs Output\relax }}{20}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise Level\relax }}{20}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Current Draw\relax }}{20}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Noise Level\relax }}{21}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Step Response\relax }}{21}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Gradual Change over Input Range\relax }}{21}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Output Range from 0000 (First Cursor) to 1111 (Second Cursor)\relax }}{22}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Current Draw (Amplifier and Digital Inputs)\relax }}{22}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces DAC Output at 0000\relax }}{22}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces DAC Output at 0001\relax }}{22}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces DAC Output at 1110\relax }}{22}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces DAC Output at 1111\relax }}{22}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Motor Controller Output of Subtractor Stage\relax }}{23}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Motor Controller Current Draw of Subtractor Stage\relax }}{23}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Motor Controller Output of Power Stage\relax }}{23}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Motor Voltage: Object Far, Speed 0000\relax }}{24}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Motor Voltage: Object Far, Speed 1111\relax }}{24}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Motor Voltage: Object Near, Speed 0000\relax }}{24}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Motor Voltage: Object Near, Speed 1111\relax }}{24}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Motor Voltage: Object 20cm, Speed 1111\relax }}{24}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 3.3 V Regulator Ripple Measurement\relax }}{19}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 5 V Regulator Ripple Measurement\relax }}{19}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Output and Noise Level in Response to Step Input\relax }}{20}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Current Draw\relax }}{20}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Noise Level\relax }}{21}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Step Response\relax }}{21}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Open Circuit to Free Running\relax }}{21}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Increasing Load\relax }}{21}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Free Running to Stall\relax }}{21}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Full-Range PWM using Modified Workbench\relax }}{22}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 400 mV Step Response Input vs Output\relax }}{22}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise Level\relax }}{22}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Current Draw\relax }}{22}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Noise Level\relax }}{23}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Step Response\relax }}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Gradual Change over Input Range\relax }}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Output Range from 0000 (First Cursor) to 1111 (Second Cursor)\relax }}{24}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Current Draw (Amplifier and Digital Inputs)\relax }}{24}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces DAC Output at 0000\relax }}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces DAC Output at 0001\relax }}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces DAC Output at 1110\relax }}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces DAC Output at 1111\relax }}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Motor Controller Output of Subtractor Stage\relax }}{25}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Motor Controller Current Draw of Subtractor Stage\relax }}{25}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Motor Controller Output of Power Stage\relax }}{25}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Motor Voltage: Object Far, Speed 0000\relax }}{26}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Motor Voltage: Object Far, Speed 1111\relax }}{26}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Motor Voltage: Object Near, Speed 0000\relax }}{26}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Motor Voltage: Object Near, Speed 1111\relax }}{26}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Motor Voltage: Object 20cm, Speed 1111\relax }}{26}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Combined Circuit\relax }}{25}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Current Sensor Physical Circuit\relax }}{26}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Ultrasonics Sensor Amplifier Physical Circuit\relax }}{27}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Digital to Analog Converter Physical Circuit\relax }}{28}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Combined Circuit\relax }}{27}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Current Sensor Physical Circuit\relax }}{28}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ultrasonics Sensor Amplifier Physical Circuit\relax }}{29}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Digital to Analog Converter Physical Circuit\relax }}{30}{figure.caption.50}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
