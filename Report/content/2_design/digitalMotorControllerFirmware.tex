@@ -45,6 +45,6 @@ however $f_{PWM} = \SI{20}{kHz}$ is used to keep the switching frequency above h
 \subsubsection{Formula}
 
 The digital formula used should emulate the analog motor controller as closely as possible. The controller's range will therefore also be from 20 cm to 1 m
-and will saturate at "digital rails". Given $S$, the speed command from 0 to 1, and $R$, the range, the following formulae may be used:
-$C = \bar{R} - (1 - \bar{S})$ with $\bar{R} = \frac{R - R_{min}}{R_{max} - R_{min}}$ and $\bar{S} = \frac{S}{15}$. $C$ should be then be clamped between 0 and 1,
-and $duty = C \times controlResolution$.
+and will saturate at "digital rails". Given $S$, the 4-bit speed command, and $R$, the range, the following formulae may be used:
+$C = \bar{R} - (1 - \bar{S})$ with $\bar{R} = \frac{R - R_{min}}{R_{max} - R_{min}}$ and $\bar{S} = \frac{S}{15}$.
+Finally $duty = clamp(0, C, 1) \times controlResolution$. LEDC functions can then be used \cite{ledControl} to set this PWM appropriately.

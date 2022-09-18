@@ -196,4 +196,10 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
   \url{https://docs.rs-online.com/1c55/0900766b80d27f42.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{ledControl}
+\BIBentryALTinterwordspacing
+{Espressif}, ``Led control (ledc),'' 2016. [Online]. Available:
+  \url{https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/ledc.html}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

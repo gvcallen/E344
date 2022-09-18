@@ -1346,6 +1346,10 @@ INPUT content/2_design/digitalMotorControllerSwitch.tex
 INPUT ./content/2_design/digitalMotorControllerSwitch.tex
 INPUT ./content/2_design/digitalMotorControllerSwitch.tex
 INPUT content/2_design/digitalMotorControllerSwitch.tex
+INPUT ./content/2_design/figures//digitalMotorController_circuitDiagram.png
+INPUT content/2_design/figures//digitalMotorController_circuitDiagram.png
+INPUT ./content/2_design/figures//digitalMotorController_circuitDiagram.png
+INPUT ./content/2_design/figures//digitalMotorController_circuitDiagram.png
 INPUT ./content/3_results/3_results.tex
 INPUT ./content/3_results/3_results.tex
 INPUT ./content/3_results/3_results.tex
