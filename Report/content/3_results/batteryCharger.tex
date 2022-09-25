@@ -1,0 +1,61 @@
+\graphicspath{{content/3_results/figures}}
+\section{Battery Charger}
+
+\subsection{Simulated}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{batteryCharger_sim}
+  \caption{Batter Charger Final Voltage and Current}
+  \label{fig:batteryCharger_sim}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{batteryCharger_sim_regulation}
+  \caption{Battery Charger Internal Voltage Regulation vs Changing Load}
+  \label{fig:batteryCharger_sim_regulation}
+\end{figure}
+
+\pagebreak
+
+\subsection{Measured}
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.35\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{batteryChargerUnloaded}
+        \captionof{figure}{Battery Charger No-Load Voltage}
+        \label{fig:batteryChargerUnloaded}
+    \end{minipage}
+    \begin{minipage}{.4\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{batteryCharger1k}
+        \captionof{figure}{Battery Charger Voltage with \SI{1}{\kilo\ohm} Load}
+        \label{fig:batteryCharger1k}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.35\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{batteryCharger50ohm}
+        \captionof{figure}{Battery Charger Voltage with \SI{50}{\ohm} Load}
+        \label{fig:batteryCharger50ohm}
+    \end{minipage}    
+    \begin{minipage}{.35\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{batteryCharger15ohm}
+        \captionof{figure}{Battery Charger with \SI{15}{\ohm} Load (approx. uncharged battery)}
+        \label{fig:batteryCharger15ohm}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.4\textwidth]{batteryChargerRegulation}
+  \caption{Battery Charger Voltage Regulation under Changing Load}
+  \label{fig:batteryChargerRegulation}
+\end{figure}

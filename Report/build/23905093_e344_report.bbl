@@ -202,4 +202,51 @@ H.~Wallman, \emph{Transient response and the central limit thereom of
   \url{https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/ledc.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{leadAcidCharging}
+\BIBentryALTinterwordspacing
+{Battery University}, ``Bu 403: Charging lead acid,'' 2021. [Online].
+  Available:
+  \url{https://batteryuniversity.com/article/bu-403-charging-lead-acid}
+\BIBentrySTDinterwordspacing
+
+\bibitem{leadAcidCharging2}
+\BIBentryALTinterwordspacing
+{Power-Sonic}, ``How to charge a lead-acid battery,'' 2021. [Online].
+  Available:
+  \url{https://www.power-sonic.com/blog/how-to-charge-a-lead-acid-battery/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{datasheetBattery}
+\BIBentryALTinterwordspacing
+{RITAR}, ``Rt670.'' [Online]. Available:
+  \url{https://www.mantech.co.za/datasheets/products/RT670.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{datasheetIRF9Z24N}
+\BIBentryALTinterwordspacing
+{International Rectifier}, ``Irf9z24npbf: Hexfet power mosfet.'' [Online].
+  Available: \url{https://docs.rs-online.com/519d/0900766b8079172c.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{datasheet2N7000}
+\BIBentryALTinterwordspacing
+{Fairchild Semiconductor}, ``N-channel enhancement mode field effect
+  transistor.'' [Online]. Available:
+  \url{https://docs.rs-online.com/591b/0900766b8145d5d8.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{datasheet1N5819}
+\BIBentryALTinterwordspacing
+{STMicroelectronics}, ``1n5817, 1n5818, 1n5819 low drop power schottky
+  rectifier.'' [Online]. Available:
+  \url{https://www.st.com/content/ccc/resource/technical/document/datasheet/26/db/14/60/52/47/47/5b/CD00001625.pdf/files/CD00001625.pdf/jcr:content/translations/en.CD00001625.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{datasheetLM317}
+\BIBentryALTinterwordspacing
+------, ``Lm217, lm317: 1.2 v to 37 v adjustable voltage regulators.''
+  [Online]. Available:
+  \url{https://docs.rs-online.com/0054/0900766b813862fa.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

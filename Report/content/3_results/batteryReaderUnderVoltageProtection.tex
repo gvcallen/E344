@@ -1,0 +1,58 @@
+\graphicspath{{content/3_results/figures}}
+\section{Battery Reader and Under-Voltage Protection}
+
+\subsection{Simulated}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{batteryReader_sim}
+  \caption{Battery Reader Output vs 5.0 to 7.2 V Input}
+  \label{fig:batteryReader_sim}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{underVoltage_sim}
+  \caption{Under-Voltage Scmitt Trigger Output vs Sine Wave Input}
+  \label{fig:underVoltage_sim}
+\end{figure}
+
+\pagebreak
+\subsection{Measured}
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.45\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{batteryReader72}
+        \captionof{figure}{Battery Reader at \SI{7.2}{V}}
+        \label{fig:batteryReader72}
+    \end{minipage}
+    \begin{minipage}{.45\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{batteryReader59}
+        \captionof{figure}{Battery Reader at \SI{5.9}{V}}
+        \label{fig:batteryReader59}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.6\textwidth]{batteryReaderUnderVoltage59}
+  \caption{Battery Reader at \SI{5.9}{V} with Under-Voltage Protection Battery Voltage}
+  \label{fig:batteryReaderUnderVoltage59}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.4\textwidth]{underVoltageInputOutput}
+  \caption{Under-Voltage Protection Output of Schmitt Trigger}
+  \label{fig:underVoltageInputOutput}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.4\textwidth]{underVoltageInputTransistorOutput}
+  \caption{Under-Voltage Protection Output of Battery Voltage}
+  \label{fig:underVoltageInputTransistorOutput}
+\end{figure}

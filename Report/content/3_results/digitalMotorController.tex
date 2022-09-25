@@ -1,0 +1,70 @@
+\graphicspath{{content/3_results/figures}}
+\section{Digital Motor Controller}
+
+\subsection{Simulated}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{digitalMotorController_sim_controlVersusOutput}
+  \caption{Motor Output Voltage vs Motor Control}
+  \label{fig:digitalMotorController_sim_controlVersusOutput}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{digitalMotorController_sim_currentVsSensor}
+  \caption{Motor Current vs Current Sensor Output}
+  \label{fig:digitalMotorController_sim_currentVsSensor}
+\end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.7\textwidth]{digitalMotorController_sim_mosfetTurnOn}
+    \caption{MOSFET Turn On Time vs Motor Control}
+    \label{fig:digitalMotorController_sim_mosfetTurnOn}
+\end{figure}
+
+\pagebreak
+
+\subsection{Measured}
+
+The following figures display the current sensor and PWM control output for different combinations of DAC and range sensor conditions.
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.45\textwidth}
+        \centering
+        \includegraphics[width=0.5\linewidth]{digitalMotorController_far_1111}
+        \captionof{figure}{Object Far, DAC 1111}
+        \label{fig:digitalMotorController_far_1111}
+    \end{minipage}
+    \begin{minipage}{.45\textwidth}
+        \centering
+        \includegraphics[width=0.5\linewidth]{digitalMotorController_far_0000}
+        \captionof{figure}{Object Far, DAC 0000}
+        \label{fig:digitalMotorController_far_0000}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.45\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{digitalMotorController_near_1111}
+        \captionof{figure}{Object Near, DAC 1111}
+        \label{fig:digitalMotorController_near_1111}
+    \end{minipage}
+    \begin{minipage}{.45\textwidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{digitalMotorController_near_0000}
+        \captionof{figure}{Object Near, DAC 0000}
+        \label{fig:digitalMotorController_near_0000}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.25\textwidth]{digitalMotorController_50cm_1111}
+  \caption{Object 50cm, DAC 1111}
+  \label{fig:digitalMotorController_50cm_1111}
+\end{figure}

@@ -27,7 +27,7 @@
 
 \subsection{Range Measurement}
 
-As visible in the above flow diagram, range will be calculated by measuring the time that the echo pin is high. An interrupt will be used to detect when
+As visible in Figure \ref{fig:digitalMotorController_flowChart_interrupt}, range will be calculated by measuring the time that the echo pin is high. An interrupt will be used to detect when
 the echo output changes from low to high, and vice versa. Then, this time will be divided by two and multiplied by the speed of sound to determine
 the range of the object. Since the time distance will be in microseconds, the following formula may be used: $D = \frac{t_{us}}{2} \times \SI{343}{m \cdot s^{-1}} \times 10^{-6}$.
 
