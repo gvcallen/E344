@@ -1,0 +1,12 @@
+/home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Code/timothy-pc/target/debug/deps/serialport-af9360a9f344df5d.rmeta: /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/lib.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/mod.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/enumerate.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/error.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/ioctl.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/poll.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/termios.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/tty.rs
+
+/home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Code/timothy-pc/target/debug/deps/serialport-af9360a9f344df5d.d: /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/lib.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/mod.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/enumerate.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/error.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/ioctl.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/poll.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/termios.rs /home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/tty.rs
+
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/lib.rs:
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/mod.rs:
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/enumerate.rs:
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/error.rs:
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/ioctl.rs:
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/poll.rs:
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/termios.rs:
+/home/gary/.cargo/registry/src/github.com-1ecc6299db9ec823/serialport-4.2.0/src/posix/tty.rs:

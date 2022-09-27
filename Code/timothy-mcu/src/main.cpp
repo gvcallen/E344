@@ -1,6 +1,6 @@
 #include <Arduino.h>
-#include <BluetoothSerial.h>
 
+#include "BluetoothServer.hpp"
 #include "RangeSensor.hpp"
 #include "Wheel.hpp"
 
@@ -32,27 +32,28 @@ constexpr uint8_t WHEEL_LEFT_CONTROL_RES = 11;
 RangeSensor rightRangeSensor, leftRangeSensor;
 DigitalWheel leftWheel;
 AnalogWheel rightWheel;
-BluetoothSerial bluetooth;
+BluetoothServer bluetooth;
 
 void setup()
 {
-    // Begin serial
+    // Begin serial and bluetooth
     Serial.begin(115200);
+    bluetooth.begin("Timothy ō͡≡o˞̶");
 
     // Begin range sensors
-    rightRangeSensor.begin(RANGE_SENSOR_RIGHT_TRIGGER_PIN, RANGE_SENSOR_RIGHT_TRIGGER_CHANNEL, RANGE_SENSOR_RIGHT_ECHO_PIN);
+    rightRangeSensor.begin(RANGE_SENSOR_RIGHT_TRIGGER_PIN, RANGE_SENSOR_RIGHT_TRIGGER_CHANNEL,
+                           RANGE_SENSOR_RIGHT_ECHO_PIN);
     leftRangeSensor.begin(RANGE_SENSOR_LEFT_TRIGGER_PIN, RANGE_SENSOR_LEFT_TRIGGER_CHANNEL, RANGE_SENSOR_LEFT_ECHO_PIN);
 
     // Begin wheels
-    leftWheel.begin(WHEEL_LEFT_CONTROL_PIN, WHEEL_LEFT_CONTROL_CHANNEL, WHEEL_LEFT_CONTROL_FREQ, WHEEL_LEFT_CONTROL_RES);
-    rightWheel.begin(WHEEL_RIGHT_CONTROL_B0_PIN, WHEEL_RIGHT_CONTROL_B1_PIN, WHEEL_RIGHT_CONTROL_B2_PIN, WHEEL_RIGHT_CONTROL_B3_PIN);
-
-    // Begin bluetooth
-    bluetooth.begin("Timothy ō͡≡o˞̶");
+    leftWheel.begin(WHEEL_LEFT_CONTROL_PIN, WHEEL_LEFT_CONTROL_CHANNEL, WHEEL_LEFT_CONTROL_FREQ,
+                    WHEEL_LEFT_CONTROL_RES);
+    rightWheel.begin(WHEEL_RIGHT_CONTROL_B0_PIN, WHEEL_RIGHT_CONTROL_B1_PIN, WHEEL_RIGHT_CONTROL_B2_PIN,
+                     WHEEL_RIGHT_CONTROL_B3_PIN);
 }
 
 void loop()
-{    
+{
     float distance = rightRangeSensor.getDistance();
     float leftWheelSpeed = 1.0f;
 
@@ -62,4 +63,17 @@ void loop()
 
     leftWheel.setSpeed(0.0f);
     rightWheel.setSpeed(0.0f);
+
+    uint8_t buffer[20];
+
+    if (Serial.available())
+    {
+        Serial.read(buffer, 10);
+        if (buffer[0] == 'h' && buffer[1] == 'e')
+        {
+            Serial.write((const char *)buffer);
+            buffer[0] = 'n';
+        }
+        // Serial.write("message 2");
+    }
 }
