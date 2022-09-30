@@ -40,7 +40,7 @@
             },
             "args": [
                 "start",
-                "bt",
+                "usb",
             ],
             "cwd": "${workspaceFolder}"
         },

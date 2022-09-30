@@ -1,8 +1,5 @@
-use std::{
-    env,
-    error::Error,
-    io::{stdin, stdout, Read, Write},
-};
+use std::{env, error::Error, io::stdin, time::Duration};
+use tokio::time;
 
 use simple_error::{bail, simple_error};
 
@@ -56,57 +53,73 @@ fn print_help_interactive() {
     println!("{}", HELP_INTERACTIVE);
 }
 
-async fn run(mut timothy: Timothy) -> Result<(), Box<dyn Error>> {
-    print_help_interactive();
-
+async fn run(timothy: &mut Timothy) -> Result<(), Box<dyn Error>> {
     let mut buffer = String::new();
-    loop {
-        buffer.clear();
 
-        stdin().read_line(&mut buffer)?;
-        let args: Vec<_> = buffer.split_ascii_whitespace().collect();
+    // Clear the buffer and read in all words into an array
+    stdin().read_line(&mut buffer)?;
+    let args: Vec<_> = buffer.split_ascii_whitespace().collect();
 
-        if args.len() < 1 {
-            continue;
+    if args.len() < 1 {
+        return Ok(());
+    }
+
+    // Parse any "combination" messages, which are not part of the protocol but translate to multiple protocol messages
+    let combination_message = match args[0] {
+        "go" => Some(vec![Message::SetLWSpeed(15), Message::SetRWSpeed(15)]),
+        "stop" => Some(vec![Message::SetLWSpeed(0), Message::SetRWSpeed(0)]),
+        "left" => Some(vec![Message::SetLWSpeed(0), Message::SetRWSpeed(15)]),
+        "right" => Some(vec![Message::SetLWSpeed(15), Message::SetRWSpeed(0)]),
+        _ => None,
+    };
+
+    // Send any potential combination message
+    if let Some(messages) = combination_message {
+        for m in messages {
+            let _ = &mut timothy.send_message(&m).await.unwrap();
         }
+        return Ok(());
+    }
 
-        let combination_message = match args[0] {
-            "go" => Some(vec![Message::SetLWSpeed(15), Message::SetRWSpeed(15)]),
-            "stop" => Some(vec![Message::SetLWSpeed(0), Message::SetRWSpeed(0)]),
-            "left" => Some(vec![Message::SetLWSpeed(0), Message::SetRWSpeed(15)]),
-            "right" => Some(vec![Message::SetLWSpeed(15), Message::SetRWSpeed(0)]),
-            _ => None,
-        };
+    // Parse any "commands"
+    let request = match args[0] {
+        "help" => {
+            print_help_interactive();
+            return Ok(());
+        }
+        "exit" => return Ok(()),
+        "set" => Message::parse_set(&args[1..]),
+        "get" => Message::parse_get(&args[1..]),
+        _ => Err(simple_error!("Invalid command").into()),
+    };
 
-        if let Some(messages) = combination_message {
-            for m in messages {
-                timothy.send_message(m).await.unwrap();
+    // Send any protocol messages
+    match request {
+        Ok(request) => {
+            if let Message::GetAll(_) = request {
+                loop {
+                    println!("{}", timothy.get_all().await.unwrap());
+                    println!("\n");
+                    time::sleep(Duration::from_secs(1)).await;
+                }
+            } else if let Ok(_) = request.len_response() {
+                println!(
+                    "{}",
+                    timothy.send_receive(&request).await.unwrap().to_string()
+                );
+            } else {
+                timothy.send_message(&request).await.unwrap();
             }
-            continue;
+            Ok(())
         }
-
-        let message = match args[0] {
-            "help" => {
-                print_help_interactive();
-                continue;
-            }
-            "exit" => return Ok(()),
-            "set" => Message::parse_set(&args[1..]),
-            "get" => Message::parse_get(&args[1..]),
-            _ => Err(simple_error!("Invalid command").into()),
-        };
-
-        match message {
-            Ok(message) => timothy.send_message(message).await.unwrap(),
-            Err(e) => println!("{}", e.to_string()),
-        }
+        Err(e) => Err(e),
     }
 }
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
+    // Collect environment variables and display help if necessary
     let args: Vec<_> = env::args().collect();
-
     if args.len() == 1 || (args.len() == 2 && args[1] == "help") {
         print_help_start();
         return Ok(());
@@ -116,7 +129,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
         bail!("Not enough arguments");
     }
 
-    let timothy = {
+    // Parse any "start" command e.g. to connect to Timothy
+    let mut timothy = {
         if args[1] == "start" {
             match args[2].as_str() {
                 "bt" => {
@@ -136,5 +150,12 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     println!("Connected!");
 
-    run(timothy).await
+    print_help_interactive();
+    loop {
+        let result = run(&mut timothy).await;
+
+        if let Err(e) = result {
+            println!("{}", e);
+        }
+    }
 }

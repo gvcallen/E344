@@ -5,6 +5,8 @@ constexpr uint8_t MESSAGE_GET_RIGHT_WHEEL_CURRENT_ID = 2;
 constexpr uint8_t MESSAGE_GET_LEFT_SENSOR_RANGE_ID = 3;
 constexpr uint8_t MESSAGE_GET_RIGHT_SENSOR_RANGE_ID = 4;
 constexpr uint8_t MESSAGE_GET_BATTERY_VOLTAGE_ID = 5;
+constexpr uint8_t MESSAGE_GET_LEFT_WHEEL_SPEED_ID = 6;
+constexpr uint8_t MESSAGE_GET_RIGHT_WHEEL_SPEED_ID = 7;
 constexpr uint8_t MESSAGE_GET_ALL_ID = 0;
 constexpr uint8_t MESSAGE_SET_LEFT_WHEEL_SPEED_ID = 100;
 constexpr uint8_t MESSAGE_SET_RIGHT_WHEEL_SPEED_ID = 101;
@@ -15,18 +17,23 @@ constexpr uint8_t MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_REQUEST = 1;
 constexpr uint8_t MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_REQUEST = 1;
 constexpr uint8_t MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_REQUEST = 1;
 constexpr uint8_t MESSAGE_GET_ALL_LENGTH_REQUEST = 1;
+constexpr uint8_t MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_REQUEST = 1;
+constexpr uint8_t MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST = 1;
 constexpr uint8_t MESSAGE_SET_LEFT_WHEEL_SPEED_LENGTH_REQUEST = 2;
 constexpr uint8_t MESSAGE_SET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST = 2;
 
-constexpr uint8_t MESSAGE_GET_LEFT_WHEEL_CURRENT_LENGTH_RESPONSE = 2;
-constexpr uint8_t MESSAGE_GET_RIGHT_WHEEL_CURRENT_LENGTH_RESPONSE = 2;
-constexpr uint8_t MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE = 2;
-constexpr uint8_t MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_RESPONSE = 2;
-constexpr uint8_t MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE = 2;
+constexpr uint8_t MESSAGE_GET_LEFT_WHEEL_CURRENT_LENGTH_RESPONSE = 5;
+constexpr uint8_t MESSAGE_GET_RIGHT_WHEEL_CURRENT_LENGTH_RESPONSE = 5;
+constexpr uint8_t MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE = 5;
+constexpr uint8_t MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_RESPONSE = 5;
+constexpr uint8_t MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE = 5;
+constexpr uint8_t MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_RESPONSE = 2;
+constexpr uint8_t MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_RESPONSE = 2;
 constexpr uint8_t MESSAGE_GET_ALL_LENGTH_RESPONSE =
     1 + MESSAGE_GET_LEFT_WHEEL_CURRENT_LENGTH_RESPONSE + MESSAGE_GET_RIGHT_WHEEL_CURRENT_LENGTH_RESPONSE +
     MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE + MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_RESPONSE +
-    MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE;
+    MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE + MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_RESPONSE +
+    MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_RESPONSE;
 
 uint8_t Message::getRequestLength(uint8_t messageId)
 {
@@ -50,6 +57,12 @@ uint8_t Message::getRequestLength(uint8_t messageId)
     case MESSAGE_GET_BATTERY_VOLTAGE_ID:
         return MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_REQUEST;
 
+    case MESSAGE_GET_LEFT_WHEEL_SPEED_ID:
+        return MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_REQUEST;
+
+    case MESSAGE_GET_RIGHT_WHEEL_SPEED_ID:
+        return MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST;
+
     case MESSAGE_SET_LEFT_WHEEL_SPEED_ID:
         return MESSAGE_SET_LEFT_WHEEL_SPEED_LENGTH_REQUEST;
 
@@ -70,33 +83,67 @@ bool Message::parse(uint8_t *buffer, Message &message)
     case MESSAGE_SET_LEFT_WHEEL_SPEED_ID:
         message.type = Message::Type::SetLWSpeed;
         message.data.speed = buffer[1] / 15.0f;
-        return true;
+        break;
     case MESSAGE_SET_RIGHT_WHEEL_SPEED_ID:
         message.type = Message::Type::SetRWSpeed;
         message.data.speed = buffer[1] / 15.0f;
-        return true;
+        break;
     case MESSAGE_GET_ALL_ID:
+        message.type = Message::Type::GetAll;
+        break;
     case MESSAGE_GET_LEFT_WHEEL_CURRENT_ID:
+        message.type = Message::Type::GetLWCurrent;
+        break;
     case MESSAGE_GET_RIGHT_WHEEL_CURRENT_ID:
+        message.type = Message::Type::GetRWCurrent;
+        break;
+    case MESSAGE_GET_LEFT_WHEEL_SPEED_ID:
+        message.type = Message::Type::GetLWSpeed;
+        break;
+    case MESSAGE_GET_RIGHT_WHEEL_SPEED_ID:
+        message.type = Message::Type::GetRWSpeed;
+        break;
     case MESSAGE_GET_LEFT_SENSOR_RANGE_ID:
+        message.type = Message::Type::GetLSRange;
+        break;
     case MESSAGE_GET_RIGHT_SENSOR_RANGE_ID:
+        message.type = Message::Type::GetRSRange;
+        break;
     case MESSAGE_GET_BATTERY_VOLTAGE_ID:
-        return true;
+        message.type = Message::Type::GetBatteryVoltage;
+        break;
     default:
         return false;
     }
 
-    return false;
-}
-
-// TODO
-uint8_t floatToFixedPoint(float value)
-{
-    uint8_t integerPart = (uint8_t)value;
-    return 0;
+    return true;
 }
 
 uint8_t Message::serialize(uint8_t *buffer)
 {
+    switch (this->type)
+    {
+    case Type::Undefined:
+    case Type::SetLWSpeed:
+    case Type::SetRWSpeed:
+        return 0;
+    case Type::GetAll:
+        return 0;
+    case Type::GetLWCurrent:
+    case Type::GetRWCurrent:
+    case Type::GetLSRange:
+    case Type::GetRSRange:
+    case Type::GetBatteryVoltage:
+        buffer[0] = this->id;
+        memcpy(&buffer[1], &this->data, sizeof(float));
+        return 1 + sizeof(float);
+
+    case Type::GetLWSpeed:
+    case Type::GetRWSpeed:
+        buffer[0] = this->id;
+        buffer[1] = (uint8_t)(this->data.speed * 15.0f);
+        return 2;
+    }
+
     return 0;
 }

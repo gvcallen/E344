@@ -33,7 +33,6 @@ int BluetoothServer::begin(std::string_view name)
     // Start service and advertising
     service->start();
     BLEAdvertising *advertising = server->getAdvertising();
-    // advertising->addServiceUUID(BLUETOOTH_SERVICE_UUID);
     advertising->start();
 
     dataReceived = false;
@@ -57,6 +56,8 @@ void BluetoothServer::onDisconnect(BLEServer *server)
 void BluetoothServer::onWrite(BLECharacteristic *characteristic)
 {
     dataReceived = true;
+
+    auto data = characteristic->getData();
 }
 
 int BluetoothServer::send(uint8_t *buffer, size_t size)

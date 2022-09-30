@@ -7,8 +7,8 @@ use futures::{Stream, StreamExt};
 use std::collections::BTreeSet;
 use std::error::Error;
 use std::pin::Pin;
-use std::thread;
 use std::time::Duration;
+use std::{result, thread};
 use tokio::time;
 use uuid::{uuid, Uuid};
 

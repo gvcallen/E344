@@ -1,6 +1,5 @@
-use std::{error::Error, mem::swap};
+use std::{error::Error, fmt::Display};
 
-use fixed::{types::extra::U4, FixedU8};
 use simple_error::bail;
 
 // Message IDs
@@ -21,18 +20,18 @@ const MESSAGE_GET_RIGHT_WHEEL_CURRENT_LENGTH_REQUEST: u8 = 1;
 const MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_REQUEST: u8 = 1;
 const MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_REQUEST: u8 = 1;
 const MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_REQUEST: u8 = 1;
+const MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_REQUEST: u8 = 1;
+const MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST: u8 = 1;
 const MESSAGE_GET_ALL_LENGTH_REQUEST: u8 = 1;
 const MESSAGE_SET_LEFT_WHEEL_SPEED_LENGTH_REQUEST: u8 = 2;
 const MESSAGE_SET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST: u8 = 2;
-const MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_REQUEST: u8 = 1;
-const MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST: u8 = 1;
 
 // Response message lengths
-const MESSAGE_GET_LEFT_WHEEL_CURRENT_LENGTH_RESPONSE: u8 = 2;
-const MESSAGE_GET_RIGHT_WHEEL_CURRENT_LENGTH_RESPONSE: u8 = 2;
-const MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE: u8 = 2;
-const MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_RESPONSE: u8 = 2;
-const MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE: u8 = 2;
+const MESSAGE_GET_LEFT_WHEEL_CURRENT_LENGTH_RESPONSE: u8 = 5;
+const MESSAGE_GET_RIGHT_WHEEL_CURRENT_LENGTH_RESPONSE: u8 = 5;
+const MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE: u8 = 5;
+const MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_RESPONSE: u8 = 5;
+const MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE: u8 = 5;
 const MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_RESPONSE: u8 = 2;
 const MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_RESPONSE: u8 = 2;
 const MESSAGE_GET_ALL_LENGTH_RESPONSE: u8 = 1                               // "ALL" message response length (MUST be updated each time a response is added above)
@@ -62,10 +61,12 @@ impl Message {
         match *self {
             Self::GetAll(None) => MESSAGE_GET_ALL_LENGTH_REQUEST,
             Self::GetLWCurrent(None) => MESSAGE_GET_LEFT_WHEEL_CURRENT_LENGTH_REQUEST,
-            Self::GetRWCurrent(None) => MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_REQUEST,
+            Self::GetRWCurrent(None) => MESSAGE_GET_RIGHT_WHEEL_CURRENT_LENGTH_REQUEST,
             Self::GetLSRange(None) => MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_REQUEST,
             Self::GetRSRange(None) => MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_REQUEST,
             Self::GetBatteryVoltage(None) => MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_REQUEST,
+            Self::GetLWSpeed(None) => MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_REQUEST,
+            Self::GetRWSpeed(None) => MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST,
             Self::SetLWSpeed(_) => MESSAGE_SET_LEFT_WHEEL_SPEED_LENGTH_REQUEST,
             Self::SetRWSpeed(_) => MESSAGE_SET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST,
 
@@ -75,8 +76,8 @@ impl Message {
             Self::GetLSRange(Some(_)) => MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE,
             Self::GetRSRange(Some(_)) => MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_RESPONSE,
             Self::GetBatteryVoltage(Some(_)) => MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE,
-            Self::GetLWSpeed(_) => MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_REQUEST,
-            Self::GetRWSpeed(_) => MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_REQUEST,
+            Self::GetLWSpeed(Some(_)) => MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_RESPONSE,
+            Self::GetRWSpeed(Some(_)) => MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_RESPONSE,
         }
     }
 
@@ -85,6 +86,8 @@ impl Message {
             Self::GetAll(None) => Ok(MESSAGE_GET_ALL_LENGTH_RESPONSE),
             Self::GetLWCurrent(None) => Ok(MESSAGE_GET_LEFT_WHEEL_CURRENT_LENGTH_RESPONSE),
             Self::GetRWCurrent(None) => Ok(MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE),
+            Self::GetLWSpeed(None) => Ok(MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_RESPONSE),
+            Self::GetRWSpeed(None) => Ok(MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_RESPONSE),
             Self::GetLSRange(None) => Ok(MESSAGE_GET_LEFT_SENSOR_RANGE_LENGTH_RESPONSE),
             Self::GetRSRange(None) => Ok(MESSAGE_GET_RIGHT_SENSOR_RANGE_LENGTH_RESPONSE),
             Self::GetBatteryVoltage(None) => Ok(MESSAGE_GET_BATTERY_VOLTAGE_LENGTH_RESPONSE),
@@ -99,6 +102,7 @@ impl Message {
         }
 
         match args[0] {
+            "all" => Ok(Self::GetAll(None)),
             "lwc" => Ok(Self::GetLWCurrent(None)),
             "rwc" => Ok(Self::GetRWCurrent(None)),
             "lsr" => Ok(Self::GetLSRange(None)),
@@ -141,14 +145,35 @@ impl Message {
             bail!("Incompatible message");
         }
 
-        let number = FixedU8::<U4>::from_bits(buffer[1]).into();
-
+        // We use "big endian" because the byte array contains the MSB at the lowest index
         let number = match buffer[0] {
-            MESSAGE_GET_LEFT_WHEEL_CURRENT_ID => Self::GetLWCurrent(Some(number)),
-            MESSAGE_GET_RIGHT_WHEEL_CURRENT_ID => Self::GetRWCurrent(Some(number)),
-            MESSAGE_GET_LEFT_SENSOR_RANGE_ID => Self::GetLWCurrent(Some(number)),
-            MESSAGE_GET_RIGHT_SENSOR_RANGE_ID => Self::GetLWCurrent(Some(number)),
-            MESSAGE_GET_BATTERY_VOLTAGE_ID => Self::GetLWCurrent(Some(number)),
+            MESSAGE_GET_ALL_ID => {
+                let mut values = Vec::<Message>::new();
+                let mut index = 1;
+                let buffer_length = buffer.len() as u8;
+
+                while index < buffer_length {
+                    values.push(Self::deserialize(&buffer[index as usize..])?);
+                    index = index + values.last().unwrap().len();
+                }
+
+                Self::GetAll(Some(values))
+            }
+            MESSAGE_GET_LEFT_WHEEL_CURRENT_ID => {
+                Self::GetLWCurrent(Some(f32::from_le_bytes(buffer[1..5].try_into()?)))
+            }
+            MESSAGE_GET_RIGHT_WHEEL_CURRENT_ID => {
+                Self::GetRWCurrent(Some(f32::from_le_bytes(buffer[1..5].try_into()?)))
+            }
+            MESSAGE_GET_LEFT_SENSOR_RANGE_ID => {
+                Self::GetLSRange(Some(f32::from_le_bytes(buffer[1..5].try_into()?)))
+            }
+            MESSAGE_GET_RIGHT_SENSOR_RANGE_ID => {
+                Self::GetRSRange(Some(f32::from_le_bytes(buffer[1..5].try_into()?)))
+            }
+            MESSAGE_GET_BATTERY_VOLTAGE_ID => {
+                Self::GetBatteryVoltage(Some(f32::from_le_bytes(buffer[1..5].try_into()?)))
+            }
             MESSAGE_GET_LEFT_WHEEL_SPEED_ID => Self::GetLWSpeed(Some(buffer[1])),
             MESSAGE_GET_RIGHT_WHEEL_SPEED_ID => Self::GetRWSpeed(Some(buffer[1])),
             _ => bail!("Invalid message ID received from server"),
@@ -198,5 +223,52 @@ impl Message {
         }
 
         Ok(self.len())
+    }
+}
+
+impl Display for Message {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match *self {
+            Self::GetLWCurrent(current) => write!(
+                f,
+                "Left wheel current:\t{:3.2} mA",
+                current.ok_or(std::fmt::Error)?
+            ),
+            Self::GetRWCurrent(current) => write!(
+                f,
+                "Right wheel current:\t{:3.2} mA",
+                current.ok_or(std::fmt::Error)?
+            ),
+            Self::GetLSRange(range) => {
+                let range = range.ok_or(std::fmt::Error)?;
+                if range > 1.0 {
+                    write!(f, "Left sensor range:\t> {} m", 1.0)
+                } else {
+                    write!(f, "Left sensor range:\t{} m", range)
+                }
+            }
+            Self::GetRSRange(range) => {
+                let range = range.ok_or(std::fmt::Error)?;
+                if range > 1.0 {
+                    write!(f, "Range sensor range:\t> {} m", 1.0)
+                } else {
+                    write!(f, "Range sensor range:\t{} m", range)
+                }
+            }
+            Self::GetBatteryVoltage(voltage) => {
+                write!(
+                    f,
+                    "Battery voltage:\t{:.2} V",
+                    voltage.ok_or(std::fmt::Error)?
+                )
+            }
+            Self::GetLWSpeed(speed) => {
+                write!(f, "Left wheel speed:\t{}", speed.ok_or(std::fmt::Error)?)
+            }
+            Self::GetRWSpeed(speed) => {
+                write!(f, "Right wheel speed:\t{}", speed.ok_or(std::fmt::Error)?)
+            }
+            _ => Err(std::fmt::Error),
+        }
     }
 }

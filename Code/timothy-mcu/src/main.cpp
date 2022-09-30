@@ -83,7 +83,7 @@ float getLeftWheelCurrent()
     int adcVal = analogRead(WHEEL_LEFT_CURRENT_PIN);
     float current = 0.08294f * adcVal + 2.529f;
 
-    if (current < 5.0f)
+    if (current < 90.0f)
         current = 0.0f;
 
     return current;
@@ -95,7 +95,7 @@ float getRightWheelCurrent()
 
     float current = 0.07361f * adcVal + 75.69f;
 
-    if (current < 80.0f)
+    if (current < 90.0f)
         current = 0.0f;
 
     return current;
@@ -152,6 +152,8 @@ Message createResponse(Message &request)
     // Act on the parsed message and create a response
     Message response;
     response.type = request.type;
+    response.id = request.id;
+
     switch (request.type)
     {
     case Message::Type::GetBatteryVoltage:
@@ -183,8 +185,8 @@ Message createResponse(Message &request)
         rightWheel.setSpeedCommand(request.data.speed);
         response.type = Message::Type::Undefined;
         break;
-        return response;
     }
+    return response;
 }
 
 // Returns length of response. 0 if there is no response or if the request passed in was 0
@@ -208,22 +210,21 @@ uint8_t processMessage(uint8_t *buffer)
 void loop()
 {
     uint8_t messageBuffer[20];
-    uint8_t responseLength = 0;
 
     // Receive serial messages
     if (receiveSerial(messageBuffer))
     {
-        responseLength = processMessage(messageBuffer);
+        uint8_t responseLength = processMessage(messageBuffer);
         if (responseLength > 0)
         {
             sendSerial(messageBuffer, responseLength);
         }
     }
 
-    // Receeive bluetooth messages
+    // Receive bluetooth messages
     if (receiveBluetooth(messageBuffer))
     {
-        responseLength = processMessage(messageBuffer);
+        uint8_t responseLength = processMessage(messageBuffer);
         if (responseLength > 0)
         {
             sendBluetooth(messageBuffer, responseLength);
