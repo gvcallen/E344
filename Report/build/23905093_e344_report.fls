@@ -1,7 +1,7 @@
-PWD /home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Report
+PWD /home/gary/Documents/_University/_2022/Second-Semester/E-Design/Repo/Report
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Report/23905093_e344_report.tex
+INPUT /home/gary/Documents/_University/_2022/Second-Semester/E-Design/Repo/Report/23905093_e344_report.tex
 OUTPUT build/23905093_e344_report.log
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls
@@ -1394,6 +1394,13 @@ INPUT ./content/2_design/figures//underVoltageProtection_circuitDiagram.png
 INPUT content/2_design/figures//underVoltageProtection_circuitDiagram.png
 INPUT ./content/2_design/figures//underVoltageProtection_circuitDiagram.png
 INPUT ./content/2_design/figures//underVoltageProtection_circuitDiagram.png
+INPUT ./content/2_design/serialCommunication.tex
+INPUT ./content/2_design/serialCommunication.tex
+INPUT ./content/2_design/serialCommunication.tex
+INPUT content/2_design/serialCommunication.tex
+INPUT ./content/2_design/serialCommunication.tex
+INPUT ./content/2_design/serialCommunication.tex
+INPUT content/2_design/serialCommunication.tex
 INPUT ./content/3_results/3_results.tex
 INPUT ./content/3_results/3_results.tex
 INPUT ./content/3_results/3_results.tex

@@ -8,7 +8,6 @@ pub fn connect_by_product(product: &str) -> Option<Box<dyn SerialPort>> {
     for port in ports {
         if let SerialPortType::UsbPort(info) = port.port_type {
             if let Some(product_candidate) = info.product {
-                println!("{}", product_candidate);
                 if product_candidate == product {
                     port_name = Some(port.port_name);
                     break;

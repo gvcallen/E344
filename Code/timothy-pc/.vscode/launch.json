@@ -38,7 +38,10 @@
                     "kind": "bin"
                 }
             },
-            "args": [],
+            "args": [
+                "start",
+                "bt",
+            ],
             "cwd": "${workspaceFolder}"
         },
         {

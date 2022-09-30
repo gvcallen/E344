@@ -1,7 +1,22 @@
 #include <Arduino.h>
 
-#include "Wheel.hpp"
 #include "Error.hpp"
+#include "Wheel.hpp"
+
+// with battery voltage 7.30:
+// 15: 5.81
+// 14: 5.65
+// 13: 5.27
+// 12: 4.90
+// 5: 2.3
+// 4: 1.94
+// 3: 1.56
+// 2: 1.19
+// 1: 0.82
+// 0: 0.43
+// equation:  y = 0.44358 * DAC + 0.3716
+
+#define BATTERY_MAX 7.28
 
 int DigitalWheel::begin(uint8_t pwmPin, uint8_t pwmChannel, uint32_t pwmFreq, uint8_t pwmRes)
 {
@@ -15,12 +30,19 @@ int DigitalWheel::begin(uint8_t pwmPin, uint8_t pwmChannel, uint32_t pwmFreq, ui
     return ERROR_NONE;
 }
 
-int DigitalWheel::setSpeed(float normalizedSpeed)
+int DigitalWheel::setSpeed(float speed, float batteryVoltage)
 {
-    normalizedSpeed *= 0.88f;
-    
-    uint32_t dutyCycle = normalizedSpeed * (1 << pwmRes);
-    ledcWrite(pwmChannel, dutyCycle);
+    // Convert the speed command to the voltage of the analog wheel at that speed
+    float analogVoltage = (0.3716f * speed * 15.0f) + 0.44358f;
+
+    // "Saturate" the command at the rail
+    analogVoltage = min(analogVoltage, batteryVoltage);
+
+    float dutyCycle = analogVoltage / batteryVoltage;
+
+    uint32_t dutyCycleTicks = dutyCycle * ((1 << pwmRes) - 1);
+
+    ledcWrite(pwmChannel, dutyCycleTicks);
 
     return ERROR_NONE;
 }

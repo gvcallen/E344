@@ -59,7 +59,7 @@ impl BluetoothUART {
         let rx_char = self.characteristics.iter().nth(self.rx_char).unwrap();
 
         self.peripheral
-            .write(rx_char, bytes, WriteType::WithoutResponse)
+            .write(rx_char, &bytes, WriteType::WithoutResponse)
             .await
     }
 
@@ -71,7 +71,7 @@ impl BluetoothUART {
         let data = &stream.value;
 
         // Only write up until the length of the buffer
-        let length = bytes.len();
+        let length = bytes.len().min(data.len());
         bytes[..length].copy_from_slice(&data[..length]);
 
         // Return the number of bytes received from the stream
@@ -102,7 +102,10 @@ pub async fn connect_by_name(name: &str) -> Option<Peripheral> {
 
     match result {
         Ok(_) => Some(peripheral),
-        Err(_) => None,
+        Err(e) => {
+            println!("{}", e.to_string());
+            None
+        }
     }
 }
 

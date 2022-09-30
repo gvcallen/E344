@@ -1,0 +1,48 @@
+\graphicspath{{content/2_design/figures/}}
+\section{Serial Communication}
+
+A serial communication protocol and procedure will be implemented that will allow control of the car, as well as telemetry readings.
+The protocol will be implemented both over UART and Bluetooth to allow both USB and wireless control. The protocol will set out
+the rules for communication for a "client" and a "server", including the types of messages and the format of the data.
+The MCU and PC will then implement this protocol as server and client respectively.
+
+\subsection{Protocol}
+
+Table \ref{tab:protocolMessages} shows the list of messages that may either be sent by the client (a "request"),
+or sent by the server (a "response"). Each message consists of an ID followed by a potential payload.
+IDs 000 to 099 are reserved for "get" messages, and 100 to 199 are reserved for "set" messages.
+\textit{Payload} refers to the data that will be sent be either the client \textit{or} the server.
+\textit{void} implies that either the client \textit{or} the server must NOT pass any payload for that message.
+\textit{N/A} implies that either the client \textit{or} the server must NEVER send that message.
+
+\begin{table}[!htb]
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{ |c|c|c|c| }
+    \hline
+    \textbf{Description}         & \textbf{ID}        & \textbf{Payload (from client)}      & \textbf{Payload (from server)}    \\
+    \hline
+    Get All Information          & [000]              & void                                & [ID][Payload] for each "get"      \\
+    \hline
+    Get Left Wheel Current       & [001]              & void                                & [uint4].[uint4] (mA)              \\
+    \hline
+    Get Right Wheel Current      & [002]              & void                                & [uint4].[uint4] (mA)              \\
+    \hline
+    Get Left Sensor Range        & [003]              & void                                & [uint4].[uint4] (mm)              \\
+    \hline
+    Get Right Sensor Range       & [004]              & void                                & [uint4].[uint4] (mm)              \\
+    \hline
+    Get Battery Voltage          & [005]              & void                                & [uint4].[uint4] (mV)              \\
+    \hline
+    Get Left Wheel Speed         & [006]              & void                                & [uint8]                           \\
+    \hline
+    Get Right Wheel Speed        & [007]              & void                                & [uint8]                           \\
+    \hline
+    Set Left Wheel Speed         & [100]              & [uint8]                             & N/A                               \\
+    \hline
+    Set Right Wheel Speed        & [101]              & [uint8]                             & N/A                               \\
+    \hline
+  \end{tabular}
+  \caption{}
+  \label{tab:protocolMessages}
+\end{table}

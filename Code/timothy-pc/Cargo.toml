@@ -7,8 +7,11 @@ edition = "2021"
 
 [dependencies]
 btleplug = "0.10.1"
-clap = { version = "3.2.22", features = ["derive"] }
+crossterm = "0.25.0"
+fixed = "1.19.0"
 futures = "0.3.24"
 serialport = "*"
+simple-error = "0.2.3"
 tokio = { version = "1.21.1", features = ["full"] }
 uuid = "1.1.2"
+ux = "0.1.5"

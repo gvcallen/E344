@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <BLE2902.h>
 #include <BLEDevice.h>
 #include <BLEServer.h>
 #include <BLEUtils.h>
@@ -12,34 +13,30 @@
 
 int BluetoothServer::begin(std::string_view name)
 {
-    // Initialize device
-    Serial.println("Setting up bluetooth");
-
     BLEDevice::init(name.data());
 
     // Create server
-    BLEServer *server = BLEDevice::createServer();
+    server = BLEDevice::createServer();
+    server->setCallbacks(this);
 
     // Create UART service and characteristics
     BLEService *service = server->createService(BLUETOOTH_SERVICE_UUID);
-    BLECharacteristic *txCharacteristic =
+    txCharacteristic =
         service->createCharacteristic(BLUETOOTH_CHARACTERISTIC_TX_UUID, BLECharacteristic::PROPERTY_NOTIFY);
-    BLECharacteristic *rxCharacteristic =
+    txCharacteristic->addDescriptor(new BLE2902());
+    rxCharacteristic =
         service->createCharacteristic(BLUETOOTH_CHARACTERISTIC_RX_UUID, BLECharacteristic::PROPERTY_WRITE);
 
     // Set callbacks for "connected" and RX
-    server->setCallbacks(this);
     rxCharacteristic->setCallbacks(this);
 
     // Start service and advertising
     service->start();
-    // server->getAdvertising()->start();
-
     BLEAdvertising *advertising = server->getAdvertising();
-    advertising->addServiceUUID(BLUETOOTH_SERVICE_UUID);
+    // advertising->addServiceUUID(BLUETOOTH_SERVICE_UUID);
     advertising->start();
 
-    Serial.println("Bluetooth setup finished");
+    dataReceived = false;
 
     return ERROR_NONE;
 }
@@ -51,16 +48,41 @@ void BluetoothServer::onConnect(BLEServer *server)
 
 void BluetoothServer::onDisconnect(BLEServer *server)
 {
-    deviceIsConnected = true;
+    deviceIsConnected = false;
+
+    delay(500); // give the bluetooth stack the chance to get things ready
+    server->startAdvertising();
 }
 
 void BluetoothServer::onWrite(BLECharacteristic *characteristic)
 {
-    std::string rxValue = characteristic->getValue();
+    dataReceived = true;
+}
 
-    if (!rxValue.empty())
+int BluetoothServer::send(uint8_t *buffer, size_t size)
+{
+    if (this->deviceIsConnected)
     {
-        Serial.print("Received: ");
-        Serial.println(rxValue.c_str());
+        this->txCharacteristic->setValue(buffer, size);
+        this->txCharacteristic->notify();
+        delay(10); // bluetooth stack will go into congestion, if too many packets are sent
     }
+
+    return ERROR_NONE;
+}
+
+size_t BluetoothServer::receive(uint8_t *buffer, size_t maxSize)
+{
+    const uint8_t *rxValue = rxCharacteristic->getData();
+    auto length = rxCharacteristic->getLength();
+
+    for (int i = 0; i < length; i++)
+    {
+        if (i == maxSize)
+            break;
+
+        buffer[i] = rxValue[i];
+    }
+
+    return length;
 }

@@ -30,63 +30,63 @@
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Battery Reader Circuit Diagram\relax }}{22}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Under-Voltage Protection Circuit Diagram\relax }}{23}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 3.3 V Regulator Ripple Measurement\relax }}{25}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 5 V Regulator Ripple Measurement\relax }}{25}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Output and Noise Level in Response to Step Input\relax }}{26}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Current Draw\relax }}{26}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Noise Level\relax }}{27}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Step Response\relax }}{27}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Open Circuit to Free Running\relax }}{27}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Increasing Load\relax }}{27}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Free Running to Stall\relax }}{27}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Full-Range PWM using Modified Workbench\relax }}{28}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 400 mV Step Response Input vs Output\relax }}{28}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise Level\relax }}{28}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Current Draw\relax }}{28}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Noise Level\relax }}{29}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Step Response\relax }}{29}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Gradual Change over Input Range\relax }}{29}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Output Range from 0000 (First Cursor) to 1111 (Second Cursor)\relax }}{30}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Current Draw (Amplifier and Digital Inputs)\relax }}{30}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces DAC Output at 0000\relax }}{30}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces DAC Output at 0001\relax }}{30}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces DAC Output at 1110\relax }}{30}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces DAC Output at 1111\relax }}{30}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Motor Controller Output of Subtractor Stage\relax }}{31}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Motor Controller Current Draw of Subtractor Stage\relax }}{31}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Motor Controller Output of Power Stage\relax }}{31}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Motor Voltage: Object Far, Speed 0000\relax }}{32}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Motor Voltage: Object Far, Speed 1111\relax }}{32}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Motor Voltage: Object Near, Speed 0000\relax }}{32}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Motor Voltage: Object Near, Speed 1111\relax }}{32}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Motor Voltage: Object 20cm, Speed 1111\relax }}{32}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Motor Output Voltage vs Motor Control\relax }}{33}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Motor Current vs Current Sensor Output\relax }}{33}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.33}{\ignorespaces MOSFET Turn On Time vs Motor Control\relax }}{33}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Object Far, DAC 1111\relax }}{34}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.35}{\ignorespaces Object Far, DAC 0000\relax }}{34}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.36}{\ignorespaces Object Near, DAC 1111\relax }}{34}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.37}{\ignorespaces Object Near, DAC 0000\relax }}{34}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.38}{\ignorespaces Object 50cm, DAC 1111\relax }}{34}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.39}{\ignorespaces Batter Charger Final Voltage and Current\relax }}{35}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.40}{\ignorespaces Battery Charger Internal Voltage Regulation vs Changing Load\relax }}{35}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.41}{\ignorespaces Battery Charger No-Load Voltage\relax }}{36}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.42}{\ignorespaces Battery Charger Voltage with \SI {1}{\kilo \ohm } Load\relax }}{36}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.43}{\ignorespaces Battery Charger Voltage with \SI {50}{\ohm } Load\relax }}{36}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.44}{\ignorespaces Battery Charger with \SI {15}{\ohm } Load (approx. uncharged battery)\relax }}{36}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.45}{\ignorespaces Battery Charger Voltage Regulation under Changing Load\relax }}{36}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.46}{\ignorespaces Battery Reader Output vs 5.0 to 7.2 V Input\relax }}{37}{figure.caption.63}%
-\contentsline {figure}{\numberline {3.47}{\ignorespaces Under-Voltage Scmitt Trigger Output vs Sine Wave Input\relax }}{37}{figure.caption.64}%
-\contentsline {figure}{\numberline {3.48}{\ignorespaces Battery Reader at \SI {7.2}{V}\relax }}{38}{figure.caption.65}%
-\contentsline {figure}{\numberline {3.49}{\ignorespaces Battery Reader at \SI {5.9}{V}\relax }}{38}{figure.caption.65}%
-\contentsline {figure}{\numberline {3.50}{\ignorespaces Battery Reader at \SI {5.9}{V} with Under-Voltage Protection Battery Voltage\relax }}{38}{figure.caption.66}%
-\contentsline {figure}{\numberline {3.51}{\ignorespaces Under-Voltage Protection Output of Schmitt Trigger\relax }}{38}{figure.caption.67}%
-\contentsline {figure}{\numberline {3.52}{\ignorespaces Under-Voltage Protection Output of Battery Voltage\relax }}{38}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 3.3 V Regulator Ripple Measurement\relax }}{26}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 5 V Regulator Ripple Measurement\relax }}{26}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Output and Noise Level in Response to Step Input\relax }}{27}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Current Draw\relax }}{27}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Noise Level\relax }}{28}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Step Response\relax }}{28}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Open Circuit to Free Running\relax }}{28}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Increasing Load\relax }}{28}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Free Running to Stall\relax }}{28}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Full-Range PWM using Modified Workbench\relax }}{29}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces 400 mV Step Response Input vs Output\relax }}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Noise Level\relax }}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Current Draw\relax }}{29}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Noise Level\relax }}{30}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Step Response\relax }}{30}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Gradual Change over Input Range\relax }}{30}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Output Range from 0000 (First Cursor) to 1111 (Second Cursor)\relax }}{31}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Current Draw (Amplifier and Digital Inputs)\relax }}{31}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces DAC Output at 0000\relax }}{31}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces DAC Output at 0001\relax }}{31}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces DAC Output at 1110\relax }}{31}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces DAC Output at 1111\relax }}{31}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Motor Controller Output of Subtractor Stage\relax }}{32}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Motor Controller Current Draw of Subtractor Stage\relax }}{32}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Motor Controller Output of Power Stage\relax }}{32}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Motor Voltage: Object Far, Speed 0000\relax }}{33}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Motor Voltage: Object Far, Speed 1111\relax }}{33}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Motor Voltage: Object Near, Speed 0000\relax }}{33}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Motor Voltage: Object Near, Speed 1111\relax }}{33}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Motor Voltage: Object 20cm, Speed 1111\relax }}{33}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Motor Output Voltage vs Motor Control\relax }}{34}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Motor Current vs Current Sensor Output\relax }}{34}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.33}{\ignorespaces MOSFET Turn On Time vs Motor Control\relax }}{34}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Object Far, DAC 1111\relax }}{35}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Object Far, DAC 0000\relax }}{35}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Object Near, DAC 1111\relax }}{35}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Object Near, DAC 0000\relax }}{35}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Object 50cm, DAC 1111\relax }}{35}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Batter Charger Final Voltage and Current\relax }}{36}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Battery Charger Internal Voltage Regulation vs Changing Load\relax }}{36}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Battery Charger No-Load Voltage\relax }}{37}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Battery Charger Voltage with \SI {1}{\kilo \ohm } Load\relax }}{37}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.43}{\ignorespaces Battery Charger Voltage with \SI {50}{\ohm } Load\relax }}{37}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.44}{\ignorespaces Battery Charger with \SI {15}{\ohm } Load (approx. uncharged battery)\relax }}{37}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.45}{\ignorespaces Battery Charger Voltage Regulation under Changing Load\relax }}{37}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.46}{\ignorespaces Battery Reader Output vs 5.0 to 7.2 V Input\relax }}{38}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.47}{\ignorespaces Under-Voltage Scmitt Trigger Output vs Sine Wave Input\relax }}{38}{figure.caption.65}%
+\contentsline {figure}{\numberline {3.48}{\ignorespaces Battery Reader at \SI {7.2}{V}\relax }}{39}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.49}{\ignorespaces Battery Reader at \SI {5.9}{V}\relax }}{39}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.50}{\ignorespaces Battery Reader at \SI {5.9}{V} with Under-Voltage Protection Battery Voltage\relax }}{39}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.51}{\ignorespaces Under-Voltage Protection Output of Schmitt Trigger\relax }}{39}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Under-Voltage Protection Output of Battery Voltage\relax }}{39}{figure.caption.69}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Combined Circuit\relax }}{39}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Current Sensor Physical Circuit\relax }}{40}{figure.caption.70}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Ultrasonics Sensor Amplifier Physical Circuit\relax }}{41}{figure.caption.71}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Digital to Analog Converter Physical Circuit\relax }}{42}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Final Combined Circuit\relax }}{40}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Current Sensor Physical Circuit\relax }}{41}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ultrasonics Sensor Amplifier Physical Circuit\relax }}{42}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Digital to Analog Converter Physical Circuit\relax }}{43}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

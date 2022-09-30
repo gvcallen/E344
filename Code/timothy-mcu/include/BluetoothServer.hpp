@@ -9,10 +9,20 @@ class BluetoothServer : public BLEServerCallbacks, public BLECharacteristicCallb
 {
   public:
     int begin(std::string_view name);
-    bool deviceConnected();
+    bool deviceConnected()
+    {
+        return deviceIsConnected;
+    };
+    int send(uint8_t *buffer, size_t size);
+    size_t receive(uint8_t *buffer, size_t size);
 
-  private:
+    volatile bool dataReceived;
+
+  public:
     bool deviceIsConnected;
+    BLECharacteristic *rxCharacteristic;
+    BLECharacteristic *txCharacteristic;
+    BLEServer *server;
 
   private:
     void onConnect(BLEServer *server) override;

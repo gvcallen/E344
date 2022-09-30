@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  25 SEP 2022 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.22)  29 SEP 2022 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Report/23905093_e344_report.tex"
-(/home/gary/Documents/_University/_2022/_Second Semester/E Design/Repo/Report/23905093_e344_report.tex
+**/home/gary/Documents/_University/_2022/Second-Semester/E-Design/Repo/Report/23905093_e344_report.tex
+(/home/gary/Documents/_University/_2022/Second-Semester/E-Design/Repo/Report/23905093_e344_report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -681,7 +681,7 @@ LaTeX Info: Redefining \nameref on input line 140.
  (./frontmatter/title_page.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/figures//SU_logo_RGB_without_slogan.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/figures//SU_logo_RGB_without_slogan.pdf, id=418, 441.01764pt x 506.96803pt>
+<frontmatter/figures//SU_logo_RGB_without_slogan.pdf, id=426, 441.01764pt x 506.96803pt>
 File: frontmatter/figures//SU_logo_RGB_without_slogan.pdf Graphic file (type pdf)
 <use frontmatter/figures//SU_logo_RGB_without_slogan.pdf>
 Package pdftex.def Info: frontmatter/figures//SU_logo_RGB_without_slogan.pdf  used on input line 7.
@@ -699,7 +699,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./frontmatter/figures//SU_logo_RGB_without_slogan.pdf>]) (./frontmatter/declaration.tex
 
 pdfTeX warning: pdflatex (file ./frontmatter/figures//SU_horizontal_RGB.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<frontmatter/figures//SU_horizontal_RGB.pdf, id=439, 835.26556pt x 283.70393pt>
+<frontmatter/figures//SU_horizontal_RGB.pdf, id=447, 835.26556pt x 283.70393pt>
 File: frontmatter/figures//SU_horizontal_RGB.pdf Graphic file (type pdf)
 <use frontmatter/figures//SU_horizontal_RGB.pdf>
 Package pdftex.def Info: frontmatter/figures//SU_horizontal_RGB.pdf  used on input line 7.
@@ -748,7 +748,7 @@ Overfull \hbox (6.30171pt too wide) in paragraph at lines 46--61
  [] 
  []
 
-<content/1_literatureReview/figures//opAmp_nonInverting.png, id=988, 301.125pt x 125.46875pt>
+<content/1_literatureReview/figures//opAmp_nonInverting.png, id=1003, 301.125pt x 125.46875pt>
 File: content/1_literatureReview/figures//opAmp_nonInverting.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_nonInverting.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_nonInverting.png  used on input line 67.
@@ -763,7 +763,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--68
 |\OT1/lmr/m/n/10.95 (+20) Non-Inverting
  []
 
-<content/1_literatureReview/figures//opAmp_nonInverting_modified.png, id=992, 435.12563pt x 298.86656pt>
+<content/1_literatureReview/figures//opAmp_nonInverting_modified.png, id=1007, 435.12563pt x 298.86656pt>
 File: content/1_literatureReview/figures//opAmp_nonInverting_modified.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_nonInverting_modified.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_nonInverting_modified.png  used on input line 73.
@@ -783,12 +783,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--74
 \OT1/lmr/m/n/10.95 (+20) Non-Inverting
  []
 
-<content/1_literatureReview/figures//opAmp_differential.png, id=995, 298.86656pt x 219.82124pt>
+<content/1_literatureReview/figures//opAmp_differential.png, id=1010, 298.86656pt x 219.82124pt>
 File: content/1_literatureReview/figures//opAmp_differential.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_differential.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_differential.png  used on input line 79.
 (pdftex.def)             Requested size: 86.90485pt x 63.92093pt.
-<content/1_literatureReview/figures//opAmp_instrumentation.png, id=998, 501.875pt x 401.5pt>
+<content/1_literatureReview/figures//opAmp_instrumentation.png, id=1013, 501.875pt x 401.5pt>
 File: content/1_literatureReview/figures//opAmp_instrumentation.png Graphic file (type png)
 <use content/1_literatureReview/figures//opAmp_instrumentation.png>
 Package pdftex.def Info: content/1_literatureReview/figures//opAmp_instrumentation.png  used on input line 85.
@@ -799,52 +799,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--86
  []
 
 ) [2 <./content/1_literatureReview/figures//opAmp_nonInverting.png> <./content/1_literatureReview/figures//opAmp_nonInverting_modified.png (PNG copy)> <./content/1_literatureReview/figures//opAmp_differential.png (PNG copy)> <./content/1_literatureReview/figures//opAmp_instrumentation.png>] (./content/1_literatureReview/currentSensing.tex
-<content/1_literatureReview/figures//currentSensing_hall_effect.jpg, id=1009, 301.125pt x 226.59656pt>
+<content/1_literatureReview/figures//currentSensing_hall_effect.jpg, id=1024, 301.125pt x 226.59656pt>
 File: content/1_literatureReview/figures//currentSensing_hall_effect.jpg Graphic file (type jpg)
 <use content/1_literatureReview/figures//currentSensing_hall_effect.jpg>
 Package pdftex.def Info: content/1_literatureReview/figures//currentSensing_hall_effect.jpg  used on input line 16.
 (pdftex.def)             Requested size: 141.69621pt x 106.62831pt.
 ) (./content/1_literatureReview/ultrasonicSensors.tex [3 <./content/1_literatureReview/figures//currentSensing_hall_effect.jpg>]
-<content/1_literatureReview/figures//sonicSensor_TTL.png, id=1020, 264.99pt x 348.55219pt>
+<content/1_literatureReview/figures//sonicSensor_TTL.png, id=1035, 264.99pt x 348.55219pt>
 File: content/1_literatureReview/figures//sonicSensor_TTL.png Graphic file (type png)
 <use content/1_literatureReview/figures//sonicSensor_TTL.png>
 Package pdftex.def Info: content/1_literatureReview/figures//sonicSensor_TTL.png  used on input line 13.
 (pdftex.def)             Requested size: 70.8445pt x 93.18492pt.
-<content/1_literatureReview/figures//sonicSensor_timing.png, id=1026, 748.29562pt x 308.65312pt>
+<content/1_literatureReview/figures//sonicSensor_timing.png, id=1041, 748.29562pt x 308.65312pt>
 File: content/1_literatureReview/figures//sonicSensor_timing.png Graphic file (type png)
 <use content/1_literatureReview/figures//sonicSensor_timing.png>
 Package pdftex.def Info: content/1_literatureReview/figures//sonicSensor_timing.png  used on input line 35.
 (pdftex.def)             Requested size: 188.9235pt x 77.92604pt.
  [4 <./content/1_literatureReview/figures//sonicSensor_TTL.png (PNG copy)> <./content/1_literatureReview/figures//sonicSensor_timing.png (PNG copy)>]
-<content/1_literatureReview/figures//sonicSensor_system.png, id=1045, 797.22844pt x 367.3725pt>
+<content/1_literatureReview/figures//sonicSensor_system.png, id=1060, 797.22844pt x 367.3725pt>
 File: content/1_literatureReview/figures//sonicSensor_system.png Graphic file (type png)
 <use content/1_literatureReview/figures//sonicSensor_system.png>
 Package pdftex.def Info: content/1_literatureReview/figures//sonicSensor_system.png  used on input line 55.
 (pdftex.def)             Requested size: 259.7752pt x 119.70856pt.
 ) (./content/1_literatureReview/pwmAnalogConversion.tex [5 <./content/1_literatureReview/figures//sonicSensor_system.png (PNG copy)>]
-<content/1_literatureReview/figures//pwm_graph.png, id=1057, 683.55376pt x 324.21124pt>
+<content/1_literatureReview/figures//pwm_graph.png, id=1072, 683.55376pt x 324.21124pt>
 File: content/1_literatureReview/figures//pwm_graph.png Graphic file (type png)
 <use content/1_literatureReview/figures//pwm_graph.png>
 Package pdftex.def Info: content/1_literatureReview/figures//pwm_graph.png  used on input line 14.
 (pdftex.def)             Requested size: 118.07898pt x 56.0007pt.
-<content/1_literatureReview/figures//pwm_filtered.png, id=1062, 709.90219pt x 516.42938pt>
+<content/1_literatureReview/figures//pwm_filtered.png, id=1077, 709.90219pt x 516.42938pt>
 File: content/1_literatureReview/figures//pwm_filtered.png Graphic file (type png)
 <use content/1_literatureReview/figures//pwm_filtered.png>
 Package pdftex.def Info: content/1_literatureReview/figures//pwm_filtered.png  used on input line 27.
 (pdftex.def)             Requested size: 141.69621pt x 103.07916pt.
 ) (./content/1_literatureReview/digitalAnalogConversion.tex [6 <./content/1_literatureReview/figures//pwm_graph.png> <./content/1_literatureReview/figures//pwm_filtered.png (PNG copy)>]
-<content/1_literatureReview/figures//dac_nonInvertingRWN.png, id=1076, 776.14969pt x 499.11469pt>
+<content/1_literatureReview/figures//dac_nonInvertingRWN.png, id=1091, 776.14969pt x 499.11469pt>
 File: content/1_literatureReview/figures//dac_nonInvertingRWN.png Graphic file (type png)
 <use content/1_literatureReview/figures//dac_nonInvertingRWN.png>
 Package pdftex.def Info: content/1_literatureReview/figures//dac_nonInvertingRWN.png  used on input line 19.
 (pdftex.def)             Requested size: 145.47346pt x 93.54568pt.
-<content/1_literatureReview/figures//dac_invertingR2R.png, id=1079, 392.21532pt x 234.1247pt>
+<content/1_literatureReview/figures//dac_invertingR2R.png, id=1094, 392.21532pt x 234.1247pt>
 File: content/1_literatureReview/figures//dac_invertingR2R.png Graphic file (type png)
 <use content/1_literatureReview/figures//dac_invertingR2R.png>
 Package pdftex.def Info: content/1_literatureReview/figures//dac_invertingR2R.png  used on input line 25.
 (pdftex.def)             Requested size: 170.02998pt x 101.49689pt.
 ) (./content/1_literatureReview/leadAcidBatteries.tex [7 <./content/1_literatureReview/figures//dac_nonInvertingRWN.png (PNG copy)> <./content/1_literatureReview/figures//dac_invertingR2R.png (PNG copy)>]
-<content/1_literatureReview/figures//batteryCharging_stages.jpg, id=1088, 463.7325pt x 445.665pt>
+<content/1_literatureReview/figures//batteryCharging_stages.jpg, id=1103, 463.7325pt x 445.665pt>
 File: content/1_literatureReview/figures//batteryCharging_stages.jpg Graphic file (type jpg)
 <use content/1_literatureReview/figures//batteryCharging_stages.jpg>
 Package pdftex.def Info: content/1_literatureReview/figures//batteryCharging_stages.jpg  used on input line 13.
@@ -855,7 +855,7 @@ Package pdftex.def Info: content/1_literatureReview/figures//batteryCharging_sta
  (./content/2_design/2_design.tex
 Chapter 2.
 (./content/2_design/systemDesign.tex
-<content/2_design/figures/voltageRegulation_blockDiagram.png, id=1102, 569.87906pt x 469.00218pt>
+<content/2_design/figures/voltageRegulation_blockDiagram.png, id=1117, 569.87906pt x 469.00218pt>
 File: content/2_design/figures/voltageRegulation_blockDiagram.png Graphic file (type png)
 <use content/2_design/figures/voltageRegulation_blockDiagram.png>
 Package pdftex.def Info: content/2_design/figures/voltageRegulation_blockDiagram.png  used on input line 9.
@@ -866,18 +866,18 @@ Package pdftex.def Info: content/2_design/figures/voltageRegulation_blockDiagram
 
 
  <./content/2_design/figures/voltageRegulation_blockDiagram.png (PNG copy)>] (./content/2_design/voltageRegulation.tex
-<content/2_design/figures/voltageRegulation_3v3.png, id=1110, 584.93532pt x 228.855pt>
+<content/2_design/figures/voltageRegulation_3v3.png, id=1125, 584.93532pt x 228.855pt>
 File: content/2_design/figures/voltageRegulation_3v3.png Graphic file (type png)
 <use content/2_design/figures/voltageRegulation_3v3.png>
 Package pdftex.def Info: content/2_design/figures/voltageRegulation_3v3.png  used on input line 14.
 (pdftex.def)             Requested size: 188.9235pt x 73.91603pt.
-<content/2_design/figures/voltageRegulation_5v.png, id=1113, 587.94656pt x 229.60782pt>
+<content/2_design/figures/voltageRegulation_5v.png, id=1128, 587.94656pt x 229.60782pt>
 File: content/2_design/figures/voltageRegulation_5v.png Graphic file (type png)
 <use content/2_design/figures/voltageRegulation_5v.png>
 Package pdftex.def Info: content/2_design/figures/voltageRegulation_5v.png  used on input line 20.
 (pdftex.def)             Requested size: 188.9235pt x 73.7773pt.
 ) [10 <./content/2_design/figures/voltageRegulation_3v3.png (PNG copy)> <./content/2_design/figures/voltageRegulation_5v.png (PNG copy)>] (./content/2_design/currentSensor.tex [11]
-<content/2_design/figures//currentSensor_sim_circuit.png, id=1129, 745.28438pt x 373.395pt>
+<content/2_design/figures//currentSensor_sim_circuit.png, id=1144, 745.28438pt x 373.395pt>
 File: content/2_design/figures//currentSensor_sim_circuit.png Graphic file (type png)
 <use content/2_design/figures//currentSensor_sim_circuit.png>
 Package pdftex.def Info: content/2_design/figures//currentSensor_sim_circuit.png  used on input line 45.
@@ -887,175 +887,180 @@ Overfull \hbox (4.27333pt too wide) in paragraph at lines 31--42
  [][] 
  []
 
-<content/2_design/figures//rangeSensor_circuitDiagram.png, id=1140, 1014.03844pt x 289.08pt>
+<content/2_design/figures//rangeSensor_circuitDiagram.png, id=1155, 1014.03844pt x 289.08pt>
 File: content/2_design/figures//rangeSensor_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//rangeSensor_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//rangeSensor_circuitDiagram.png  used on input line 55.
 (pdftex.def)             Requested size: 377.85419pt x 107.71661pt.
 [13]) (./content/2_design/digitalAnalogConverter.tex [14 <./content/2_design/figures//rangeSensor_circuitDiagram.png (PNG copy)>]
-<content/2_design/figures//dac_circuitDiagram.png, id=1160, 856.70062pt x 556.32843pt>
+<content/2_design/figures//dac_circuitDiagram.png, id=1175, 856.70062pt x 556.32843pt>
 File: content/2_design/figures//dac_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//dac_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//dac_circuitDiagram.png  used on input line 33.
 (pdftex.def)             Requested size: 198.37183pt x 128.81871pt.
 ) (./content/2_design/analogMotorController.tex [15 <./content/2_design/figures//dac_circuitDiagram.png (PNG copy)>] [16]
-<content/2_design/figures//motorController_subtractor_circuitDiagram.png, id=1181, 860.46469pt x 428.35031pt>
+<content/2_design/figures//motorController_subtractor_circuitDiagram.png, id=1196, 860.46469pt x 428.35031pt>
 File: content/2_design/figures//motorController_subtractor_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//motorController_subtractor_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//motorController_subtractor_circuitDiagram.png  used on input line 71.
 (pdftex.def)             Requested size: 283.39244pt x 141.07498pt.
-<content/2_design/figures//motorController_power_circuitDiagram.png, id=1182, 269.50688pt x 237.13594pt>
+<content/2_design/figures//motorController_power_circuitDiagram.png, id=1197, 269.50688pt x 237.13594pt>
 File: content/2_design/figures//motorController_power_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//motorController_power_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//motorController_power_circuitDiagram.png  used on input line 77.
 (pdftex.def)             Requested size: 165.31346pt x 145.4596pt.
 ) (./content/2_design/digitalMotorControllerFirmware.tex
-<content/2_design/figures//digitalMotorController_flowChart_setup.png, id=1183, 704.6325pt x 176.91093pt>
+<content/2_design/figures//digitalMotorController_flowChart_setup.png, id=1198, 704.6325pt x 176.91093pt>
 File: content/2_design/figures//digitalMotorController_flowChart_setup.png Graphic file (type png)
 <use content/2_design/figures//digitalMotorController_flowChart_setup.png>
 Package pdftex.def Info: content/2_design/figures//digitalMotorController_flowChart_setup.png  used on input line 10.
 (pdftex.def)             Requested size: 191.28535pt x 48.02573pt.
-<content/2_design/figures//digitalMotorController_flowChart_interrupt.png, id=1184, 701.62125pt x 184.43906pt>
+<content/2_design/figures//digitalMotorController_flowChart_interrupt.png, id=1199, 701.62125pt x 184.43906pt>
 File: content/2_design/figures//digitalMotorController_flowChart_interrupt.png Graphic file (type png)
 <use content/2_design/figures//digitalMotorController_flowChart_interrupt.png>
 Package pdftex.def Info: content/2_design/figures//digitalMotorController_flowChart_interrupt.png  used on input line 16.
 (pdftex.def)             Requested size: 191.28535pt x 50.28326pt.
-<content/2_design/figures//digitalMotorController_flowChart_loop.png, id=1185, 699.36281pt x 182.93344pt>
+<content/2_design/figures//digitalMotorController_flowChart_loop.png, id=1200, 699.36281pt x 182.93344pt>
 File: content/2_design/figures//digitalMotorController_flowChart_loop.png Graphic file (type png)
 <use content/2_design/figures//digitalMotorController_flowChart_loop.png>
 Package pdftex.def Info: content/2_design/figures//digitalMotorController_flowChart_loop.png  used on input line 22.
 (pdftex.def)             Requested size: 191.28535pt x 50.03468pt.
  [17 <./content/2_design/figures//motorController_subtractor_circuitDiagram.png (PNG copy)> <./content/2_design/figures//motorController_power_circuitDiagram.png (PNG copy)>]) (./content/2_design/digitalMotorControllerSwitch.tex [18 <./content/2_design/figures//digitalMotorController_flowChart_setup.png (PNG copy)> <./content/2_design/figures//digitalMotorController_flowChart_interrupt.png (PNG copy)> <./content/2_design/figures//digitalMotorController_flowChart_loop.png (PNG copy)>] [19]
-<content/2_design/figures//digitalMotorController_circuitDiagram.png, id=1207, 1136.74687pt x 527.72156pt>
+<content/2_design/figures//digitalMotorController_circuitDiagram.png, id=1222, 1136.74687pt x 527.72156pt>
 File: content/2_design/figures//digitalMotorController_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//digitalMotorController_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//digitalMotorController_circuitDiagram.png  used on input line 61.
 (pdftex.def)             Requested size: 330.61972pt x 153.48627pt.
 ) (./content/2_design/batteryCharger.tex [20 <./content/2_design/figures//digitalMotorController_circuitDiagram.png (PNG copy)>]
-<content/2_design/figures//batteryCharger_circuitDiagram.png, id=1216, 960.58875pt x 370.38374pt>
+<content/2_design/figures//batteryCharger_circuitDiagram.png, id=1231, 960.58875pt x 370.38374pt>
 File: content/2_design/figures//batteryCharger_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//batteryCharger_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//batteryCharger_circuitDiagram.png  used on input line 42.
 (pdftex.def)             Requested size: 283.39244pt x 109.2679pt.
 ) (./content/2_design/batteryReader.tex [21]
-<content/2_design/figures//batteryReader_circuitDiagram.png, id=1225, 802.49812pt x 623.32875pt>
+<content/2_design/figures//batteryReader_circuitDiagram.png, id=1240, 802.49812pt x 623.32875pt>
 File: content/2_design/figures//batteryReader_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//batteryReader_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//batteryReader_circuitDiagram.png  used on input line 12.
 (pdftex.def)             Requested size: 188.9235pt x 146.73907pt.
  [22 <./content/2_design/figures//batteryCharger_circuitDiagram.png (PNG copy)> <./content/2_design/figures//batteryReader_circuitDiagram.png (PNG copy)>]) (./content/2_design/underVoltageProtection.tex
-<content/2_design/figures//underVoltageProtection_circuitDiagram.png, id=1231, 891.33pt x 411.78844pt>
+<content/2_design/figures//underVoltageProtection_circuitDiagram.png, id=1246, 891.33pt x 411.78844pt>
 File: content/2_design/figures//underVoltageProtection_circuitDiagram.png Graphic file (type png)
 <use content/2_design/figures//underVoltageProtection_circuitDiagram.png>
 Package pdftex.def Info: content/2_design/figures//underVoltageProtection_circuitDiagram.png  used on input line 17.
 (pdftex.def)             Requested size: 283.39244pt x 130.92673pt.
- [23 <./content/2_design/figures//underVoltageProtection_circuitDiagram.png (PNG copy)>])) [24]
+ [23 <./content/2_design/figures//underVoltageProtection_circuitDiagram.png (PNG copy)>]) [24] (./content/2_design/serialCommunication.tex
+Overfull \hbox (1.78185pt too wide) in paragraph at lines 21--46
+ [][] 
+ []
+
+)) [25]
 \openout2 = `content/3_results/3_results.aux'.
 
  (./content/3_results/3_results.tex
 Chapter 3.
 (./content/3_results/voltageRegulation.tex
-<content/3_results/figures/voltageRegulation_3v3.jpeg, id=1243, 1606.0pt x 1204.5pt>
+<content/3_results/figures/voltageRegulation_3v3.jpeg, id=1263, 1606.0pt x 1204.5pt>
 File: content/3_results/figures/voltageRegulation_3v3.jpeg Graphic file (type jpg)
 <use content/3_results/figures/voltageRegulation_3v3.jpeg>
 Package pdftex.def Info: content/3_results/figures/voltageRegulation_3v3.jpeg  used on input line 15.
 (pdftex.def)             Requested size: 212.54073pt x 159.40251pt.
-<content/3_results/figures/voltageRegulation_5v.jpeg, id=1244, 1606.0pt x 1204.5pt>
+<content/3_results/figures/voltageRegulation_5v.jpeg, id=1264, 1606.0pt x 1204.5pt>
 File: content/3_results/figures/voltageRegulation_5v.jpeg Graphic file (type jpg)
 <use content/3_results/figures/voltageRegulation_5v.jpeg>
 Package pdftex.def Info: content/3_results/figures/voltageRegulation_5v.jpeg  used on input line 21.
 (pdftex.def)             Requested size: 212.54073pt x 159.40251pt.
-) (./content/3_results/currentSensor.tex [25
+) (./content/3_results/currentSensor.tex [26
 
 
 
 
  <./content/3_results/figures/voltageRegulation_3v3.jpeg> <./content/3_results/figures/voltageRegulation_5v.jpeg>]
-<content/3_results/figures/currentSensor_sim_stepResponse.png, id=1249, 1032.10594pt x 321.45094pt>
+<content/3_results/figures/currentSensor_sim_stepResponse.png, id=1269, 1032.10594pt x 321.45094pt>
 File: content/3_results/figures/currentSensor_sim_stepResponse.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_sim_stepResponse.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_sim_stepResponse.png  used on input line 11.
 (pdftex.def)             Requested size: 283.39244pt x 88.25948pt.
-<content/3_results/figures/currentSensor_sim_currentDraw.png, id=1250, 915.42pt x 319.1925pt>
+<content/3_results/figures/currentSensor_sim_currentDraw.png, id=1270, 915.42pt x 319.1925pt>
 File: content/3_results/figures/currentSensor_sim_currentDraw.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_sim_currentDraw.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_sim_currentDraw.png  used on input line 18.
 (pdftex.def)             Requested size: 236.15797pt x 82.34518pt.
- [26 <./content/3_results/figures/currentSensor_sim_stepResponse.png (PNG copy)> <./content/3_results/figures/currentSensor_sim_currentDraw.png (PNG copy)>]
-<content/3_results/figures/currentSensor_impl_noise.jpeg, id=1257, 609.77812pt x 467.49657pt>
+ [27 <./content/3_results/figures/currentSensor_sim_stepResponse.png (PNG copy)> <./content/3_results/figures/currentSensor_sim_currentDraw.png (PNG copy)>]
+<content/3_results/figures/currentSensor_impl_noise.jpeg, id=1278, 609.77812pt x 467.49657pt>
 File: content/3_results/figures/currentSensor_impl_noise.jpeg Graphic file (type jpg)
 <use content/3_results/figures/currentSensor_impl_noise.jpeg>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_noise.jpeg  used on input line 47.
 (pdftex.def)             Requested size: 148.77785pt x 114.06328pt.
-<content/3_results/figures/currentSensor_impl_stepResponse.jpeg, id=1258, 612.78937pt x 425.33907pt>
+<content/3_results/figures/currentSensor_impl_stepResponse.jpeg, id=1279, 612.78937pt x 425.33907pt>
 File: content/3_results/figures/currentSensor_impl_stepResponse.jpeg Graphic file (type jpg)
 <use content/3_results/figures/currentSensor_impl_stepResponse.jpeg>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_stepResponse.jpeg  used on input line 53.
 (pdftex.def)             Requested size: 148.77785pt x 103.26466pt.
-<content/3_results/figures/currentSensor_impl_freeRunning.png, id=1260, 390.70969pt x 305.64188pt>
+<content/3_results/figures/currentSensor_impl_freeRunning.png, id=1281, 390.70969pt x 305.64188pt>
 File: content/3_results/figures/currentSensor_impl_freeRunning.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_impl_freeRunning.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_freeRunning.png  used on input line 86.
 (pdftex.def)             Requested size: 99.1869pt x 77.5902pt.
-<content/3_results/figures/currentSensor_impl_increasingLoad.png, id=1261, 355.3275pt x 279.29344pt>
+<content/3_results/figures/currentSensor_impl_increasingLoad.png, id=1282, 355.3275pt x 279.29344pt>
 File: content/3_results/figures/currentSensor_impl_increasingLoad.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_impl_increasingLoad.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_increasingLoad.png  used on input line 91.
 (pdftex.def)             Requested size: 99.1869pt x 77.96297pt.
-<content/3_results/figures/currentSensor_impl_stall.png, id=1262, 365.11406pt x 273.27094pt>
+<content/3_results/figures/currentSensor_impl_stall.png, id=1283, 365.11406pt x 273.27094pt>
 File: content/3_results/figures/currentSensor_impl_stall.png Graphic file (type png)
 <use content/3_results/figures/currentSensor_impl_stall.png>
 Package pdftex.def Info: content/3_results/figures/currentSensor_impl_stall.png  used on input line 96.
 (pdftex.def)             Requested size: 99.1869pt x 74.23447pt.
-) [27 <./content/3_results/figures/currentSensor_impl_noise.jpeg> <./content/3_results/figures/currentSensor_impl_stepResponse.jpeg> <./content/3_results/figures/currentSensor_impl_freeRunning.png (PNG copy)> <./content/3_results/figures/currentSensor_impl_increasingLoad.png (PNG copy)> <./content/3_results/figures/currentSensor_impl_stall.png (PNG copy)>] (./content/3_results/rangeSensor.tex
-<content/3_results/figures/rangeSensor_sim_fullRange.png, id=1268, 1184.17406pt x 319.94531pt>
+) [28 <./content/3_results/figures/currentSensor_impl_noise.jpeg> <./content/3_results/figures/currentSensor_impl_stepResponse.jpeg> <./content/3_results/figures/currentSensor_impl_freeRunning.png (PNG copy)> <./content/3_results/figures/currentSensor_impl_increasingLoad.png (PNG copy)> <./content/3_results/figures/currentSensor_impl_stall.png (PNG copy)>] (./content/3_results/rangeSensor.tex
+<content/3_results/figures/rangeSensor_sim_fullRange.png, id=1288, 1184.17406pt x 319.94531pt>
 File: content/3_results/figures/rangeSensor_sim_fullRange.png Graphic file (type png)
 <use content/3_results/figures/rangeSensor_sim_fullRange.png>
 Package pdftex.def Info: content/3_results/figures/rangeSensor_sim_fullRange.png  used on input line 8.
 (pdftex.def)             Requested size: 377.85419pt x 102.08678pt.
-<content/3_results/figures/rangeSensor_sim_stepResponse.png, id=1269, 536.0025pt x 319.1925pt>
+<content/3_results/figures/rangeSensor_sim_stepResponse.png, id=1289, 536.0025pt x 319.1925pt>
 File: content/3_results/figures/rangeSensor_sim_stepResponse.png Graphic file (type png)
 <use content/3_results/figures/rangeSensor_sim_stepResponse.png>
 Package pdftex.def Info: content/3_results/figures/rangeSensor_sim_stepResponse.png  used on input line 17.
 (pdftex.def)             Requested size: 170.03322pt x 101.25238pt.
-<content/3_results/figures/rangeSensor_sim_noiseLevel.png, id=1270, 785.93625pt x 319.1925pt>
+<content/3_results/figures/rangeSensor_sim_noiseLevel.png, id=1290, 785.93625pt x 319.1925pt>
 File: content/3_results/figures/rangeSensor_sim_noiseLevel.png Graphic file (type png)
 <use content/3_results/figures/rangeSensor_sim_noiseLevel.png>
 Package pdftex.def Info: content/3_results/figures/rangeSensor_sim_noiseLevel.png  used on input line 23.
 (pdftex.def)             Requested size: 212.54073pt x 86.31949pt.
-<content/3_results/figures/rangeSensor_sim_currentDraw.png, id=1271, 941.76843pt x 319.1925pt>
+<content/3_results/figures/rangeSensor_sim_currentDraw.png, id=1291, 941.76843pt x 319.1925pt>
 File: content/3_results/figures/rangeSensor_sim_currentDraw.png Graphic file (type png)
 <use content/3_results/figures/rangeSensor_sim_currentDraw.png>
 Package pdftex.def Info: content/3_results/figures/rangeSensor_sim_currentDraw.png  used on input line 31.
 (pdftex.def)             Requested size: 236.15797pt x 80.03658pt.
-<content/3_results/figures/rangeSensor_impl_noiseLevel.jpeg, id=1276, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/rangeSensor_impl_noiseLevel.jpeg, id=1296, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/rangeSensor_impl_noiseLevel.jpeg Graphic file (type jpg)
 <use content/3_results/figures/rangeSensor_impl_noiseLevel.jpeg>
 Package pdftex.def Info: content/3_results/figures/rangeSensor_impl_noiseLevel.jpeg  used on input line 50.
 (pdftex.def)             Requested size: 283.39244pt x 159.32178pt.
- [28 <./content/3_results/figures/rangeSensor_sim_fullRange.png (PNG copy)> <./content/3_results/figures/rangeSensor_sim_stepResponse.png (PNG copy)> <./content/3_results/figures/rangeSensor_sim_noiseLevel.png (PNG copy)> <./content/3_results/figures/rangeSensor_sim_currentDraw.png (PNG copy)>]
-<content/3_results/figures/rangeSensor_impl_stepResponse.jpeg, id=1281, 1604.99625pt x 902.37125pt>
+ [29 <./content/3_results/figures/rangeSensor_sim_fullRange.png (PNG copy)> <./content/3_results/figures/rangeSensor_sim_stepResponse.png (PNG copy)> <./content/3_results/figures/rangeSensor_sim_noiseLevel.png (PNG copy)> <./content/3_results/figures/rangeSensor_sim_currentDraw.png (PNG copy)>]
+<content/3_results/figures/rangeSensor_impl_stepResponse.jpeg, id=1301, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/rangeSensor_impl_stepResponse.jpeg Graphic file (type jpg)
 <use content/3_results/figures/rangeSensor_impl_stepResponse.jpeg>
 Package pdftex.def Info: content/3_results/figures/rangeSensor_impl_stepResponse.jpeg  used on input line 59.
 (pdftex.def)             Requested size: 201.91304pt x 113.51212pt.
-<content/3_results/figures/rangeSensor_impl_gradual.jpeg, id=1282, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/rangeSensor_impl_gradual.jpeg, id=1302, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/rangeSensor_impl_gradual.jpeg Graphic file (type jpg)
 <use content/3_results/figures/rangeSensor_impl_gradual.jpeg>
 Package pdftex.def Info: content/3_results/figures/rangeSensor_impl_gradual.jpeg  used on input line 65.
 (pdftex.def)             Requested size: 201.91304pt x 113.51212pt.
-) [29 <./content/3_results/figures/rangeSensor_impl_noiseLevel.jpeg> <./content/3_results/figures/rangeSensor_impl_stepResponse.jpeg> <./content/3_results/figures/rangeSensor_impl_gradual.jpeg>] (./content/3_results/digitalAnalogConverter.tex
-<content/3_results/figures/dac_sim_range.png, id=1290, 892.08281pt x 319.1925pt>
+) [30 <./content/3_results/figures/rangeSensor_impl_noiseLevel.jpeg> <./content/3_results/figures/rangeSensor_impl_stepResponse.jpeg> <./content/3_results/figures/rangeSensor_impl_gradual.jpeg>] (./content/3_results/digitalAnalogConverter.tex
+<content/3_results/figures/dac_sim_range.png, id=1310, 892.08281pt x 319.1925pt>
 File: content/3_results/figures/dac_sim_range.png Graphic file (type png)
 <use content/3_results/figures/dac_sim_range.png>
 Package pdftex.def Info: content/3_results/figures/dac_sim_range.png  used on input line 10.
 (pdftex.def)             Requested size: 236.15797pt x 84.49794pt.
-<content/3_results/figures/dac_sim_currentDraw.png, id=1291, 596.2275pt x 317.68687pt>
+<content/3_results/figures/dac_sim_currentDraw.png, id=1311, 596.2275pt x 317.68687pt>
 File: content/3_results/figures/dac_sim_currentDraw.png Graphic file (type png)
 <use content/3_results/figures/dac_sim_currentDraw.png>
 Package pdftex.def Info: content/3_results/figures/dac_sim_currentDraw.png  used on input line 16.
 (pdftex.def)             Requested size: 212.54073pt x 113.2474pt.
-<content/3_results/figures/dac_impl_0000.jpeg, id=1294, 676.77844pt x 662.475pt>
+<content/3_results/figures/dac_impl_0000.jpeg, id=1314, 676.77844pt x 662.475pt>
 File: content/3_results/figures/dac_impl_0000.jpeg Graphic file (type jpg)
 <use content/3_results/figures/dac_impl_0000.jpeg>
 Package pdftex.def Info: content/3_results/figures/dac_impl_0000.jpeg  used on input line 35.
@@ -1070,7 +1075,7 @@ Underfull \hbox (badness 1997) in paragraph at lines 36--36
 |\OT1/lmr/m/n/10.95 (+20) DAC Out-put
  []
 
-<content/3_results/figures/dac_impl_0001.jpeg, id=1295, 587.19376pt x 668.4975pt>
+<content/3_results/figures/dac_impl_0001.jpeg, id=1315, 587.19376pt x 668.4975pt>
 File: content/3_results/figures/dac_impl_0001.jpeg Graphic file (type jpg)
 <use content/3_results/figures/dac_impl_0001.jpeg>
 Package pdftex.def Info: content/3_results/figures/dac_impl_0001.jpeg  used on input line 41.
@@ -1080,7 +1085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 |\OT1/lmr/m/n/10.95 (+20) DAC Out-
  []
 
-<content/3_results/figures/dac_impl_1110.jpeg, id=1296, 676.77844pt x 697.10437pt>
+<content/3_results/figures/dac_impl_1110.jpeg, id=1316, 676.77844pt x 697.10437pt>
 File: content/3_results/figures/dac_impl_1110.jpeg Graphic file (type jpg)
 <use content/3_results/figures/dac_impl_1110.jpeg>
 Package pdftex.def Info: content/3_results/figures/dac_impl_1110.jpeg  used on input line 47.
@@ -1095,7 +1100,7 @@ Underfull \hbox (badness 1997) in paragraph at lines 48--48
 |\OT1/lmr/m/n/10.95 (+20) DAC Out-put
  []
 
-<content/3_results/figures/dac_impl_1111.jpeg, id=1297, 620.3175pt x 673.01437pt>
+<content/3_results/figures/dac_impl_1111.jpeg, id=1317, 620.3175pt x 673.01437pt>
 File: content/3_results/figures/dac_impl_1111.jpeg Graphic file (type jpg)
 <use content/3_results/figures/dac_impl_1111.jpeg>
 Package pdftex.def Info: content/3_results/figures/dac_impl_1111.jpeg  used on input line 53.
@@ -1105,103 +1110,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--54
 |\OT1/lmr/m/n/10.95 (+20) DAC Out-
  []
 
-) (./content/3_results/analogMotorController.tex [30 <./content/3_results/figures/dac_sim_range.png> <./content/3_results/figures/dac_sim_currentDraw.png (PNG copy)> <./content/3_results/figures/dac_impl_0000.jpeg> <./content/3_results/figures/dac_impl_0001.jpeg> <./content/3_results/figures/dac_impl_1110.jpeg> <./content/3_results/figures/dac_impl_1111.jpeg>]
-<content/3_results/figures/motorController_sim_subtractor_output.png, id=1305, 1429.59094pt x 315.42844pt>
+) (./content/3_results/analogMotorController.tex [31 <./content/3_results/figures/dac_sim_range.png> <./content/3_results/figures/dac_sim_currentDraw.png (PNG copy)> <./content/3_results/figures/dac_impl_0000.jpeg> <./content/3_results/figures/dac_impl_0001.jpeg> <./content/3_results/figures/dac_impl_1110.jpeg> <./content/3_results/figures/dac_impl_1111.jpeg>]
+<content/3_results/figures/motorController_sim_subtractor_output.png, id=1325, 1429.59094pt x 315.42844pt>
 File: content/3_results/figures/motorController_sim_subtractor_output.png Graphic file (type png)
 <use content/3_results/figures/motorController_sim_subtractor_output.png>
 Package pdftex.def Info: content/3_results/figures/motorController_sim_subtractor_output.png  used on input line 10.
 (pdftex.def)             Requested size: 377.85419pt x 83.37154pt.
-<content/3_results/figures/motorController_sim_subtractor_currentDraw.png, id=1306, 1192.455pt x 319.94531pt>
+<content/3_results/figures/motorController_sim_subtractor_currentDraw.png, id=1326, 1192.455pt x 319.94531pt>
 File: content/3_results/figures/motorController_sim_subtractor_currentDraw.png Graphic file (type png)
 <use content/3_results/figures/motorController_sim_subtractor_currentDraw.png>
 Package pdftex.def Info: content/3_results/figures/motorController_sim_subtractor_currentDraw.png  used on input line 17.
 (pdftex.def)             Requested size: 283.39244pt x 76.0366pt.
-<content/3_results/figures/motorController_sim_power_output.png, id=1307, 672.26157pt x 316.93407pt>
+<content/3_results/figures/motorController_sim_power_output.png, id=1327, 672.26157pt x 316.93407pt>
 File: content/3_results/figures/motorController_sim_power_output.png Graphic file (type png)
 <use content/3_results/figures/motorController_sim_power_output.png>
 Package pdftex.def Info: content/3_results/figures/motorController_sim_power_output.png  used on input line 24.
 (pdftex.def)             Requested size: 212.54073pt x 100.20229pt.
-<content/3_results/figures/motorController_far_0000.jpeg, id=1308, 1606.0pt x 1204.5pt>
+<content/3_results/figures/motorController_far_0000.jpeg, id=1328, 1606.0pt x 1204.5pt>
 File: content/3_results/figures/motorController_far_0000.jpeg Graphic file (type jpg)
 <use content/3_results/figures/motorController_far_0000.jpeg>
 Package pdftex.def Info: content/3_results/figures/motorController_far_0000.jpeg  used on input line 48.
 (pdftex.def)             Requested size: 179.48236pt x 134.60901pt.
-<content/3_results/figures/motorController_far_1111.jpeg, id=1309, 1606.0pt x 1204.5pt>
+<content/3_results/figures/motorController_far_1111.jpeg, id=1329, 1606.0pt x 1204.5pt>
 File: content/3_results/figures/motorController_far_1111.jpeg Graphic file (type jpg)
 <use content/3_results/figures/motorController_far_1111.jpeg>
 Package pdftex.def Info: content/3_results/figures/motorController_far_1111.jpeg  used on input line 54.
 (pdftex.def)             Requested size: 179.48236pt x 134.60901pt.
- [31 <./content/3_results/figures/motorController_sim_subtractor_output.png (PNG copy)> <./content/3_results/figures/motorController_sim_subtractor_currentDraw.png (PNG copy)> <./content/3_results/figures/motorController_sim_power_output.png (PNG copy)>]
-<content/3_results/figures/motorController_near_0000.jpeg, id=1314, 1606.0pt x 1204.5pt>
+ [32 <./content/3_results/figures/motorController_sim_subtractor_output.png (PNG copy)> <./content/3_results/figures/motorController_sim_subtractor_currentDraw.png (PNG copy)> <./content/3_results/figures/motorController_sim_power_output.png (PNG copy)>]
+<content/3_results/figures/motorController_near_0000.jpeg, id=1334, 1606.0pt x 1204.5pt>
 File: content/3_results/figures/motorController_near_0000.jpeg Graphic file (type jpg)
 <use content/3_results/figures/motorController_near_0000.jpeg>
 Package pdftex.def Info: content/3_results/figures/motorController_near_0000.jpeg  used on input line 64.
 (pdftex.def)             Requested size: 179.48236pt x 134.60901pt.
-<content/3_results/figures/motorController_near_1111.jpeg, id=1315, 1606.0pt x 1204.5pt>
+<content/3_results/figures/motorController_near_1111.jpeg, id=1335, 1606.0pt x 1204.5pt>
 File: content/3_results/figures/motorController_near_1111.jpeg Graphic file (type jpg)
 <use content/3_results/figures/motorController_near_1111.jpeg>
 Package pdftex.def Info: content/3_results/figures/motorController_near_1111.jpeg  used on input line 70.
 (pdftex.def)             Requested size: 179.48236pt x 134.60901pt.
-<content/3_results/figures/motorController_20cm_1111.jpeg, id=1317, 1606.0pt x 1204.5pt>
+<content/3_results/figures/motorController_20cm_1111.jpeg, id=1337, 1606.0pt x 1204.5pt>
 File: content/3_results/figures/motorController_20cm_1111.jpeg Graphic file (type jpg)
 <use content/3_results/figures/motorController_20cm_1111.jpeg>
 Package pdftex.def Info: content/3_results/figures/motorController_20cm_1111.jpeg  used on input line 84.
 (pdftex.def)             Requested size: 141.69621pt x 106.26834pt.
-) [32 <./content/3_results/figures/motorController_far_0000.jpeg> <./content/3_results/figures/motorController_far_1111.jpeg> <./content/3_results/figures/motorController_near_0000.jpeg> <./content/3_results/figures/motorController_near_1111.jpeg> <./content/3_results/figures/motorController_20cm_1111.jpeg>] (./content/3_results/digitalMotorController.tex
-<content/3_results/figures/digitalMotorController_sim_controlVersusOutput.png, id=1322, 1433.355pt x 624.83438pt>
+) [33 <./content/3_results/figures/motorController_far_0000.jpeg> <./content/3_results/figures/motorController_far_1111.jpeg> <./content/3_results/figures/motorController_near_0000.jpeg> <./content/3_results/figures/motorController_near_1111.jpeg> <./content/3_results/figures/motorController_20cm_1111.jpeg>] (./content/3_results/digitalMotorController.tex
+<content/3_results/figures/digitalMotorController_sim_controlVersusOutput.png, id=1343, 1433.355pt x 624.83438pt>
 File: content/3_results/figures/digitalMotorController_sim_controlVersusOutput.png Graphic file (type png)
 <use content/3_results/figures/digitalMotorController_sim_controlVersusOutput.png>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_sim_controlVersusOutput.png  used on input line 8.
 (pdftex.def)             Requested size: 377.85419pt x 164.7127pt.
-<content/3_results/figures/digitalMotorController_sim_currentVsSensor.png, id=1323, 1431.84938pt x 547.2947pt>
+<content/3_results/figures/digitalMotorController_sim_currentVsSensor.png, id=1344, 1431.84938pt x 547.2947pt>
 File: content/3_results/figures/digitalMotorController_sim_currentVsSensor.png Graphic file (type png)
 <use content/3_results/figures/digitalMotorController_sim_currentVsSensor.png>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_sim_currentVsSensor.png  used on input line 15.
 (pdftex.def)             Requested size: 377.85419pt x 144.42278pt.
-<content/3_results/figures/digitalMotorController_sim_mosfetTurnOn.png, id=1324, 804.75656pt x 321.45094pt>
+<content/3_results/figures/digitalMotorController_sim_mosfetTurnOn.png, id=1345, 804.75656pt x 321.45094pt>
 File: content/3_results/figures/digitalMotorController_sim_mosfetTurnOn.png Graphic file (type png)
 <use content/3_results/figures/digitalMotorController_sim_mosfetTurnOn.png>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_sim_mosfetTurnOn.png  used on input line 22.
 (pdftex.def)             Requested size: 330.61972pt x 132.0606pt.
- [33 <./content/3_results/figures/digitalMotorController_sim_controlVersusOutput.png (PNG copy)> <./content/3_results/figures/digitalMotorController_sim_currentVsSensor.png (PNG copy)> <./content/3_results/figures/digitalMotorController_sim_mosfetTurnOn.png (PNG copy)>]
-<content/3_results/figures/digitalMotorController_far_1111.jpeg, id=1330, 722.7pt x 1284.8pt>
+ [34 <./content/3_results/figures/digitalMotorController_sim_controlVersusOutput.png (PNG copy)> <./content/3_results/figures/digitalMotorController_sim_currentVsSensor.png (PNG copy)> <./content/3_results/figures/digitalMotorController_sim_mosfetTurnOn.png (PNG copy)>]
+<content/3_results/figures/digitalMotorController_far_1111.jpeg, id=1351, 722.7pt x 1284.8pt>
 File: content/3_results/figures/digitalMotorController_far_1111.jpeg Graphic file (type jpg)
 <use content/3_results/figures/digitalMotorController_far_1111.jpeg>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_far_1111.jpeg  used on input line 37.
 (pdftex.def)             Requested size: 106.27036pt x 188.90842pt.
-<content/3_results/figures/digitalMotorController_far_0000.jpeg, id=1331, 722.7pt x 1284.8pt>
+<content/3_results/figures/digitalMotorController_far_0000.jpeg, id=1352, 722.7pt x 1284.8pt>
 File: content/3_results/figures/digitalMotorController_far_0000.jpeg Graphic file (type jpg)
 <use content/3_results/figures/digitalMotorController_far_0000.jpeg>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_far_0000.jpeg  used on input line 43.
 (pdftex.def)             Requested size: 106.27036pt x 188.90842pt.
-<content/3_results/figures/digitalMotorController_near_1111.jpeg, id=1332, 1284.8pt x 722.7pt>
+<content/3_results/figures/digitalMotorController_near_1111.jpeg, id=1353, 1284.8pt x 722.7pt>
 File: content/3_results/figures/digitalMotorController_near_1111.jpeg Graphic file (type jpg)
 <use content/3_results/figures/digitalMotorController_near_1111.jpeg>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_near_1111.jpeg  used on input line 53.
 (pdftex.def)             Requested size: 212.54073pt x 119.54912pt.
-<content/3_results/figures/digitalMotorController_near_0000.jpeg, id=1333, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/digitalMotorController_near_0000.jpeg, id=1354, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/digitalMotorController_near_0000.jpeg Graphic file (type jpg)
 <use content/3_results/figures/digitalMotorController_near_0000.jpeg>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_near_0000.jpeg  used on input line 59.
 (pdftex.def)             Requested size: 212.54073pt x 119.48788pt.
-<content/3_results/figures/digitalMotorController_50cm_1111.jpeg, id=1334, 902.37125pt x 1604.99625pt>
+<content/3_results/figures/digitalMotorController_50cm_1111.jpeg, id=1355, 902.37125pt x 1604.99625pt>
 File: content/3_results/figures/digitalMotorController_50cm_1111.jpeg Graphic file (type jpg)
 <use content/3_results/figures/digitalMotorController_50cm_1111.jpeg>
 Package pdftex.def Info: content/3_results/figures/digitalMotorController_50cm_1111.jpeg  used on input line 67.
 (pdftex.def)             Requested size: 118.07898pt x 210.0038pt.
-) [34 <./content/3_results/figures/digitalMotorController_far_1111.jpeg> <./content/3_results/figures/digitalMotorController_far_0000.jpeg> <./content/3_results/figures/digitalMotorController_near_1111.jpeg> <./content/3_results/figures/digitalMotorController_near_0000.jpeg> <./content/3_results/figures/digitalMotorController_50cm_1111.jpeg>] (./content/3_results/batteryCharger.tex
-<content/3_results/figures/batteryCharger_sim.png, id=1339, 759.58781pt x 350.81062pt>
+) [35 <./content/3_results/figures/digitalMotorController_far_1111.jpeg> <./content/3_results/figures/digitalMotorController_far_0000.jpeg> <./content/3_results/figures/digitalMotorController_near_1111.jpeg> <./content/3_results/figures/digitalMotorController_near_0000.jpeg> <./content/3_results/figures/digitalMotorController_50cm_1111.jpeg>] (./content/3_results/batteryCharger.tex
+<content/3_results/figures/batteryCharger_sim.png, id=1360, 759.58781pt x 350.81062pt>
 File: content/3_results/figures/batteryCharger_sim.png Graphic file (type png)
 <use content/3_results/figures/batteryCharger_sim.png>
 Package pdftex.def Info: content/3_results/figures/batteryCharger_sim.png  used on input line 8.
 (pdftex.def)             Requested size: 377.85419pt x 174.51093pt.
-<content/3_results/figures/batteryCharger_sim_regulation.png, id=1340, 755.82375pt x 335.75438pt>
+<content/3_results/figures/batteryCharger_sim_regulation.png, id=1361, 755.82375pt x 335.75438pt>
 File: content/3_results/figures/batteryCharger_sim_regulation.png Graphic file (type png)
 <use content/3_results/figures/batteryCharger_sim_regulation.png>
 Package pdftex.def Info: content/3_results/figures/batteryCharger_sim_regulation.png  used on input line 15.
 (pdftex.def)             Requested size: 377.85419pt x 167.85115pt.
- [35 <./content/3_results/figures/batteryCharger_sim.png (PNG copy)> <./content/3_results/figures/batteryCharger_sim_regulation.png (PNG copy)>]
-<content/3_results/figures/batteryChargerUnloaded.jpeg, id=1345, 734.745pt x 659.46375pt>
+ [36 <./content/3_results/figures/batteryCharger_sim.png (PNG copy)> <./content/3_results/figures/batteryCharger_sim_regulation.png (PNG copy)>]
+<content/3_results/figures/batteryChargerUnloaded.jpeg, id=1366, 734.745pt x 659.46375pt>
 File: content/3_results/figures/batteryChargerUnloaded.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryChargerUnloaded.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryChargerUnloaded.jpeg  used on input line 28.
@@ -1211,14 +1216,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--29
 []\OT1/lmss/bx/n/10.95 (+20) Figure 3.41: |\OT1/lmr/m/n/10.95 (+20) Bat-tery
  []
 
-<content/3_results/figures/batteryCharger1k.jpeg, id=1346, 803.25093pt x 676.77844pt>
+<content/3_results/figures/batteryCharger1k.jpeg, id=1367, 803.25093pt x 676.77844pt>
 File: content/3_results/figures/batteryCharger1k.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryCharger1k.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryCharger1k.jpeg  used on input line 34.
 (pdftex.def)             Requested size: 188.9235pt x 159.1772pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 35.
-<content/3_results/figures/batteryCharger50ohm.jpeg, id=1347, 676.77844pt x 709.14937pt>
+<content/3_results/figures/batteryCharger50ohm.jpeg, id=1368, 676.77844pt x 709.14937pt>
 File: content/3_results/figures/batteryCharger50ohm.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryCharger50ohm.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryCharger50ohm.jpeg  used on input line 44.
@@ -1228,7 +1233,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--45
 []\OT1/lmss/bx/n/10.95 (+20) Figure 3.43: |\OT1/lmr/m/n/10.95 (+20) Bat-tery
  []
 
-<content/3_results/figures/batteryCharger15ohm.jpeg, id=1348, 676.77844pt x 760.34062pt>
+<content/3_results/figures/batteryCharger15ohm.jpeg, id=1369, 676.77844pt x 760.34062pt>
 File: content/3_results/figures/batteryCharger15ohm.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryCharger15ohm.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryCharger15ohm.jpeg  used on input line 50.
@@ -1244,83 +1249,83 @@ Underfull \hbox (badness 1281) in paragraph at lines 51--51
 $ Load
  []
 
-<content/3_results/figures/batteryChargerRegulation.jpeg, id=1349, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/batteryChargerRegulation.jpeg, id=1370, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/batteryChargerRegulation.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryChargerRegulation.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryChargerRegulation.jpeg  used on input line 58.
 (pdftex.def)             Requested size: 188.9235pt x 106.21451pt.
-) [36 <./content/3_results/figures/batteryChargerUnloaded.jpeg> <./content/3_results/figures/batteryCharger1k.jpeg> <./content/3_results/figures/batteryCharger50ohm.jpeg> <./content/3_results/figures/batteryCharger15ohm.jpeg> <./content/3_results/figures/batteryChargerRegulation.jpeg>] (./content/3_results/batteryReaderUnderVoltageProtection.tex
-<content/3_results/figures/batteryReader_sim.png, id=1355, 741.52031pt x 337.26pt>
+) [37 <./content/3_results/figures/batteryChargerUnloaded.jpeg> <./content/3_results/figures/batteryCharger1k.jpeg> <./content/3_results/figures/batteryCharger50ohm.jpeg> <./content/3_results/figures/batteryCharger15ohm.jpeg> <./content/3_results/figures/batteryChargerRegulation.jpeg>] (./content/3_results/batteryReaderUnderVoltageProtection.tex
+<content/3_results/figures/batteryReader_sim.png, id=1375, 741.52031pt x 337.26pt>
 File: content/3_results/figures/batteryReader_sim.png Graphic file (type png)
 <use content/3_results/figures/batteryReader_sim.png>
 Package pdftex.def Info: content/3_results/figures/batteryReader_sim.png  used on input line 8.
 (pdftex.def)             Requested size: 377.85419pt x 171.85622pt.
-<content/3_results/figures/underVoltage_sim.png, id=1356, 684.30656pt x 315.42844pt>
+<content/3_results/figures/underVoltage_sim.png, id=1376, 684.30656pt x 315.42844pt>
 File: content/3_results/figures/underVoltage_sim.png Graphic file (type png)
 <use content/3_results/figures/underVoltage_sim.png>
 Package pdftex.def Info: content/3_results/figures/underVoltage_sim.png  used on input line 15.
 (pdftex.def)             Requested size: 377.85419pt x 174.17444pt.
- [37 <./content/3_results/figures/batteryReader_sim.png (PNG copy)> <./content/3_results/figures/underVoltage_sim.png (PNG copy)>]
-<content/3_results/figures/batteryReader72.jpeg, id=1361, 1604.99625pt x 902.37125pt>
+ [38 <./content/3_results/figures/batteryReader_sim.png (PNG copy)> <./content/3_results/figures/underVoltage_sim.png (PNG copy)>]
+<content/3_results/figures/batteryReader72.jpeg, id=1381, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/batteryReader72.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryReader72.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryReader72.jpeg  used on input line 27.
 (pdftex.def)             Requested size: 212.54073pt x 119.48788pt.
-<content/3_results/figures/batteryReader59.jpeg, id=1362, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/batteryReader59.jpeg, id=1382, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/batteryReader59.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryReader59.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryReader59.jpeg  used on input line 33.
 (pdftex.def)             Requested size: 212.54073pt x 119.48788pt.
-<content/3_results/figures/batteryReaderUnderVoltage59.jpeg, id=1363, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/batteryReaderUnderVoltage59.jpeg, id=1383, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/batteryReaderUnderVoltage59.jpeg Graphic file (type jpg)
 <use content/3_results/figures/batteryReaderUnderVoltage59.jpeg>
 Package pdftex.def Info: content/3_results/figures/batteryReaderUnderVoltage59.jpeg  used on input line 41.
 (pdftex.def)             Requested size: 283.39244pt x 159.32178pt.
-<content/3_results/figures/underVoltageInputOutput.jpeg, id=1364, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/underVoltageInputOutput.jpeg, id=1384, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/underVoltageInputOutput.jpeg Graphic file (type jpg)
 <use content/3_results/figures/underVoltageInputOutput.jpeg>
 Package pdftex.def Info: content/3_results/figures/underVoltageInputOutput.jpeg  used on input line 48.
 (pdftex.def)             Requested size: 188.9235pt x 106.21451pt.
-<content/3_results/figures/underVoltageInputTransistorOutput.jpeg, id=1365, 1604.99625pt x 902.37125pt>
+<content/3_results/figures/underVoltageInputTransistorOutput.jpeg, id=1385, 1604.99625pt x 902.37125pt>
 File: content/3_results/figures/underVoltageInputTransistorOutput.jpeg Graphic file (type jpg)
 <use content/3_results/figures/underVoltageInputTransistorOutput.jpeg>
 Package pdftex.def Info: content/3_results/figures/underVoltageInputTransistorOutput.jpeg  used on input line 55.
 (pdftex.def)             Requested size: 188.9235pt x 106.21451pt.
-)) [38 <./content/3_results/figures/batteryReader72.jpeg> <./content/3_results/figures/batteryReader59.jpeg> <./content/3_results/figures/batteryReaderUnderVoltage59.jpeg> <./content/3_results/figures/underVoltageInputOutput.jpeg> <./content/3_results/figures/underVoltageInputTransistorOutput.jpeg>]
+)) [39 <./content/3_results/figures/batteryReader72.jpeg> <./content/3_results/figures/batteryReader59.jpeg> <./content/3_results/figures/batteryReaderUnderVoltage59.jpeg> <./content/3_results/figures/underVoltageInputOutput.jpeg> <./content/3_results/figures/underVoltageInputTransistorOutput.jpeg>]
 \openout2 = `content/4_implementation/4_implementation.aux'.
 
  (./content/4_implementation/4_implementation.tex
 Chapter 4.
 (./content/4_implementation/combinedCircuit.tex
-<content/4_implementation/figures//assignment5.png, id=1371, 776.14969pt x 508.14844pt>
+<content/4_implementation/figures//assignment5.png, id=1392, 776.14969pt x 508.14844pt>
 File: content/4_implementation/figures//assignment5.png Graphic file (type png)
 <use content/4_implementation/figures//assignment5.png>
 Package pdftex.def Info: content/4_implementation/figures//assignment5.png  used on input line 8.
 (pdftex.def)             Requested size: 401.47144pt x 262.85078pt.
-) [39
+) [40
 
 
 
 
  <./content/4_implementation/figures//assignment5.png (PNG copy)>] (./content/4_implementation/currentSensor.tex
-<content/4_implementation/figures//currentSensor_impl_circuit.png, id=1377, 480.29437pt x 526.96875pt>
+<content/4_implementation/figures//currentSensor_impl_circuit.png, id=1397, 480.29437pt x 526.96875pt>
 File: content/4_implementation/figures//currentSensor_impl_circuit.png Graphic file (type png)
 <use content/4_implementation/figures//currentSensor_impl_circuit.png>
 Package pdftex.def Info: content/4_implementation/figures//currentSensor_impl_circuit.png  used on input line 14.
 (pdftex.def)             Requested size: 354.23695pt x 388.66422pt.
-) [40 <./content/4_implementation/figures//currentSensor_impl_circuit.png (PNG copy)>] (./content/4_implementation/ultrasonicSensor.tex
-<content/4_implementation/figures//rangeSensor_impl_circuit.png, id=1382, 404.26031pt x 502.12593pt>
+) [41 <./content/4_implementation/figures//currentSensor_impl_circuit.png (PNG copy)>] (./content/4_implementation/ultrasonicSensor.tex
+<content/4_implementation/figures//rangeSensor_impl_circuit.png, id=1402, 404.26031pt x 502.12593pt>
 File: content/4_implementation/figures//rangeSensor_impl_circuit.png Graphic file (type png)
 <use content/4_implementation/figures//rangeSensor_impl_circuit.png>
 Package pdftex.def Info: content/4_implementation/figures//rangeSensor_impl_circuit.png  used on input line 6.
 (pdftex.def)             Requested size: 354.23695pt x 440.0027pt.
-) [41 <./content/4_implementation/figures//rangeSensor_impl_circuit.png (PNG copy)>] (./content/4_implementation/digitalAnalogConverter.tex
-<content/4_implementation/figures//dac_impl_circuit.png, id=1387, 487.8225pt x 571.38469pt>
+) [42 <./content/4_implementation/figures//rangeSensor_impl_circuit.png (PNG copy)>] (./content/4_implementation/digitalAnalogConverter.tex
+<content/4_implementation/figures//dac_impl_circuit.png, id=1407, 487.8225pt x 571.38469pt>
 File: content/4_implementation/figures//dac_impl_circuit.png Graphic file (type png)
 <use content/4_implementation/figures//dac_impl_circuit.png>
 Package pdftex.def Info: content/4_implementation/figures//dac_impl_circuit.png  used on input line 6.
 (pdftex.def)             Requested size: 354.23695pt x 414.91898pt.
-)) [42 <./content/4_implementation/figures//dac_impl_circuit.png (PNG copy)>] (build/23905093_e344_report.bbl
+)) [43 <./content/4_implementation/figures//dac_impl_circuit.png (PNG copy)>] (build/23905093_e344_report.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 33--36
 \OT1/lmr/m/n/12 (+14) downloads / aemDocuments / documents / OTH / ProductDocuments / DataSheets / 21882d .
  []
@@ -1345,7 +1350,7 @@ Underfull \hbox (badness 1248) in paragraph at lines 75--79
 []\OT1/lmr/m/n/12 (+20) Engineering360, ``How elec-tric cur-rent sen-sor tech-nol-ogy works,''
  []
 
-[43
+[44
 
 
 
@@ -1354,26 +1359,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--191
 \OT1/lmr/m/n/12 (+20) datasheet / 99 / 3b / 7d / 91 / 91 / 51 / 4b / be / CD00000544 . pdf / ^^Lles / CD00000544 . pdf / jcr :
  []
 
-[44]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 240--244
 \OT1/lmr/m/n/12 (+20) datasheet / 26 / db / 14 / 60 / 52 / 47 / 47 / 5b / CD00001625 . pdf / ^^Lles / CD00001625 . pdf / jcr :
  []
 
-) (./endmatter/appendix_a.tex [45]
+) (./endmatter/appendix_a.tex [46]
 Appendix A.
 
 
 pdfTeX warning: pdflatex (file ./endmatter/figures//SocialContract_signed.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<endmatter/figures//SocialContract_signed.pdf, id=1471, 597.50829pt x 845.0471pt>
+<endmatter/figures//SocialContract_signed.pdf, id=1491, 597.50829pt x 845.0471pt>
 File: endmatter/figures//SocialContract_signed.pdf Graphic file (type pdf)
 <use endmatter/figures//SocialContract_signed.pdf>
 Package pdftex.def Info: endmatter/figures//SocialContract_signed.pdf  used on input line 7.
 (pdftex.def)             Requested size: 377.85419pt x 534.39401pt.
-) (./endmatter/appendix_b.tex [46
+) (./endmatter/appendix_b.tex [47
 
  <./endmatter/figures//SocialContract_signed.pdf>]
 Appendix B.
-<endmatter/figures//GitHub.png, id=1513, 998.22937pt x 685.05937pt>
+<endmatter/figures//GitHub.png, id=1533, 998.22937pt x 685.05937pt>
 File: endmatter/figures//GitHub.png Graphic file (type png)
 <use endmatter/figures//GitHub.png>
 Package pdftex.def Info: endmatter/figures//GitHub.png  used on input line 8.
@@ -1383,7 +1388,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 8--10
  [][] 
  []
 
-) (./endmatter/appendix_c.tex [47
+) (./endmatter/appendix_c.tex [48
 
  <./endmatter/figures//GitHub.png (PNG copy)>]
 Appendix C.
@@ -1410,7 +1415,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `superscript' on input line 32.
 
-[48
+[49
 
 ]
 
@@ -1442,23 +1447,23 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package caption Warning: Unused \captionsetup[algorithm] on input line 126.
 See the caption package documentation for explanation.
 
-[49] (build/23905093_e344_report.aux (build/content/1_literatureReview/1_literatureReview.aux) (build/content/2_design/2_design.aux) (build/content/3_results/3_results.aux) (build/content/4_implementation/4_implementation.aux))
+[50] (build/23905093_e344_report.aux (build/content/1_literatureReview/1_literatureReview.aux) (build/content/2_design/2_design.aux) (build/content/3_results/3_results.aux) (build/content/4_implementation/4_implementation.aux))
 Package rerunfilecheck Info: File `23905093_e344_report.out' has not changed.
-(rerunfilecheck)             Checksum: AB92B4AD2522FAEB6087375285168C49;14973.
+(rerunfilecheck)             Checksum: 47CFFE181E57A088E70FC3489829ACAC;15238.
  ) 
 Here is how much of TeX's memory you used:
- 23949 strings out of 478238
- 484724 string characters out of 5850456
- 827252 words of memory out of 5000000
- 41127 multiletter control sequences out of 15000+600000
- 553963 words of font info for 198 fonts, out of 8000000 for 9000
+ 23964 strings out of 478238
+ 485091 string characters out of 5850456
+ 827289 words of memory out of 5000000
+ 41133 multiletter control sequences out of 15000+600000
+ 554090 words of font info for 199 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,14n,79p,1096b,948s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,14n,79p,1093b,948s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on build/23905093_e344_report.pdf (59 pages, 11553357 bytes).
+Output written on build/23905093_e344_report.pdf (60 pages, 11555940 bytes).
 PDF statistics:
- 1690 PDF objects out of 1728 (max. 8388607)
- 1446 compressed objects within 15 object streams
- 287 named destinations out of 1000 (max. 500000)
- 52470 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1712 PDF objects out of 1728 (max. 8388607)
+ 1467 compressed objects within 15 object streams
+ 291 named destinations out of 1000 (max. 500000)
+ 52486 words of extra memory for PDF output out of 61914 (max. 10000000)
 
