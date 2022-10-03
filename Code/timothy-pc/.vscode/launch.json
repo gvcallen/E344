@@ -26,6 +26,24 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "Debug executable 'timothy-gui'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=timothy-gui",
+                    "--package=timothy-pc"
+                ],
+                "filter": {
+                    "name": "timothy-gui",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug executable 'timothy-cli'",
             "cargo": {
                 "args": [
@@ -40,7 +58,7 @@
             },
             "args": [
                 "start",
-                "usb",
+                "bt",
             ],
             "cwd": "${workspaceFolder}"
         },

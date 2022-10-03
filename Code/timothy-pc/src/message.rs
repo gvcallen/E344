@@ -43,6 +43,7 @@ const MESSAGE_GET_ALL_LENGTH_RESPONSE: u8 = 1                               // "
     + MESSAGE_GET_LEFT_WHEEL_SPEED_LENGTH_RESPONSE
     + MESSAGE_GET_RIGHT_WHEEL_SPEED_LENGTH_RESPONSE;
 
+#[derive(Debug, Clone)]
 pub enum Message {
     GetAll(Option<Vec<Message>>),
     GetLWCurrent(Option<f32>),
@@ -250,9 +251,9 @@ impl Display for Message {
             Self::GetRSRange(range) => {
                 let range = range.ok_or(std::fmt::Error)?;
                 if range > 1.0 {
-                    write!(f, "Range sensor range:\t> {} m", 1.0)
+                    write!(f, "Right sensor range:\t> {} m", 1.0)
                 } else {
-                    write!(f, "Range sensor range:\t{} m", range)
+                    write!(f, "Right sensor range:\t{} m", range)
                 }
             }
             Self::GetBatteryVoltage(voltage) => {

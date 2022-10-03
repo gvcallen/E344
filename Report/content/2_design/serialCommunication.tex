@@ -2,9 +2,9 @@
 \section{Serial Communication}
 
 A serial communication protocol and procedure will be implemented that will allow control of the car, as well as telemetry readings.
-The protocol will be implemented both over UART and Bluetooth to allow both USB and wireless control. The protocol will set out
-the rules for communication for a "client" and a "server", including the types of messages and the format of the data.
-The MCU and PC will then implement this protocol as server and client respectively.
+The protocol will be implemented over UART and Bluetooth to allow both USB and wireless control. The protocol will set out
+the rules for communication between a "client" and a "server". This will define the types of messages and the format of the data.
+The protocol will then be implemented by the server (ESP) and the client (PC) respectively.
 
 \subsection{Protocol}
 
@@ -46,3 +46,38 @@ IDs 000 to 099 are reserved for "get" messages, and 100 to 199 are reserved for 
   \caption{}
   \label{tab:protocolMessages}
 \end{table}
+
+\subsection{ESP Firmware}
+
+The firmware on the ESP should be designed to be both scalable yet fast. The setup for the protocol is trivial - UART is already
+initialized in the Arduino framework, and bluetooth simply needs to be initialized with a single function call.
+
+The flow diagram in Figure \ref{fig:serialCommunication_firmwareDiagram} therefore illustrates the implementation of the protocol
+in the main loop. Note that because the length of the message is known, there is no need for a state machine - the firmware
+can simply wait on the serial buffer until it is populated to the required length for that message.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.9\textwidth]{serialCommunication_firmwareDiagram}
+  \caption{Serial Communication Firmware Flow Diagram}
+  \label{fig:serialCommunication_firmwareDiagram}
+\end{figure}
+
+\subsection{PC Software}
+
+The software from the PC should provided a command-line interface to command the car's wheel speeds and to get telemetry readings.
+The implementation is relatively simple:
+
+\begin{enumerate}
+  \item Start a connection with the device via either serial or bluetooth when the application starts.
+  \item Wait for any "commands" from the user e.g. "set lws 8" to set the left wheel speed to 8 while the application is running.
+  \item Parse the arguments of the user's command into a Message structure.
+  \item Serialize the Message into a byte array.
+  \item Send the byte array over the relevant protocol.
+  \item If the Message is a "get" request, block and wait for a response for a short amount of time:
+  \begin{enumerate}
+    \item Receive the Message response over the relevant protocol.
+    \item Deserialize the byte array into a Message structure.
+    \item Display the results of the Message to the user.
+  \end{enumerate}
+\end{enumerate}

@@ -8,6 +8,8 @@ edition = "2021"
 [dependencies]
 btleplug = "0.10.1"
 crossterm = "0.25.0"
+eframe = "0.19.0"
+egui = "0.19.0"
 fixed = "1.19.0"
 futures = "0.3.24"
 serialport = "*"

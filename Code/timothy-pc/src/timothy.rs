@@ -133,6 +133,14 @@ impl Timothy {
         self.send(&mut buffer[..count as usize]).await
     }
 
+    pub async fn send_messages(&mut self, requests: &[Message]) -> Result<(), Box<dyn Error>> {
+        for request in requests {
+            self.send_message(request).await?
+        }
+
+        Ok(())
+    }
+
     pub async fn receive_message(&mut self, request: &Message) -> Result<Message, Box<dyn Error>> {
         let response_length = request.len_response()?;
         let mut buffer = [0u8; 20];
