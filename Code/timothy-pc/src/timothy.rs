@@ -1,7 +1,8 @@
-use std::{error::Error, time::Duration};
+use std::{error::Error, sync::Mutex, time::Duration};
 
+use gilrs::{ev::state::GamepadState, GamepadId, Gilrs, GilrsBuilder};
 use serialport::SerialPort;
-use simple_error::bail;
+use simple_error::{bail, simple_error};
 use tokio::time::{self, timeout};
 
 use crate::{
@@ -17,7 +18,11 @@ pub enum TimothyProtocol {
 
 pub struct Timothy {
     com_method: TimothyProtocol,
+    // active_gamepad: Some<
 }
+
+const RECEIVE_DELAY: u64 = 5;
+const SEND_DELAY: u64 = 50;
 
 impl Timothy {
     pub fn new(com_method: TimothyProtocol) -> Self {
@@ -25,9 +30,7 @@ impl Timothy {
     }
 
     pub async fn new_bluetooth() -> Result<Self, Box<dyn Error>> {
-        let peripheral = bluetooth::connect_by_name("Timothy")
-            .await
-            .ok_or("Could not connect via Bluetooth")?;
+        let peripheral = bluetooth::connect_by_name("Timothy").await?;
 
         let uart = bluetooth::BluetoothUART::new(peripheral).await?;
         Ok(Timothy::new(TimothyProtocol::Bluetooth(uart)))
@@ -42,8 +45,9 @@ impl Timothy {
 
     pub async fn receive(&mut self, buffer: &mut [u8]) -> Result<usize, std::io::Error> {
         match &mut self.com_method {
-            TimothyProtocol::Serial(serialport) => serialport.read(buffer),
+            // TimothyProtocol::Serial(serialport) => serialport.read(buffer),
             TimothyProtocol::Bluetooth(bluetooth) => bluetooth.receive(buffer).await,
+            _ => Ok(0),
         }
     }
 
@@ -58,6 +62,12 @@ impl Timothy {
         }
 
         Ok(())
+    }
+
+    pub async fn test(&mut self) -> Result<String, Box<dyn Error>> {
+        let _ = self.send(&mut [0; 5]).await;
+
+        Ok("Works".into())
     }
 
     pub async fn get_all(&mut self) -> Result<String, Box<dyn Error>> {
@@ -122,8 +132,52 @@ impl Timothy {
 
         self.send_message(&request).await.unwrap();
 
-        time::sleep(Duration::from_millis(10)).await;
+        time::sleep(Duration::from_millis(RECEIVE_DELAY)).await;
         self.receive_message(&request).await
+    }
+
+    pub async fn go(&mut self) -> Result<(), Box<dyn Error>> {
+        self.send_messages(&[Message::SetRWSpeed(15), Message::SetLWSpeed(15)])
+            .await
+    }
+
+    pub async fn stop(&mut self) -> Result<(), Box<dyn Error>> {
+        self.send_messages(&[Message::SetRWSpeed(0), Message::SetLWSpeed(0)])
+            .await
+    }
+
+    pub async fn left(&mut self) -> Result<(), Box<dyn Error>> {
+        self.send_messages(&[Message::SetRWSpeed(15), Message::SetLWSpeed(0)])
+            .await
+    }
+
+    pub async fn right(&mut self) -> Result<(), Box<dyn Error>> {
+        self.send_messages(&[Message::SetRWSpeed(0), Message::SetLWSpeed(15)])
+            .await
+    }
+
+    // Speed must be [-1.0, 1.0]
+    pub async fn drive(&mut self, speed: f32, direction: f32) -> Result<(), Box<dyn Error>> {
+        let lw_speed = {
+            if direction < 0.0 {
+                speed * 15.0 * (1.0 + direction)
+            } else {
+                speed * 15.0
+            }
+        };
+
+        let rw_speed = {
+            if direction > 0.0 {
+                speed * 15.0 * (1.0 - direction)
+            } else {
+                speed * 15.0
+            }
+        };
+
+        self.send_message(&Message::SetRWSpeed(rw_speed as u8))
+            .await?;
+        self.send_message(&Message::SetLWSpeed(lw_speed as u8))
+            .await
     }
 
     pub async fn send_message(&mut self, request: &Message) -> Result<(), Box<dyn Error>> {
@@ -135,7 +189,8 @@ impl Timothy {
 
     pub async fn send_messages(&mut self, requests: &[Message]) -> Result<(), Box<dyn Error>> {
         for request in requests {
-            self.send_message(request).await?
+            self.send_message(request).await?;
+            time::sleep(Duration::from_millis(SEND_DELAY)).await;
         }
 
         Ok(())

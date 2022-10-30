@@ -4,11 +4,14 @@ use btleplug::api::{
 };
 use btleplug::platform::{Adapter, Manager, Peripheral};
 use futures::{Stream, StreamExt};
+use simple_error::simple_error;
 use std::collections::BTreeSet;
 use std::error::Error;
 use std::pin::Pin;
 use std::time::Duration;
 use std::{result, thread};
+use tokio::runtime::Runtime;
+use tokio::sync::Mutex;
 use tokio::time;
 use uuid::{uuid, Uuid};
 
@@ -22,7 +25,7 @@ pub struct BluetoothUART {
     characteristics: BTreeSet<Characteristic>,
     rx_char: usize,
     tx_char: usize,
-    tx_stream: Pin<Box<dyn Stream<Item = ValueNotification> + Send>>,
+    tx_stream: Mutex<Pin<Box<dyn Stream<Item = ValueNotification> + Send>>>,
 }
 
 impl BluetoothUART {
@@ -51,7 +54,7 @@ impl BluetoothUART {
             characteristics,
             rx_char,
             tx_char,
-            tx_stream,
+            tx_stream: Mutex::new(tx_stream),
         })
     }
 
@@ -64,10 +67,16 @@ impl BluetoothUART {
     }
 
     pub async fn receive(&mut self, bytes: &mut [u8]) -> Result<usize, std::io::Error> {
-        let stream = self.tx_stream.next().await.ok_or(std::io::Error::new(
-            std::io::ErrorKind::TimedOut,
-            "Bluetooth notification timeout occurred.",
-        ))?;
+        let stream = self
+            .tx_stream
+            .lock()
+            .await
+            .next()
+            .await
+            .ok_or(std::io::Error::new(
+                std::io::ErrorKind::TimedOut,
+                "Bluetooth notification timeout occurred.",
+            ))?;
         let data = &stream.value;
 
         // Only write up until the length of the buffer
@@ -81,7 +90,7 @@ impl BluetoothUART {
 
 // Generic functions
 
-pub async fn connect_by_name(name: &str) -> Option<Peripheral> {
+pub async fn connect_by_name(name: &str) -> Result<Peripheral, Box<dyn Error>> {
     let manager = Manager::new().await.unwrap();
 
     // get the first bluetooth adapter
@@ -92,21 +101,17 @@ pub async fn connect_by_name(name: &str) -> Option<Peripheral> {
     let central = adapters.into_iter().nth(0).unwrap();
 
     // start scanning for devices
-    central.start_scan(ScanFilter::default()).await.unwrap();
+    central.start_scan(ScanFilter::default()).await?;
     time::sleep(Duration::from_secs(2)).await;
 
     // find the device we're interested in
-    let peripheral = find_by_name(&central, name).await?;
+    let peripheral = find_by_name(&central, name)
+        .await
+        .ok_or(simple_error!("Could not find device"))?;
 
-    let result = peripheral.connect().await;
+    peripheral.connect().await?;
 
-    match result {
-        Ok(_) => Some(peripheral),
-        Err(e) => {
-            println!("{}", e.to_string());
-            None
-        }
-    }
+    Ok(peripheral)
 }
 
 async fn find_by_name(central: &Adapter, peripheral_name: &str) -> Option<Peripheral> {

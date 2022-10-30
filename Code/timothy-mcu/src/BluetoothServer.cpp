@@ -11,24 +11,30 @@
 #define BLUETOOTH_CHARACTERISTIC_TX_UUID "980e2c70-3e62-11ed-b878-0242ac120002"
 #define BLUETOOTH_CHARACTERISTIC_RX_UUID "980e2d7e-3e62-11ed-b878-0242ac120002"
 
+namespace tim
+{
+
 int BluetoothServer::begin(std::string_view name)
 {
-    BLEDevice::init(name.data());
+    if (!server)
+    {
+        BLEDevice::init(name.data());
 
-    // Create server
-    server = BLEDevice::createServer();
-    server->setCallbacks(this);
+        // Create server
+        server = BLEDevice::createServer();
+        server->setCallbacks(this);
 
-    // Create UART service and characteristics
-    BLEService *service = server->createService(BLUETOOTH_SERVICE_UUID);
-    txCharacteristic =
-        service->createCharacteristic(BLUETOOTH_CHARACTERISTIC_TX_UUID, BLECharacteristic::PROPERTY_NOTIFY);
-    txCharacteristic->addDescriptor(new BLE2902());
-    rxCharacteristic =
-        service->createCharacteristic(BLUETOOTH_CHARACTERISTIC_RX_UUID, BLECharacteristic::PROPERTY_WRITE);
+        // Create UART service and characteristics
+        service = server->createService(BLUETOOTH_SERVICE_UUID);
+        txCharacteristic =
+            service->createCharacteristic(BLUETOOTH_CHARACTERISTIC_TX_UUID, BLECharacteristic::PROPERTY_NOTIFY);
+        txCharacteristic->addDescriptor(new BLE2902());
+        rxCharacteristic =
+            service->createCharacteristic(BLUETOOTH_CHARACTERISTIC_RX_UUID, BLECharacteristic::PROPERTY_WRITE);
 
-    // Set callbacks for "connected" and RX
-    rxCharacteristic->setCallbacks(this);
+        // Set callbacks for "connected" and RX
+        rxCharacteristic->setCallbacks(this);
+    }
 
     // Start service and advertising
     service->start();
@@ -36,6 +42,18 @@ int BluetoothServer::begin(std::string_view name)
     advertising->start();
 
     dataReceived = false;
+
+    this->isRunning = true;
+
+    return ERROR_NONE;
+}
+
+int BluetoothServer::end()
+{
+    // BLEDevice::deinit(true);
+    // BLEDevice::stopAdvertising();
+    service->stop();
+    this->isRunning = false;
 
     return ERROR_NONE;
 }
@@ -87,3 +105,19 @@ size_t BluetoothServer::receive(uint8_t *buffer, size_t maxSize)
 
     return length;
 }
+
+bool BluetoothServer::tryReceive(uint8_t *buffer, size_t bufferSize)
+{
+    if (this->dataReceived)
+    {
+        this->dataReceived = false;
+
+        size_t numBytes = this->receive(buffer, sizeof(buffer));
+
+        return true;
+    }
+
+    return false;
+}
+
+} // namespace tim

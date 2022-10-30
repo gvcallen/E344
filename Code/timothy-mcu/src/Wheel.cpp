@@ -3,20 +3,29 @@
 #include "Error.hpp"
 #include "Wheel.hpp"
 
-// with battery voltage 7.30:
-// 15: 5.81
-// 14: 5.65
-// 13: 5.27
-// 12: 4.90
-// 5: 2.3
-// 4: 1.94
-// 3: 1.56
-// 2: 1.19
-// 1: 0.82
-// 0: 0.43
-// equation:  y = 0.44358 * DAC + 0.3716
+namespace tim
+{
 
-#define BATTERY_MAX 7.28
+int Wheel::beginCurrentSensor(uint8_t pin, float a, float b)
+{
+    this->currentSensor.pin = pin;
+    this->currentSensor.a = a;
+    this->currentSensor.b = b;
+
+    pinMode(pin, INPUT);
+    return ERROR_NONE;
+}
+
+float Wheel::getCurrent()
+{
+    int adcVal = analogRead(this->currentSensor.pin);
+    float current = this->currentSensor.a * adcVal + this->currentSensor.b;
+
+    if (current < 80.0f)
+        current = 0.0f;
+
+    return current;
+}
 
 int DigitalWheel::begin(uint8_t pwmPin, uint8_t pwmChannel, uint32_t pwmFreq, uint8_t pwmRes)
 {
@@ -47,6 +56,13 @@ int DigitalWheel::setSpeed(float speed, float batteryVoltage)
     return ERROR_NONE;
 }
 
+int DigitalWheel::update(float rightDistance, float batteryVoltage)
+{
+    rightDistance = rightDistance < 1.0f ? rightDistance : 1.0f;
+    this->setSpeed(this->getSpeedCommand() * rightDistance, batteryVoltage);
+    return ERROR_NONE;
+}
+
 int AnalogWheel::begin(uint8_t bit0Pin, uint8_t bit1Pin, uint8_t bit2Pin, uint8_t bit3Pin)
 {
     pinMode(bit0Pin, OUTPUT);
@@ -73,3 +89,12 @@ int AnalogWheel::setSpeed(float speed)
 
     return ERROR_NONE;
 }
+
+int AnalogWheel::update()
+{
+    this->setSpeed(this->getSpeedCommand());
+
+    return ERROR_NONE;
+}
+
+} // namespace tim

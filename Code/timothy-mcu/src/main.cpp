@@ -1,154 +1,52 @@
 #include <Arduino.h>
 
+#include "Battery.hpp"
 #include "BluetoothServer.hpp"
+#include "Config.hpp"
 #include "Message.hpp"
 #include "RangeSensor.hpp"
 #include "Wheel.hpp"
+#include "WiFiServer.hpp"
 
-#include <BLE2902.h>
-#include <BLEDevice.h>
-#include <BLEServer.h>
-#include <BLEUtils.h>
-
-// Pin definitions
-constexpr uint8_t RANGE_SENSOR_LEFT_TRIGGER_PIN = 23;
-constexpr uint8_t RANGE_SENSOR_LEFT_ECHO_PIN = 21;
-constexpr uint8_t RANGE_SENSOR_RIGHT_TRIGGER_PIN = RANGE_SENSOR_LEFT_TRIGGER_PIN;
-constexpr uint8_t RANGE_SENSOR_RIGHT_ECHO_PIN = 14;
-
-constexpr uint8_t WHEEL_LEFT_CURRENT_PIN = 4;
-constexpr uint8_t WHEEL_LEFT_CONTROL_PIN = 22;
-
-constexpr uint8_t WHEEL_RIGHT_CONTROL_B0_PIN = 16;
-constexpr uint8_t WHEEL_RIGHT_CONTROL_B1_PIN = 5;
-constexpr uint8_t WHEEL_RIGHT_CONTROL_B2_PIN = 18;
-constexpr uint8_t WHEEL_RIGHT_CONTROL_B3_PIN = 19;
-constexpr uint8_t WHEEL_RIGHT_CURRENT_PIN = 32;
-
-constexpr uint8_t BATTERY_PIN = 15;
-
-// Range sensor PWM settings
-constexpr uint8_t RANGE_SENSOR_LEFT_TRIGGER_CHANNEL = 0;
-constexpr uint8_t RANGE_SENSOR_RIGHT_TRIGGER_CHANNEL = RANGE_SENSOR_LEFT_TRIGGER_CHANNEL;
-
-// Right wheel control PWM settings
-constexpr uint32_t WHEEL_LEFT_CONTROL_FREQ = 20000;
-constexpr uint8_t WHEEL_LEFT_CONTROL_CHANNEL = 2;
-constexpr uint8_t WHEEL_LEFT_CONTROL_RES = 11;
-
-// Global objects
-RangeSensor rightRangeSensor, leftRangeSensor;
-DigitalWheel leftWheel;
-AnalogWheel rightWheel;
-BluetoothServer bluetooth;
-
-// Global variables
-static float prevRightDistanceMeasured, prevRightDistanceOutput, rightDistanceBeta, rightDistanceOneMinusBeta;
+// Globals
+tim::RangeSensor rightRangeSensor, leftRangeSensor;
+tim::DigitalWheel leftWheel;
+tim::AnalogWheel rightWheel;
+tim::BluetoothServer bluetooth;
+tim::WiFiServer wiFi;
+tim::Battery battery;
 
 void setup()
 {
     // Begin serial and bluetooth
-    Serial.begin(115200);
-    bluetooth.begin("Timothy ō͡≡o˞̶");
+    Serial.begin(SERIAL_BAUD);
 
     // Begin range sensors
     rightRangeSensor.begin(RANGE_SENSOR_RIGHT_TRIGGER_PIN, RANGE_SENSOR_RIGHT_TRIGGER_CHANNEL,
                            RANGE_SENSOR_RIGHT_ECHO_PIN);
     leftRangeSensor.begin(RANGE_SENSOR_LEFT_TRIGGER_PIN, RANGE_SENSOR_LEFT_TRIGGER_CHANNEL, RANGE_SENSOR_LEFT_ECHO_PIN);
 
-    // Begin wheels
+    // Begin left wheel
     leftWheel.begin(WHEEL_LEFT_CONTROL_PIN, WHEEL_LEFT_CONTROL_CHANNEL, WHEEL_LEFT_CONTROL_FREQ,
                     WHEEL_LEFT_CONTROL_RES);
+    leftWheel.beginCurrentSensor(WHEEL_LEFT_CURRENT_PIN, 0.08294f, 2.529f);
+
+    // Begin right wheel
     rightWheel.begin(WHEEL_RIGHT_CONTROL_B0_PIN, WHEEL_RIGHT_CONTROL_B1_PIN, WHEEL_RIGHT_CONTROL_B2_PIN,
                      WHEEL_RIGHT_CONTROL_B3_PIN);
+    rightWheel.beginCurrentSensor(WHEEL_RIGHT_CURRENT_PIN, 0.07361f, 75.69f);
 
     // Setup battery reading
-    pinMode(BATTERY_PIN, INPUT);
+    battery.begin(BATTERY_PIN);
 
-    // Setup current sensors
-    pinMode(WHEEL_LEFT_CURRENT_PIN, INPUT);
-    pinMode(WHEEL_RIGHT_CURRENT_PIN, INPUT);
+    // Delay for debugging
+    delay(1000);
 }
 
-float getBatteryVoltage()
+tim::Message respond(tim::Message &request)
 {
-    int adcVal = analogRead(BATTERY_PIN);
-    float voltage = 5.2166e-4 * adcVal + 5.1078f;
+    using tim::Message;
 
-    return voltage;
-}
-
-float getLeftWheelCurrent()
-{
-    int adcVal = analogRead(WHEEL_LEFT_CURRENT_PIN);
-    float current = 0.08294f * adcVal + 2.529f;
-
-    if (current < 90.0f)
-        current = 0.0f;
-
-    return current;
-}
-
-float getRightWheelCurrent()
-{
-    int adcVal = analogRead(WHEEL_RIGHT_CURRENT_PIN);
-
-    float current = 0.07361f * adcVal + 75.69f;
-
-    if (current < 90.0f)
-        current = 0.0f;
-
-    return current;
-}
-
-// Send a response over serial
-uint8_t sendSerial(uint8_t *buffer, uint8_t length)
-{
-    return Serial.write(buffer, length);
-}
-
-// Send a response over bluetooth
-int sendBluetooth(uint8_t *buffer, uint8_t length)
-{
-    return bluetooth.send(buffer, length);
-}
-
-// Receive a request over serial
-bool receiveSerial(uint8_t *buffer)
-{
-    int bytesAvailable = Serial.available();
-    if (bytesAvailable > 0)
-    {
-        auto requiredLength = Message::getRequestLength(Serial.peek());
-
-        if (bytesAvailable >= requiredLength)
-        {
-            Serial.readBytes(buffer, requiredLength);
-        }
-
-        return true;
-    }
-
-    return false;
-}
-
-// Receive a request over bluetooth
-bool receiveBluetooth(uint8_t *buffer)
-{
-    if (bluetooth.dataReceived)
-    {
-        bluetooth.dataReceived = false;
-
-        size_t numBytes = bluetooth.receive(buffer, sizeof(buffer));
-
-        return true;
-    }
-
-    return false;
-}
-
-Message createResponse(Message &request)
-{
     // Act on the parsed message and create a response
     Message response;
     response.type = request.type;
@@ -157,13 +55,13 @@ Message createResponse(Message &request)
     switch (request.type)
     {
     case Message::Type::GetBatteryVoltage:
-        response.data.voltage = getBatteryVoltage();
+        response.data.voltage = battery.getVoltage();
         break;
     case Message::Type::GetLSRange:
         response.data.distance = leftRangeSensor.getDistance();
         break;
     case Message::Type::GetLWCurrent:
-        response.data.current = getLeftWheelCurrent();
+        response.data.current = leftWheel.getCurrent();
         break;
     case Message::Type::GetLWSpeed:
         response.data.speed = leftWheel.getSpeedCommand();
@@ -172,7 +70,7 @@ Message createResponse(Message &request)
         response.data.distance = rightRangeSensor.getDistance();
         break;
     case Message::Type::GetRWCurrent:
-        response.data.current = getRightWheelCurrent();
+        response.data.current = rightWheel.getCurrent();
         break;
     case Message::Type::GetRWSpeed:
         response.data.speed = rightWheel.getSpeedCommand();
@@ -185,20 +83,40 @@ Message createResponse(Message &request)
         rightWheel.setSpeedCommand(request.data.speed);
         response.type = Message::Type::Undefined;
         break;
+    case Message::Type::GetAll:
+        auto &all = response.data.getAll;
+        // all.bat = battery.getVoltage();
+        all.bat = 6.5f;
+
+        all.lsr = leftRangeSensor.getDistance();
+
+        // all.lwc = leftWheel.getCurrent();
+        all.lwc = 1.0f;
+
+        all.lws = leftWheel.getSpeedCommand();
+        all.rsr = rightRangeSensor.getDistance();
+
+        all.rwc = rightWheel.getCurrent();
+        // all.rwc = 0.5f;
+
+        all.rws = rightWheel.getSpeedCommand();
+        break;
     }
     return response;
 }
 
-// Returns length of response. 0 if there is no response or if the request passed in was 0
-uint8_t processMessage(uint8_t *buffer)
+// Returns length of response. 0 is returned in the case of no response.
+uint8_t processSerialMessage(uint8_t *buffer)
 {
+    using tim::Message;
+
     // Parse the message
     Message request;
     if (!Message::parse(buffer, request))
         return 0;
 
     // Create the response
-    auto response = createResponse(request);
+    auto response = respond(request);
 
     // Serialize the response
     auto length = response.serialize(buffer);
@@ -207,35 +125,113 @@ uint8_t processMessage(uint8_t *buffer)
     return length;
 }
 
-void loop()
+// Receive a request over serial
+bool receiveSerial(uint8_t *buffer)
+{
+    int bytesAvailable = Serial.available();
+    if (bytesAvailable > 0)
+    {
+        auto requiredLength = tim::Message::getRequestLength(Serial.peek());
+
+        if (bytesAvailable >= requiredLength)
+        {
+            Serial.readBytes(buffer, requiredLength);
+        }
+
+        return true;
+    }
+
+    return false;
+}
+
+void updateSerial()
 {
     uint8_t messageBuffer[20];
 
-    // Receive serial messages
     if (receiveSerial(messageBuffer))
     {
-        uint8_t responseLength = processMessage(messageBuffer);
+        uint8_t responseLength = processSerialMessage(messageBuffer);
         if (responseLength > 0)
-        {
-            sendSerial(messageBuffer, responseLength);
-        }
+            Serial.write(messageBuffer, responseLength);
     }
+}
 
-    // Receive bluetooth messages
-    if (receiveBluetooth(messageBuffer))
+void updateBluetooth()
+{
+    uint8_t messageBuffer[20];
+
+    if (bluetooth.tryReceive(messageBuffer, sizeof(messageBuffer)))
     {
-        uint8_t responseLength = processMessage(messageBuffer);
+        auto responseLength = processSerialMessage(messageBuffer);
         if (responseLength > 0)
+            bluetooth.send(messageBuffer, responseLength);
+    }
+}
+
+void updateWiFi()
+{
+    using tim::Message;
+
+    wiFi.update();
+
+    auto requests = wiFi.getRequests();
+
+    for (auto request : requests)
+    {
+        Message response = respond(request);
+        wiFi.sendResponse(response);
+    }
+}
+
+void updateWireless()
+{
+    if (!bluetooth.connected() && !wiFi.connected())
+    {
+        if (!wiFi.running())
         {
-            sendBluetooth(messageBuffer, responseLength);
+            Serial.println("Starting WiFi...");
+            wiFi.begin(DEVICE_NAME, WIFI_PASSWORD, WIFI_PORT);
+        }
+
+        if (!bluetooth.running())
+        {
+            Serial.println("Starting Bluetooth...");
+            bluetooth.begin(DEVICE_NAME);
         }
     }
 
-    // Set right wheel (analog) speed
-    rightWheel.setSpeed(rightWheel.getSpeedCommand());
+    if (bluetooth.connected() && wiFi.running())
+    {
+        Serial.println("Ending WiFi...");
+        wiFi.end();
+    }
 
-    // Set left wheel (digital) speed. First get range sensor's value
-    float rightDistance = rightRangeSensor.getDistance();
-    rightDistance = rightDistance < 1.0f ? rightDistance : 1.0f;
-    leftWheel.setSpeed(leftWheel.getSpeedCommand() * rightDistance, getBatteryVoltage());
+    if (wiFi.connected() && bluetooth.running())
+    {
+        Serial.println("Ending Bluetooth...");
+        bluetooth.end();
+    }
+
+    if (bluetooth.running())
+        updateBluetooth();
+
+    if (wiFi.running())
+        updateWiFi();
+}
+
+void updateWheels()
+{
+    rightWheel.update();
+    leftWheel.update(rightRangeSensor.getDistance(), battery.getVoltage());
+}
+
+void loop()
+{
+    updateSerial();
+    updateWireless();
+    // if (!wiFi.running())
+    // wiFi.begin(DEVICE_NAME, WIFI_PASSWORD, WIFI_PORT);
+    // updateWiFi();
+    updateWheels();
+    // Serial.println(leftRangeSensor.getDistance() * 100);
 }

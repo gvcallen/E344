@@ -1,4 +1,4 @@
-use std::{env, error::Error, io::stdin, time::Duration};
+use std::{env, error::Error, io::stdin, thread, time::Duration};
 use tokio::time;
 
 use simple_error::{bail, simple_error};
@@ -64,55 +64,44 @@ async fn run(timothy: &mut Timothy) -> Result<(), Box<dyn Error>> {
         return Ok(());
     }
 
-    // Parse any "combination" messages, which are not part of the protocol but translate to multiple protocol messages
-    let combination_message = match args[0] {
-        "go" => Some(vec![Message::SetLWSpeed(15), Message::SetRWSpeed(15)]),
-        "stop" => Some(vec![Message::SetLWSpeed(0), Message::SetRWSpeed(0)]),
-        "left" => Some(vec![Message::SetLWSpeed(0), Message::SetRWSpeed(15)]),
-        "right" => Some(vec![Message::SetLWSpeed(15), Message::SetRWSpeed(0)]),
-        _ => None,
-    };
-
-    // Send any potential combination message
-    if let Some(messages) = combination_message {
-        for m in messages {
-            let _ = &mut timothy.send_message(&m).await.unwrap();
-        }
-        return Ok(());
-    }
-
-    // Parse any "commands"
-    let request = match args[0] {
+    // Parse any requests
+    match args[0] {
+        "go" => timothy.go().await,
+        "stop" => timothy.stop().await,
+        "left" => timothy.left().await,
+        "right" => timothy.right().await,
         "help" => {
             print_help_interactive();
-            return Ok(());
-        }
-        "exit" => return Ok(()),
-        "set" => Message::parse_set(&args[1..]),
-        "get" => Message::parse_get(&args[1..]),
-        _ => Err(simple_error!("Invalid command").into()),
-    };
-
-    // Send any protocol messages
-    match request {
-        Ok(request) => {
-            if let Message::GetAll(_) = request {
-                loop {
-                    println!("{}", timothy.get_all().await.unwrap());
-                    println!("\n");
-                    time::sleep(Duration::from_secs(1)).await;
-                }
-            } else if let Ok(_) = request.len_response() {
-                println!(
-                    "{}",
-                    timothy.send_receive(&request).await.unwrap().to_string()
-                );
-            } else {
-                timothy.send_message(&request).await.unwrap();
-            }
             Ok(())
         }
-        Err(e) => Err(e),
+        "exit" => Ok(()),
+        "set" => {
+            if let Ok(request) = Message::parse_set(&args[1..]) {
+                timothy.send_message(&request).await
+            } else {
+                bail!("Invalid command");
+            }
+        }
+        "get" => {
+            if let Ok(request) = Message::parse_get(&args[1..]) {
+                if let Message::GetAll(_) = request {
+                    loop {
+                        println!("{}", timothy.get_all().await.unwrap());
+                        println!("\n");
+                    }
+                } else {
+                    println!(
+                        "{}",
+                        timothy.send_receive(&request).await.unwrap().to_string()
+                    );
+                }
+
+                Ok(())
+            } else {
+                bail!("Invalid command");
+            }
+        }
+        _ => bail!("Invalid command"),
     }
 }
 
